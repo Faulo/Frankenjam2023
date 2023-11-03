@@ -25,7 +25,7 @@ unityPipeline {
     STEAM_CREDENTIALS = ''
     
     // configuration for deploying to itch
-    ITCH_ID = 'faulo/gossip-gang'
+    ITCH_ID = 'faulo/spill-the-tea'
 	ITCH_CREDENTIALS = 'Faulo-itch.io'
 }
 
