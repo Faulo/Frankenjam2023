@@ -1,19 +1,11 @@
 using UnityEngine;
 
 namespace GossipGang {
-
-    public class PrintInk : MonoBehaviour {
-        // Start is called before the first frame update
-        protected
-        // Start is called before the first frame update
-        void Start() {
-
+    public sealed class PrintInk : MonoBehaviour {
+        void Awake() {
         }
-
-        // Update is called once per frame
-        protected
-
-        // Update is called once per frame
+        void Start() {
+        }
         void Update() {
 
         }
