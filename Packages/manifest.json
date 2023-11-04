@@ -24,6 +24,7 @@
     "com.unity.ui": "2.0.0",
     "com.unity.ui.builder": "2.0.0",
     "net.slothsoft.unity-extensions": "3.0.0",
-    "com.unity.modules.androidjni": "1.0.0"
+    "com.unity.modules.androidjni": "1.0.0",
+    "unity-dependencies-hunter": "https://github.com/AlexeyPerov/Unity-Dependencies-Hunter.git#upm"
   }
 }
