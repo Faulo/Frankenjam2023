@@ -59,8 +59,8 @@ namespace GossipGang {
                 m_answeringPlayer = value;
 
                 playerText.text = activePlayerIsSelf
-                    ? $"{askingPlayer.name}'s turn"
-                    : $"{askingPlayer.name}'s turn\r\n{answeringPlayer.name}'s answer";
+                    ? $"{askingPlayer.nameWithColor}'s turn"
+                    : $"{askingPlayer.nameWithColor}'s turn\r\n{answeringPlayer.nameWithColor}'s answer";
             }
         }
 

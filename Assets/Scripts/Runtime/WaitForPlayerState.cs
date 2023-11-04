@@ -27,7 +27,7 @@ namespace GossipGang {
         }
 
         public void Bind(Player model) {
-            playerText.text = model.name;
+            playerText.text = model.nameWithColor;
         }
     }
 }
