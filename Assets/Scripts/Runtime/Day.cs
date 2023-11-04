@@ -26,6 +26,25 @@ namespace GossipGang {
         string[] m_answers = new[] { "A", "B", "C", "D" };
         public IReadOnlyList<string> answers => m_answers;
 
+        public static bool TryCreateFromCSV(out Day day, string description, string question, IEnumerable<string> answers, IEnumerable<string> tags) {
+            day = CreateInstance<Day>();
+
+            day.m_description = description.Trim();
+            day.m_question = question.Trim();
+            day.m_answers = answers.ToArray();
+            day.m_tags = tags.ToArray();
+
+            if (string.IsNullOrWhiteSpace(day.m_question)) {
+                return false;
+            }
+
+            if (day.m_answers.Length == 0) {
+                return false;
+            }
+
+            return true;
+        }
+
         public static bool TryCreateFromCSV(string[] header, string[] data, out Day day) {
             day = CreateInstance<Day>();
 

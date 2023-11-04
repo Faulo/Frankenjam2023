@@ -1,12 +1,58 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
+using CsvHelper;
+using CsvHelper.Configuration;
 using UnityEngine;
 using UnityEngine.Networking;
 
 namespace GossipGang {
     [CreateAssetMenu]
     sealed class GoogleSheetAsset : ScriptableAsset {
+#pragma warning disable IDE1006 // Naming Styles
+        record Row {
+            public string Tag_1 { get; set; }
+            public string Tag_2 { get; set; }
+            public string Tag_3 { get; set; }
+
+            public IEnumerable<string> Tags => new string[] {
+                Tag_1,
+                Tag_2,
+                Tag_3,
+            }
+            .Select(a => a.Trim())
+            .Where(a => !string.IsNullOrWhiteSpace(a));
+
+            public string Description { get; set; }
+            public string Question { get; set; }
+            public string Answer_1 { get; set; }
+            public string Answer_2 { get; set; }
+            public string Answer_3 { get; set; }
+            public string Answer_4 { get; set; }
+            public string Answer_5 { get; set; }
+            public string Answer_6 { get; set; }
+            public string Answer_7 { get; set; }
+            public string Answer_8 { get; set; }
+            public string Answer_9 { get; set; }
+            public string Answer_10 { get; set; }
+
+            public IEnumerable<string> Answers => new string[] {
+                Answer_1,
+                Answer_2,
+                Answer_3,
+                Answer_4,
+                Answer_5,
+                Answer_6,
+                Answer_7,
+                Answer_8,
+                Answer_9,
+                Answer_10,
+            }
+            .Select(a => a.Trim())
+            .Where(a => !string.IsNullOrWhiteSpace(a));
+        }
+#pragma warning restore IDE1006 // Naming Styles
         [SerializeField]
         string id = "1gfnagqw3ySRh9GeTb3Emuy3RAd96msUj7WpWPA0rB2M";
         [SerializeField, TextArea(10, 100)]
@@ -14,11 +60,12 @@ namespace GossipGang {
 
         public IEnumerable<Day> days {
             get {
-                string[] rows = data.Split('\r');
-                string[] header = rows[0].Split(',');
+                var config = new Configuration();
+                using var reader = new StringReader(data);
+                using var parser = new CsvReader(reader, config);
 
-                foreach (string row in rows.Skip(1)) {
-                    if (Day.TryCreateFromCSV(header, row.Split(','), out var day)) {
+                foreach (var row in parser.GetRecords<Row>()) {
+                    if (Day.TryCreateFromCSV(out var day, row.Description, row.Question, row.Answers, row.Tags)) {
                         yield return day;
                     }
                 }
@@ -39,6 +86,9 @@ namespace GossipGang {
                     break;
                 case UnityWebRequest.Result.Success:
                     data = request.downloadHandler.text;
+#if UNITY_EDITOR
+                    UnityEditor.EditorUtility.SetDirty(this);
+#endif
                     break;
             }
         }
