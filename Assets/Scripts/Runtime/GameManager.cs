@@ -34,6 +34,7 @@ namespace GossipGang {
         int activePlayerIndex = 0;
         readonly List<Player> m_players = new();
         public IReadOnlyList<Player> players => m_players;
+        public int playerCount => m_players.Count;
         public Player activePlayer => m_players[activePlayerIndex % m_players.Count];
         public void AddPlayer(Player player) {
             m_players.Add(player);
@@ -78,5 +79,12 @@ namespace GossipGang {
             yield return Instantiate(prefab).WaitForDone();
             yield return null;
         }
+
+        public Player GetNextPlayer(Player previousPlayer) {
+            int index = m_players.IndexOf(previousPlayer);
+            return m_players[(index + 1) % playerCount];
+        }
+
+        public void AdvancePlayer() => activePlayerIndex++;
     }
 }

@@ -1,6 +1,8 @@
 ﻿using System.Collections;
+using System.Linq;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace GossipGang {
     sealed class NewRoundState : UIState, IBindingReceiver<PlayerEntry> {
@@ -18,7 +20,7 @@ namespace GossipGang {
         [SerializeField]
         GameObject answerPrefab;
 
-        bool isDone;
+        bool isDone => entry is not null && entry.answers.Values.All(a => a != -1);
 
         void Start() {
         }
@@ -28,19 +30,52 @@ namespace GossipGang {
 
             Destroy(gameObject);
 
+            GameManager.instance.AdvancePlayer();
+
             yield return GameManager.instance.LoadNewRoundState();
         }
 
+        PlayerEntry entry;
+        bool activePlayerIsSelf => answeringPlayer == askingPlayer;
+        Player askingPlayer => entry.player;
+
+        Player m_answeringPlayer;
+        Player answeringPlayer {
+            get => m_answeringPlayer;
+            set {
+                m_answeringPlayer = value;
+
+                playerText.text = activePlayerIsSelf
+                    ? $"{askingPlayer.name}'s turn"
+                    : $"{askingPlayer.name}'s turn\r\n{answeringPlayer.name}'s answer";
+            }
+        }
+
         public void Bind(PlayerEntry entry) {
-            playerText.text = entry.player.name;
+            this.entry = entry;
+            answeringPlayer = entry.player;
+
             dateText.text = entry.dateString;
             descriptionText.text = entry.day.description;
             questionText.text = entry.day.question;
 
+            int i = 0;
             foreach (string answer in entry.day.answers) {
                 var instance = Instantiate(answerPrefab, buttonContainer);
                 instance.BindTo(answer);
+
+                if (instance.TryGetComponent<Button>(out var button)) {
+                    button.onClick.AddListener(() => SetAnswer(i));
+                }
+
+                i++;
             }
+        }
+
+        void SetAnswer(int answer) {
+            entry.answers[answeringPlayer] = answer;
+
+            answeringPlayer = GameManager.instance.GetNextPlayer(answeringPlayer);
         }
     }
 }
