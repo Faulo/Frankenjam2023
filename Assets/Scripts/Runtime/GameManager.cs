@@ -31,12 +31,13 @@ namespace GossipGang {
             }
         }
 
-        readonly HashSet<Player> m_players = new();
-        public IReadOnlyCollection<Player> players => m_players;
+        int activePlayerIndex = 0;
+        readonly List<Player> m_players = new();
+        public IReadOnlyList<Player> players => m_players;
+        public Player activePlayer => m_players[activePlayerIndex % m_players.Count];
         public void AddPlayer(Player player) {
-            if (m_players.Add(player)) {
-                onAddPlayer?.Invoke(player);
-            }
+            m_players.Add(player);
+            onAddPlayer?.Invoke(player);
         }
 
         void Awake() {
@@ -61,7 +62,7 @@ namespace GossipGang {
             yield return null;
 
             var instance = Instantiate(newRoundState);
-            var entry = new PlayerEntry(m_days.RandomElement(), DateTime.Now);
+            var entry = new PlayerEntry(m_days.RandomElement(), DateTime.Now, activePlayer, m_players);
             instance.gameObject.BindTo(entry);
             yield return instance.WaitForDone();
 

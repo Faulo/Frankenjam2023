@@ -5,6 +5,8 @@ using UnityEngine;
 namespace GossipGang {
     sealed class NewRoundState : UIState, IBindingReceiver<PlayerEntry> {
         [SerializeField]
+        TMP_Text playerText;
+        [SerializeField]
         TMP_Text dateText;
         [SerializeField]
         TMP_Text descriptionText;
@@ -30,9 +32,15 @@ namespace GossipGang {
         }
 
         public void Bind(PlayerEntry entry) {
-            dateText.text = entry.date.ToShortDateString();
+            playerText.text = entry.player.name;
+            dateText.text = entry.dateString;
             descriptionText.text = entry.day.description;
             questionText.text = entry.day.question;
+
+            foreach (string answer in entry.day.answers) {
+                var instance = Instantiate(answerPrefab, buttonContainer);
+                instance.BindTo(answer);
+            }
         }
     }
 }
