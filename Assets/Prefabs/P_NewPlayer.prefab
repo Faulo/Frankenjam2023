@@ -518,8 +518,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Cancel & return to main menu
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 5a15c5e0eff8a3443af6f81283fbcce3, type: 2}
-  m_sharedMaterial: {fileID: -5507352161249096593, guid: 5a15c5e0eff8a3443af6f81283fbcce3, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: c0d5734b5f830634d8a1dbe976484076, type: 2}
+  m_sharedMaterial: {fileID: 3228817776502478536, guid: c0d5734b5f830634d8a1dbe976484076, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1114,8 +1114,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Add player, then add another player
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 5a15c5e0eff8a3443af6f81283fbcce3, type: 2}
-  m_sharedMaterial: {fileID: -5507352161249096593, guid: 5a15c5e0eff8a3443af6f81283fbcce3, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: c0d5734b5f830634d8a1dbe976484076, type: 2}
+  m_sharedMaterial: {fileID: 3228817776502478536, guid: c0d5734b5f830634d8a1dbe976484076, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1371,8 +1371,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Add player, then start game
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 5a15c5e0eff8a3443af6f81283fbcce3, type: 2}
-  m_sharedMaterial: {fileID: -5507352161249096593, guid: 5a15c5e0eff8a3443af6f81283fbcce3, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: c0d5734b5f830634d8a1dbe976484076, type: 2}
+  m_sharedMaterial: {fileID: 3228817776502478536, guid: c0d5734b5f830634d8a1dbe976484076, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
