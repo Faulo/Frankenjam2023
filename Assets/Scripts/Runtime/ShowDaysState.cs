@@ -22,7 +22,7 @@ namespace GossipGang {
         void Start() {
             foreach (var day in GameManager.instance.days) {
                 var instance = Instantiate(dayPrefab, dayContainer);
-                day.BindTo(instance);
+                instance.BindTo(day);
             }
 
             backButton.onClick.AddListener(() => {

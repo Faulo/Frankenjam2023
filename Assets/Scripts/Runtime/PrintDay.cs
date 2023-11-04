@@ -2,7 +2,7 @@ using TMPro;
 using UnityEngine;
 
 namespace GossipGang {
-    sealed class PrintDay : MonoBehaviour, IDayReceiver {
+    sealed class PrintDay : MonoBehaviour, IBindingReceiver<Day> {
         [SerializeField]
         TMP_Text titleText;
         [SerializeField]

@@ -3,7 +3,7 @@ using TMPro;
 using UnityEngine;
 
 namespace GossipGang {
-    sealed class NewRoundState : UIState, IPlayerEntryReceiver {
+    sealed class NewRoundState : UIState, IBindingReceiver<PlayerEntry> {
         [SerializeField]
         TMP_Text dateText;
         [SerializeField]
