@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: New Image Library
   m_EditorClassIdentifier: 
   m_asset: {fileID: 11400000}
-  image: {fileID: 21300000, guid: 16305acb014e800409a7c129fbd9fc32, type: 3}
+  defaultImage: {fileID: 21300000, guid: 268a148b8c4ad6d44bc5629f8eb8eb48, type: 3}

@@ -4,7 +4,7 @@ namespace GossipGang {
     [CreateAssetMenu]
     sealed class ImageLibrary : ScriptableAsset {
         [SerializeField]
-        Sprite image;
+        Sprite defaultImage;
 
         Sprite[] images;
         public Sprite LookUp(string name) {
@@ -16,7 +16,7 @@ namespace GossipGang {
                 }
             }
 
-            return image;
+            return defaultImage;
         }
     }
 }
