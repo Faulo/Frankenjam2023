@@ -1,5 +1,4 @@
-﻿using System.Linq;
-using UnityEngine;
+﻿using UnityEngine;
 
 namespace GossipGang {
     [CreateAssetMenu]
@@ -11,9 +10,13 @@ namespace GossipGang {
         public Sprite LookUp(string name) {
             images ??= Resources.LoadAll<Sprite>("");
 
-            return images
-                .DefaultIfEmpty(image)
-                .FirstOrDefault(image => image.name == name);
+            foreach (var image in images) {
+                if (image.name == name) {
+                    return image;
+                }
+            }
+
+            return image;
         }
     }
 }
