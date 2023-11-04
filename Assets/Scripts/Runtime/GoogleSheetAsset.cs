@@ -81,8 +81,12 @@ namespace GossipGang {
             }
             .Select(a => a.Trim())
             .Where(a => !string.IsNullOrWhiteSpace(a));
+
+            public string Image { get; set; }
         }
 #pragma warning restore IDE1006 // Naming Styles
+        [SerializeField]
+        ImageLibrary library;
         [SerializeField]
         string id = "1gfnagqw3ySRh9GeTb3Emuy3RAd96msUj7WpWPA0rB2M";
         [SerializeField, TextArea(10, 100)]
@@ -99,7 +103,9 @@ namespace GossipGang {
                         category = DayCategory.Default;
                     }
 
-                    if (Day.TryCreateFromCSV(out var day, category, row.Description, row.Question, row.Answers, row.Tags, row.StartDate, row.EndDate)) {
+                    var image = library.LookUp(row.Image);
+
+                    if (Day.TryCreateFromCSV(out var day, category, row.Description, row.Question, row.Answers, row.Tags, row.StartDate, row.EndDate, image)) {
                         yield return day;
                     }
                 }

@@ -41,7 +41,11 @@ namespace GossipGang {
 
         public DateTime randomDate => new((long)UnityRandom.Range(start.Ticks, end.Ticks));
 
-        public static bool TryCreateFromCSV(out Day day, DayCategory category, string description, string question, IEnumerable<string> answers, IEnumerable<DayTag> tags, DateTime start, DateTime end) {
+        [SerializeField]
+        Sprite m_image;
+        public Sprite image => m_image;
+
+        public static bool TryCreateFromCSV(out Day day, DayCategory category, string description, string question, IEnumerable<string> answers, IEnumerable<DayTag> tags, DateTime start, DateTime end, Sprite image) {
             day = CreateInstance<Day>();
 
             day.m_category = category;
@@ -51,6 +55,7 @@ namespace GossipGang {
             day.m_tags = tags.ToArray();
             day.m_start = start;
             day.m_end = end;
+            day.m_image = image;
 
             if (string.IsNullOrWhiteSpace(day.m_question)) {
                 return false;

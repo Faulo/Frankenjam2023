@@ -32,6 +32,7 @@ namespace GossipGang {
             get {
                 yield return ("Application.version", Application.version);
                 yield return ("Game.dayCount", GameManager.instance.days.Count.ToString());
+                yield return ("Game.firstPlayer", GameManager.instance.firstPlayer.nameWithColor);
             }
         }
 

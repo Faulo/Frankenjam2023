@@ -10,6 +10,13 @@ namespace GossipGang {
         public static event Action<Day> onAddDay;
         public static event Action<Player> onAddPlayer;
 
+        int currentRound = 0;
+
+        [SerializeField]
+        int roundMaximum = 3;
+
+        bool hasFinished => currentRound >= roundMaximum;
+
         [SerializeField]
         UIState mainMenuState;
 
@@ -18,6 +25,9 @@ namespace GossipGang {
 
         [SerializeField]
         UIState newRoundState;
+
+        [SerializeField]
+        UIState endgameState;
 
         [SerializeField]
         UIState showDaysState;
@@ -43,6 +53,11 @@ namespace GossipGang {
         public IReadOnlyList<Player> players => m_players;
         public int playerCount => m_players.Count;
         public Player activePlayer => m_players[activePlayerIndex % m_players.Count];
+
+        public Player firstPlayer => playerCount == 0
+            ? new Player()
+            : m_players[0];
+
         public void AddPlayer(Player player) {
             m_players.Add(player);
             onAddPlayer?.Invoke(player);
@@ -71,10 +86,16 @@ namespace GossipGang {
         public IEnumerator LoadNewRoundState() {
             yield return null;
 
-            var instance = Instantiate(newRoundState);
-            var entry = new PlayerEntry(m_days.RandomElement(), activePlayer, m_players);
-            instance.gameObject.BindTo(entry);
-            yield return instance.WaitForDone();
+            if (hasFinished) {
+                var instance = Instantiate(endgameState);
+                instance.gameObject.BindTo(this);
+                yield return instance.WaitForDone();
+            } else {
+                var instance = Instantiate(newRoundState);
+                var entry = new PlayerEntry(m_days.RandomElement(), activePlayer, m_players);
+                instance.gameObject.BindTo(entry);
+                yield return instance.WaitForDone();
+            }
 
             yield return null;
         }
@@ -105,6 +126,14 @@ namespace GossipGang {
             return Color.HSVToRGB(index / playerCount, playerSaturation, playerValue);
         }
 
-        public void AdvancePlayer() => activePlayerIndex++;
+        public void AdvancePlayer() {
+            activePlayerIndex = (activePlayerIndex + 1) % playerCount;
+
+            if (activePlayerIndex == 0) {
+                AdvanceRound();
+            }
+        }
+
+        void AdvanceRound() => currentRound++;
     }
 }

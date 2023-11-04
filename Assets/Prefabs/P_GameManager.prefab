@@ -90,9 +90,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f22b2a6673fc4d4e9877360d7db6bee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  roundMaximum: 3
   mainMenuState: {fileID: 6583839949492670992, guid: c75e34d373e508442af3889bf3349f3f, type: 3}
   newPlayerState: {fileID: 4731318394138481114, guid: 4a854f572741c1141ac8648389b3b7b7, type: 3}
   newRoundState: {fileID: 4975614860496351151, guid: 6c37c2e6a633a994aa810fb684f859e6, type: 3}
+  endgameState: {fileID: 370868796289533815, guid: 477f1f22a06f9134281c19225f1b5830, type: 3}
   showDaysState: {fileID: 2883313632550808200, guid: 7d93fab8bedeec7459e34c7585ab2e40, type: 3}
   playerSaturation: 0.75
   playerValue: 0.5
