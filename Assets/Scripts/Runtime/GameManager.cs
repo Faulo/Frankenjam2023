@@ -7,7 +7,6 @@ using UnityEngine;
 namespace GossipGang {
     sealed class GameManager : MonoBehaviour {
         public static GameManager instance;
-        public static event Action<Action<Day>> onLoadResources;
         public static event Action<Day> onAddDay;
         public static event Action<Player> onAddPlayer;
 
@@ -25,10 +24,18 @@ namespace GossipGang {
 
         readonly HashSet<Day> m_days = new();
         public IReadOnlyCollection<Day> days => m_days;
-        void AddDay(Day day) {
+        public void AddDay(Day day) {
             if (m_days.Add(day)) {
                 onAddDay?.Invoke(day);
             }
+        }
+
+        static readonly List<Func<IEnumerator>> loaders = new();
+        public static void RegisterDayLoader(Func<IEnumerator> loader) {
+            loaders.Add(loader);
+        }
+        public static void RemoveDayLoader(Func<IEnumerator> loader) {
+            loaders.Remove(loader);
         }
 
         int activePlayerIndex = 0;
@@ -46,7 +53,9 @@ namespace GossipGang {
         }
 
         public IEnumerator Start() {
-            onLoadResources?.Invoke(AddDay);
+            foreach (var loader in loaders) {
+                yield return loader();
+            }
 
             yield return LoadMainMenu();
         }
@@ -63,7 +72,7 @@ namespace GossipGang {
             yield return null;
 
             var instance = Instantiate(newRoundState);
-            var entry = new PlayerEntry(m_days.RandomElement(), DateTime.Now, activePlayer, m_players);
+            var entry = new PlayerEntry(m_days.RandomElement(), activePlayer, m_players);
             instance.gameObject.BindTo(entry);
             yield return instance.WaitForDone();
 

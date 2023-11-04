@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 98b09995b36e9854b90902364b216872, type: 3}
+  m_Name: New Google Sheet Asset
+  m_EditorClassIdentifier: 
+  m_asset: {fileID: 11400000}
+  id: 1gfnagqw3ySRh9GeTb3Emuy3RAd96msUj7WpWPA0rB2M
+  data: "Category,Tag_1,Tag_2,Tag_3,Start,End,Description,Question,Answer_1,Answer_2,Answer_3,Answer_4,Answer_5,Answer_6,Answer_7,Answer_8,Answer_9,Answer_10\r\nDefault,Childhood,,,20.03.,20.06.,\"Henry
+    ist vor ein paar Tagen durch seine alten Sachen durchgegangen und hat seine Zeugnisse
+    von damals gefunden. Er hat sich sehr dar\xFCber am\xFCsiert, wie viel Stress
+    er sich damals um seine Noten gemacht hat. Bis in die tiefste Nacht hat er gelernt
+    und gef\xFChlt trotzdem nie etwas verstanden und all diese M\xFChen waren komplett
+    sinnlos, weil sich nach der Schule gef\xFChlt nie wieder jemand f\xFCr diese
+    Noten interessiert hat.\",Welcher Typ Sch\xFCler*in warst du in deiner Schulzeit?,Streber/Lehrerliebling,Coole
+    letzte Reihe/ Klassenclown,Solider Durchschnitt,\"Ein Bereich exzellent, sonst
+    nur bestanden.\",,,,,,\r\nDefault,Childhood,,,20.03.,20.06.,\"Ich h\xE4tte wirklich
+    nicht gedacht, dass die Teenager heutzutage das auch noch machen. Als ich heute
+    auf den Bus gewartet habe, war da ein Junge, der ganz sch\xFCchtern einem M\xE4del
+    einen Zettel in die Hand gedr\xFCckt hat und dann aber ganz schnell abgehauen
+    ist. Wie gerne ich damals den Mut gehabt h\xE4tte, das Gleiche zu tun. Aber das
+    h\xE4tte ich mich wirklich niemals getraut. Nicht mal f\xFCr Geld.\",\"Wenn dir
+    eine Person gef\xE4llt, dann...\",\u2026 machst du den ersten Schritt.,\"\u2026
+    wartest du geduldig, bis die Person den ersten Schritt macht.\",\"\u2026 bittest
+    ein*e Freund*in, Wing-person zu spielen\r\",,,,,,,\r\nDefault,Lovelife,,,20.03.,20.06.,\"Ob
+    ich je gedacht h\xE4tte, dass ich diese Zeilen mal schreibe? Um ehrlich zu sein,
+    nicht wirklich. Aber naja, jetzt sind wir hier. Seit Wochen geht mir diese eine
+    Person nicht aus dem Kopf. Das ist an sich v\xF6llig okay und sch\xF6n - vor
+    allem, da die Person auch Interesse an mir zu haben scheint. Was mich nur ein
+    bisschen aus dem Konzept bringt, ist, dass ich wirklich sehr \xFCberzeugt davon
+    war, hetero zu sein, und sie bringt das halt gerade komplett ins Schwanken. Aber
+    es gibt wohl anscheinend f\xFCr alles ein erstes Mal?\",Hast du schon mal deine
+    eigene Sexualit\xE4t hinterfragt?,Nein,\"Ja, durch einen Crush\",\"Ja, durch
+    einen sexy Traum\",\"Ja, durch neue Information\",,,,,,\r\nDefault,,,,,,,,,,,,,,,,,\r\nDefault,,,,,,,,,,,,,,,,,\r\nDefault,,,,,,,,,,,,,,,,,"

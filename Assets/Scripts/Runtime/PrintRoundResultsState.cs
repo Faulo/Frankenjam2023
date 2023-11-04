@@ -1,9 +1,12 @@
 ﻿using System.Collections;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
 namespace GossipGang {
     sealed class PrintRoundResultsState : UIState, IBindingReceiver<PlayerEntry> {
+        [SerializeField]
+        TMP_Text questionText;
         [SerializeField]
         Transform answerContainer;
         [SerializeField]
@@ -26,6 +29,8 @@ namespace GossipGang {
         }
 
         public void Bind(PlayerEntry entry) {
+            questionText.text = entry.day.question;
+
             for (int i = 0; i < entry.answerCount; i++) {
                 var instance = Instantiate(answerPrefab, answerContainer);
                 instance.BindTo((entry, i));
