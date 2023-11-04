@@ -72,7 +72,7 @@ namespace GossipGang {
             yield return null;
 
             var instance = Instantiate(newRoundState);
-            var entry = new PlayerEntry(m_days.RandomElement(), DateTime.Now, activePlayer, m_players);
+            var entry = new PlayerEntry(m_days.RandomElement(), activePlayer, m_players);
             instance.gameObject.BindTo(entry);
             yield return instance.WaitForDone();
 

@@ -8,8 +8,12 @@ namespace GossipGang {
     [CreateAssetMenu]
     sealed class Day : ScriptableObject {
         [SerializeField]
-        string[] m_tags = Array.Empty<string>();
-        public IReadOnlyList<string> tags => m_tags;
+        DayTag[] m_tags = Array.Empty<DayTag>();
+        public IReadOnlyList<DayTag> tags => m_tags;
+
+        [SerializeField]
+        DayCategory m_category = DayCategory.Default;
+        public DayCategory category => m_category;
 
         [SerializeField]
         string m_title = nameof(title);
@@ -37,9 +41,10 @@ namespace GossipGang {
 
         public DateTime randomDate => new((long)UnityRandom.Range(start.Ticks, end.Ticks));
 
-        public static bool TryCreateFromCSV(out Day day, string description, string question, IEnumerable<string> answers, IEnumerable<string> tags, DateTime start, DateTime end) {
+        public static bool TryCreateFromCSV(out Day day, DayCategory category, string description, string question, IEnumerable<string> answers, IEnumerable<DayTag> tags, DateTime start, DateTime end) {
             day = CreateInstance<Day>();
 
+            day.m_category = category;
             day.m_description = description.Trim();
             day.m_question = question.Trim();
             day.m_answers = answers.ToArray();
@@ -73,6 +78,7 @@ namespace GossipGang {
             }
 
             day.m_tags = FindEnumerable(header, data, "Tag")
+                .Select(t => Enum.Parse<DayTag>(t))
                 .ToArray();
 
             day.m_answers = FindEnumerable(header, data, "Answer")

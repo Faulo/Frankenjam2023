@@ -11,7 +11,7 @@ namespace GossipGang {
         TMP_Text questionText;
 
         public void Bind(Day day) {
-            dateText.text = day.randomDate.ToString("dd.MM.");
+            dateText.text = day.randomDate.ToShortDateString();
             descriptionText.text = day.description;
             questionText.text = day.question;
         }

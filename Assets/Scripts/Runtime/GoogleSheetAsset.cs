@@ -13,17 +13,28 @@ namespace GossipGang {
     sealed class GoogleSheetAsset : ScriptableAsset {
 #pragma warning disable IDE1006 // Naming Styles
         record Row {
+            public string Category { get; set; }
+
             public string Tag_1 { get; set; }
             public string Tag_2 { get; set; }
             public string Tag_3 { get; set; }
 
-            public IEnumerable<string> Tags => new string[] {
+            IEnumerable<string> StringTags => new string[] {
                 Tag_1,
                 Tag_2,
                 Tag_3,
             }
             .Select(a => a.Trim())
             .Where(a => !string.IsNullOrWhiteSpace(a));
+            public IEnumerable<DayTag> Tags {
+                get {
+                    foreach (string tag in StringTags) {
+                        if (Enum.TryParse<DayTag>(tag, out var t)) {
+                            yield return t;
+                        }
+                    }
+                }
+            }
 
             public string Start { get; set; }
             public DateTime StartDate {
@@ -84,7 +95,11 @@ namespace GossipGang {
                 using var parser = new CsvReader(reader, config);
 
                 foreach (var row in parser.GetRecords<Row>()) {
-                    if (Day.TryCreateFromCSV(out var day, row.Description, row.Question, row.Answers, row.Tags, row.StartDate, row.EndDate)) {
+                    if (!Enum.TryParse<DayCategory>(row.Category, out var category)) {
+                        category = DayCategory.Default;
+                    }
+
+                    if (Day.TryCreateFromCSV(out var day, category, row.Description, row.Question, row.Answers, row.Tags, row.StartDate, row.EndDate)) {
                         yield return day;
                     }
                 }
