@@ -25,7 +25,6 @@ namespace GossipGang {
                 Tag_2,
                 Tag_3,
             }
-            .Select(a => a.Trim())
             .Where(a => !string.IsNullOrWhiteSpace(a));
             public IEnumerable<DayTag> Tags {
                 get {
@@ -80,7 +79,6 @@ namespace GossipGang {
                 Answer_9,
                 Answer_10,
             }
-            .Select(a => a.Trim())
             .Where(a => !string.IsNullOrWhiteSpace(a));
 
             public string Image { get; set; }
