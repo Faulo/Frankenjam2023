@@ -109,6 +109,7 @@ namespace GossipGang {
         string url => $"https://docs.google.com/spreadsheets/d/{id}/export?format=csv";
 
         public IEnumerator DownloadSheet_Co() {
+#if UNITY_EDITOR
             using var request = UnityWebRequest.Get(url);
             yield return request.SendWebRequest();
 
@@ -125,6 +126,9 @@ namespace GossipGang {
 #endif
                     break;
             }
+#else
+            yield break;
+#endif
         }
     }
 }
