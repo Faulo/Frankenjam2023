@@ -20,6 +20,9 @@ namespace GossipGang {
         [SerializeField]
         GameObject answerPrefab;
 
+        [SerializeField]
+        UIState popupPrefab;
+
         bool isDone => entry is not null && entry.answers.Values.All(a => a != -1);
 
         void Start() {
@@ -27,6 +30,10 @@ namespace GossipGang {
 
         public override IEnumerator WaitForDone() {
             yield return new WaitUntil(() => isDone);
+
+            var instance = Instantiate(popupPrefab);
+            instance.BindTo(askingPlayer);
+            yield return instance.WaitForDone();
 
             Destroy(gameObject);
 

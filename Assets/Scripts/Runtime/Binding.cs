@@ -7,5 +7,8 @@ namespace GossipGang {
                 receiver.Bind(model);
             }
         }
+        public static void BindTo<T>(this Component component, T model) {
+            component.gameObject.BindTo(model);
+        }
     }
 }
