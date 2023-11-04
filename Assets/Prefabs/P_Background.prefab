@@ -244,7 +244,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Gossip Gang v{Application.version} ({Game.dayCount} days)
+  m_text: Gossip Gang v{Application.version} ({Game.dayCount} diary entries)
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 1b8f8e7ed4675994893ca03ae167947b, type: 2}
   m_sharedMaterial: {fileID: 5197169296787191909, guid: 1b8f8e7ed4675994893ca03ae167947b, type: 2}
