@@ -1,9 +1,15 @@
+using System;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 namespace GossipGang {
     [CreateAssetMenu]
     sealed class Day : ScriptableObject {
+        [SerializeField]
+        string[] m_tags = Array.Empty<string>();
+        public IReadOnlyList<string> tags => m_tags;
+
         [SerializeField]
         string m_title = nameof(title);
         public string title => m_title;
@@ -19,5 +25,51 @@ namespace GossipGang {
         [SerializeField, TextArea(3, 12)]
         string[] m_answers = new[] { "A", "B", "C", "D" };
         public IReadOnlyList<string> answers => m_answers;
+
+        public static bool TryCreateFromCSV(string[] header, string[] data, out Day day) {
+            day = CreateInstance<Day>();
+
+            if (!TryFind(header, data, "Title", out day.m_title)) {
+            }
+
+            if (!TryFind(header, data, "Description", out day.m_description)) {
+                return false;
+            }
+
+            if (!TryFind(header, data, "Question", out day.m_question)) {
+                return false;
+            }
+
+            day.m_tags = FindEnumerable(header, data, "Tag")
+                .ToArray();
+
+            day.m_answers = FindEnumerable(header, data, "Answer")
+                .ToArray();
+            if (day.m_answers.Length == 0) {
+                return false;
+            }
+
+            return true;
+        }
+
+        static bool TryFind(string[] header, string[] data, string key, out string value) {
+            for (int i = 0; i < header.Length; i++) {
+                if (key.Equals(header[i], StringComparison.InvariantCultureIgnoreCase)) {
+                    value = data[i];
+                    return !string.IsNullOrEmpty(value);
+                }
+            }
+
+            value = default;
+            return false;
+        }
+
+        static IEnumerable<string> FindEnumerable(string[] header, string[] data, string key) {
+            for (int i = 0; i < 20; i++) {
+                if (TryFind(header, data, $"{key}_{i}", out string value)) {
+                    yield return value;
+                }
+            }
+        }
     }
 }
