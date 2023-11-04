@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.IO;
@@ -23,6 +24,24 @@ namespace GossipGang {
             }
             .Select(a => a.Trim())
             .Where(a => !string.IsNullOrWhiteSpace(a));
+
+            public string Start { get; set; }
+            public DateTime StartDate {
+                get {
+                    return DateTime.TryParse(Start + DateTime.Now.Year, out var date)
+                        ? date
+                        : DateTime.Now;
+                }
+            }
+
+            public string End { get; set; }
+            public DateTime EndDate {
+                get {
+                    return DateTime.TryParse(End + DateTime.Now.Year, out var date)
+                        ? date
+                        : DateTime.Now;
+                }
+            }
 
             public string Description { get; set; }
             public string Question { get; set; }
@@ -65,7 +84,7 @@ namespace GossipGang {
                 using var parser = new CsvReader(reader, config);
 
                 foreach (var row in parser.GetRecords<Row>()) {
-                    if (Day.TryCreateFromCSV(out var day, row.Description, row.Question, row.Answers, row.Tags)) {
+                    if (Day.TryCreateFromCSV(out var day, row.Description, row.Question, row.Answers, row.Tags, row.StartDate, row.EndDate)) {
                         yield return day;
                     }
                 }

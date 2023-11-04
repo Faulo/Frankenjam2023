@@ -1,7 +1,9 @@
 using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using UnityEngine;
+using UnityRandom = UnityEngine.Random;
 
 namespace GossipGang {
     [CreateAssetMenu]
@@ -26,13 +28,25 @@ namespace GossipGang {
         string[] m_answers = new[] { "A", "B", "C", "D" };
         public IReadOnlyList<string> answers => m_answers;
 
-        public static bool TryCreateFromCSV(out Day day, string description, string question, IEnumerable<string> answers, IEnumerable<string> tags) {
+        [SerializeField]
+        DateTime m_start = DateTime.Now;
+        public DateTime start => m_start;
+
+        [SerializeField]
+        DateTime m_end = DateTime.Now;
+        public DateTime end => m_end;
+
+        public DateTime randomDate => new((long)UnityRandom.Range(start.Ticks, end.Ticks));
+
+        public static bool TryCreateFromCSV(out Day day, string description, string question, IEnumerable<string> answers, IEnumerable<string> tags, DateTime start, DateTime end) {
             day = CreateInstance<Day>();
 
             day.m_description = description.Trim();
             day.m_question = question.Trim();
             day.m_answers = answers.ToArray();
             day.m_tags = tags.ToArray();
+            day.m_start = start;
+            day.m_end = end;
 
             if (string.IsNullOrWhiteSpace(day.m_question)) {
                 return false;
