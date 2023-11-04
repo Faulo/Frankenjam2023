@@ -9,6 +9,8 @@ namespace GossipGang {
         public Color color => GameManager.instance.GetPlayerColor(this);
         public string nameWithColor => $"<color=#{ColorUtility.ToHtmlStringRGB(color)}>{name}</color>";
 
+        public Player() {
+        }
         public Player(string name, string birthday, string secret) {
             this.name = name;
             this.birthday = birthday;

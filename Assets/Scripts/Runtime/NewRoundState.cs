@@ -72,6 +72,8 @@ namespace GossipGang {
             descriptionText.text = entry.day.description;
             questionText.text = entry.day.question;
 
+            gameObject.BindTo(entry.day.image);
+
             int i = 0;
             foreach (string answer in entry.day.answers) {
                 var instance = Instantiate(answerPrefab, buttonContainer);

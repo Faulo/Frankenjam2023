@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Globalization;
 using System.IO;
 using System.Linq;
 using CsvHelper;
@@ -24,7 +25,6 @@ namespace GossipGang {
                 Tag_2,
                 Tag_3,
             }
-            .Select(a => a.Trim())
             .Where(a => !string.IsNullOrWhiteSpace(a));
             public IEnumerable<DayTag> Tags {
                 get {
@@ -79,18 +79,28 @@ namespace GossipGang {
                 Answer_9,
                 Answer_10,
             }
-            .Select(a => a.Trim())
             .Where(a => !string.IsNullOrWhiteSpace(a));
+
+            public string Image { get; set; }
         }
 #pragma warning restore IDE1006 // Naming Styles
+
+        [SerializeField]
+        ImageLibrary library;
         [SerializeField]
         string id = "1gfnagqw3ySRh9GeTb3Emuy3RAd96msUj7WpWPA0rB2M";
+
+        string url => $"https://docs.google.com/spreadsheets/d/{id}/export?format=csv";
+
         [SerializeField, TextArea(10, 100)]
         string data = "";
 
         public IEnumerable<Day> days {
             get {
-                var config = new Configuration();
+                var config = new Configuration {
+                    CultureInfo = CultureInfo.InvariantCulture,
+                    TrimOptions = TrimOptions.Trim | TrimOptions.InsideQuotes
+                };
                 using var reader = new StringReader(data);
                 using var parser = new CsvReader(reader, config);
 
@@ -99,18 +109,18 @@ namespace GossipGang {
                         category = DayCategory.Default;
                     }
 
-                    if (Day.TryCreateFromCSV(out var day, category, row.Description, row.Question, row.Answers, row.Tags, row.StartDate, row.EndDate)) {
+                    var image = library.LookUp(row.Image);
+
+                    if (Day.TryCreateFromCSV(out var day, category, row.Description, row.Question, row.Answers, row.Tags, row.StartDate, row.EndDate, image)) {
                         yield return day;
                     }
                 }
             }
         }
 
-        string url => $"https://docs.google.com/spreadsheets/d/{id}/export?format=csv";
-
         public IEnumerator DownloadSheet_Co() {
-#if UNITY_EDITOR
             using var request = UnityWebRequest.Get(url);
+
             yield return request.SendWebRequest();
 
             switch (request.result) {
@@ -126,9 +136,6 @@ namespace GossipGang {
 #endif
                     break;
             }
-#else
-            yield break;
-#endif
         }
     }
 }
