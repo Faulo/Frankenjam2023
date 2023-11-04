@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Slothsoft.UnityExtensions;
 using UnityEngine;
 
 namespace GossipGang {
@@ -8,6 +9,7 @@ namespace GossipGang {
         public static GameManager instance;
         public static event Action<Action<Day>> onLoadResources;
         public static event Action<Day> onAddDay;
+        public static event Action<Player> onAddPlayer;
 
         [SerializeField]
         UIState mainMenuState;
@@ -29,6 +31,14 @@ namespace GossipGang {
             }
         }
 
+        readonly HashSet<Player> m_players = new();
+        public IReadOnlyCollection<Player> players => m_players;
+        public void AddPlayer(Player player) {
+            if (m_players.Add(player)) {
+                onAddPlayer?.Invoke(player);
+            }
+        }
+
         void Awake() {
             instance = this;
         }
@@ -43,15 +53,22 @@ namespace GossipGang {
             yield return ProcessState(mainMenuState);
         }
 
-        public IEnumerator AddPlayer() {
+        public IEnumerator LoadNewPlayerState() {
             yield return ProcessState(newPlayerState);
         }
 
-        public IEnumerator NextRound() {
-            yield return ProcessState(newRoundState);
+        public IEnumerator LoadNewRoundState() {
+            yield return null;
+
+            var instance = Instantiate(newRoundState);
+            var entry = new PlayerEntry(m_days.RandomElement(), DateTime.Now);
+            entry.BindTo(instance.gameObject);
+            yield return instance.WaitForDone();
+
+            yield return null;
         }
 
-        public IEnumerator ShowDays() {
+        public IEnumerator LoadShowDaysState() {
             yield return ProcessState(showDaysState);
         }
 

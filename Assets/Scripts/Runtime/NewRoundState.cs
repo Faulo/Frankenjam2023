@@ -1,28 +1,24 @@
 ﻿using System.Collections;
 using TMPro;
 using UnityEngine;
-using UnityEngine.UI;
 
 namespace GossipGang {
-    sealed class NewRoundState : UIState {
-        static int round = 0;
+    sealed class NewRoundState : UIState, IPlayerEntryReceiver {
+        [SerializeField]
+        TMP_Text dateText;
+        [SerializeField]
+        TMP_Text descriptionText;
+        [SerializeField]
+        TMP_Text questionText;
 
         [SerializeField]
-        TMP_InputField roundField;
-
+        Transform buttonContainer;
         [SerializeField]
-        Button nextRoundButton;
+        GameObject answerPrefab;
 
         bool isDone;
 
         void Start() {
-            round++;
-
-            roundField.text = round.ToString();
-
-            nextRoundButton.onClick.AddListener(() => {
-                isDone = true;
-            });
         }
 
         public override IEnumerator WaitForDone() {
@@ -30,7 +26,13 @@ namespace GossipGang {
 
             Destroy(gameObject);
 
-            yield return GameManager.instance.NextRound();
+            yield return GameManager.instance.LoadNewRoundState();
+        }
+
+        public void Bind(PlayerEntry entry) {
+            dateText.text = entry.date.ToShortDateString();
+            descriptionText.text = entry.day.description;
+            questionText.text = entry.day.question;
         }
     }
 }

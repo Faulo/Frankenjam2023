@@ -37,7 +37,6 @@ namespace GossipGang {
 
             switch (state) {
                 case NextState.Back:
-                    yield return GameManager.instance.LoadMainMenu();
                     break;
             }
         }

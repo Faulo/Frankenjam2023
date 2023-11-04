@@ -76,14 +76,16 @@ namespace GossipGang {
         public override IEnumerator WaitForDone() {
             yield return new WaitWhile(() => state == NextState.Unknown);
 
+            GameManager.instance.AddPlayer(new(nameField.text, birthdayField.text, secretField.text));
+
             Destroy(gameObject);
 
             switch (state) {
                 case NextState.AddMorePlayers:
-                    yield return GameManager.instance.AddPlayer();
+                    yield return GameManager.instance.LoadNewPlayerState();
                     break;
                 case NextState.StartGame:
-                    yield return GameManager.instance.NextRound();
+                    yield return GameManager.instance.LoadNewRoundState();
                     break;
                 case NextState.Cancel:
                     yield return GameManager.instance.LoadMainMenu();
