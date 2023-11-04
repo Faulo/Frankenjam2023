@@ -99,7 +99,7 @@ namespace GossipGang {
             get {
                 var config = new Configuration {
                     CultureInfo = CultureInfo.InvariantCulture,
-                    TrimOptions = TrimOptions.Trim | TrimOptions.InsideQuotes
+                    TrimOptions = TrimOptions.Trim
                 };
                 using var reader = new StringReader(data);
                 using var parser = new CsvReader(reader, config);

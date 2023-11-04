@@ -264,6 +264,7 @@ GameObject:
   - component: {fileID: 4514970184643577169}
   - component: {fileID: 5712435433019856374}
   - component: {fileID: 8732027878888463181}
+  - component: {fileID: 3856356509381509369}
   m_Layer: 5
   m_Name: Content
   m_TagString: Untagged
@@ -331,6 +332,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_HorizontalFit: 0
   m_VerticalFit: 2
+--- !u!222 &3856356509381509369
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2464717530808341160}
+  m_CullTransparentMesh: 1
 --- !u!1 &2496784776705531279
 GameObject:
   m_ObjectHideFlags: 0

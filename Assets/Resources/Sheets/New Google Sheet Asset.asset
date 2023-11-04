@@ -15,7 +15,7 @@ MonoBehaviour:
   m_asset: {fileID: 11400000}
   library: {fileID: 11400000, guid: 34eb03dcc88f80c4ba1eea39e35eb958, type: 2}
   id: 1gfnagqw3ySRh9GeTb3Emuy3RAd96msUj7WpWPA0rB2M
-  data: "Category,Tag_1,Tag_2,Tag_3,Start,End,Description,Question,Answer_1,Answer_2,Answer_3,Answer_4,Answer_5,Answer_6,Answer_7,Answer_8,Answer_9,Answer_10,Image\r\nDefault,Childhood,,,20.03.,20.06.,\"Henry
+  data: "Category,Tag_1,Tag_2,Tag_3,Start,End,Season,Description,Question,Answer_1,Answer_2,Answer_3,Answer_4,Answer_5,Answer_6,Answer_7,Answer_8,Answer_9,Answer_10,Image\r\nDefault,Childhood,,,20.03.,20.06.,Spring,\"Henry
     ist vor ein paar Tagen durch seine alten Sachen durchgegangen und hat seine Zeugnisse
     von damals gefunden. Er hat sich sehr dar\xFCber am\xFCsiert, wie viel Stress
     er sich damals um seine Noten gemacht hat. Bis in die tiefste Nacht hat er gelernt
@@ -23,7 +23,7 @@ MonoBehaviour:
     sinnlos, weil sich nach der Schule gef\xFChlt nie wieder jemand f\xFCr diese
     Noten interessiert hat.\",Welcher Typ Sch\xFCler*in warst du in deiner Schulzeit?,Streber/Lehrerliebling,Coole
     letzte Reihe/ Klassenclown,Solider Durchschnitt,\"Ein Bereich exzellent, sonst
-    nur bestanden.\",,,,,,,S_Doodle_Autumn_Alcohol_02\r\nDefault,Childhood,,,20.03.,20.06.,\"Ich
+    nur bestanden.\",,,,,,,S_Doodle_Autumn_Alcohol_02\r\nDefault,Childhood,,,20.03.,20.06.,Spring,\"Ich
     h\xE4tte wirklich nicht gedacht, dass die Teenager heutzutage das auch noch machen.
     Als ich heute auf den Bus gewartet habe, war da ein Junge, der ganz sch\xFCchtern
     einem M\xE4del einen Zettel in die Hand gedr\xFCckt hat und dann aber ganz schnell
@@ -32,14 +32,14 @@ MonoBehaviour:
     dir eine Person gef\xE4llt, dann...\",\u2026 machst du den ersten Schritt.,\"\u2026
     wartest du geduldig, bis die Person den ersten Schritt macht.\",\"\u2026 bittest
     ein*e Freund*in, Wing-person zu spielen\r\",\u2026 schmachtest du aus der Entfernung
-    und zerdenkst absolut alles.,,,,,,,\r\nAllPlayers,Childhood,,,20.03.,20.06.,\"Noa
+    und zerdenkst absolut alles.,,,,,,,\r\nAllPlayers,Childhood,,,20.03.,20.06.,Spring,\"Noa
     bereitet sich momentan auf deren erste Unterrichtsstunde vor. Dey ist wahnsinnig
     nerv\xF6s und hat uns den ganzen Abend dar\xFCber ausgefragt, was f\xFCr Lehrer*innen
     wir hatten und was sie gut und was sie schlecht gemacht haben. Noa hatte gef\xFChlt
     einen ganzen Fragenkatalog vorbereitet. Aber eigentlich war es auch echt sch\xF6n,
     an ein paar meiner Lehrer*innen zur\xFCckzudenken. Unterricht mit Frau Ortiz
     hat schon immer wirklich Spa\xDF gemacht, weil sie sehr viel mit Humor genommen
-    hat.\",Wer in dieser Runde w\xE4re der beste Lehrk\xF6rper?,,,,,,,,,,,\r\nDefault,Lovelife,,,20.03.,20.06.,\"Ob
+    hat.\",Wer in dieser Runde w\xE4re der beste Lehrk\xF6rper?,,,,,,,,,,,\r\nDefault,Lovelife,,,20.03.,26.03.,Spring,\"Ob
     ich je gedacht h\xE4tte, dass ich diese Zeilen mal schreibe? Um ehrlich zu sein,
     nicht wirklich. Aber naja, jetzt sind wir hier. Seit Wochen geht mir diese eine
     Person nicht aus dem Kopf. Das ist an sich v\xF6llig okay und sch\xF6n - vor
@@ -48,7 +48,7 @@ MonoBehaviour:
     war, hetero zu sein, und sie bringt das halt gerade komplett ins Schwanken. Aber
     es gibt wohl anscheinend f\xFCr alles ein erstes Mal?\",Hast du schon mal deine
     eigene Sexualit\xE4t hinterfragt?,Nein,\"Ja, durch einen Crush\",\"Ja, durch
-    einen sexy Traum\",\"Ja, durch neue Information\",,,,,,,\r\nDefault,Lovelife,,,20.03.,20.06.,\"Wirklich.
+    einen sexy Traum\",\"Ja, durch neue Information\",,,,,,,\r\nDefault,Lovelife,,,03.04.,20.06.,Spring,\"Wirklich.
     Kann mir irgendwer erkl\xE4ren, wie das passiert ist? Den ganzen Winter lang
     war ich das perfekte Abbild eines ungl\xFCcklichen Singles und kaum beginnt der
     Fr\xFChling, sieht mein Dating-Leben aus wie bei \u2018ner schlechten Dating-Show.
@@ -57,7 +57,7 @@ MonoBehaviour:
     Ohr, aber Mia ist einfach von Grund auf faszinierend und ich f\xFChle mich wirklich
     gut aufgehoben bei ihr.\",Hast du schon mal mehrere Leute gleichzeitig gedatet?,\"Ja,
     habe ich.\",\"Ja, aber nur f\xFCr so ein oder zwei Dates.\",\"Nein, aber das
-    ist doch in Ordnung.\",\"Nein, w\xFCrde ich niemals machen.\",,,,,,,\r\nDefault,Lovelife,,,20.03.,20.06.,\"Muss
+    ist doch in Ordnung.\",\"Nein, w\xFCrde ich niemals machen.\",,,,,,,\r\nDefault,Lovelife,,,10.04.,20.06.,Spring,\"Muss
     ich mich denn wirklich entscheiden? Oliver und Mia sind beide wirklich tolle
     Menschen, die mich sehr begeistern, und je mehr ich \xFCber sie erfahre, desto
     weniger kann ich mich entscheiden. Noa hat mir auch letztens von einer Bekannten
@@ -66,7 +66,15 @@ MonoBehaviour:
     es ja genau das Richtige f\xFCr mich? Es f\xFChlt sich zumindest stark danach
     an\u2026\",Was w\xFCrdest du in einer \xE4hnlichen Situation machen?,Ein*e Freund*in
     um Rat bitten.,Mit beiden offen dar\xFCber reden.,\"Es weiterlaufen lassen und
-    warten, was sich ergibt.\",\"Kontakt abbrechen, das ist mir zu viel Drama.\",,,,,,,\r\nDefault,,,,,,,,,,,,,,,,,,\r\nDefault,Lovelife,,,20.03.,20.06.,\"Henry
+    warten, was sich ergibt.\",\"Kontakt abbrechen, das ist mir zu viel Drama.\",,,,,,,\r\nAllPlayers,Lovelife,,,20.03.,20.06.,Spring,\"Noa
+    hatte alles darauf verwettet, dass das nichts wird. Francis hat sich komplett
+    enthalten. Ich wollte mich - \xE4hnlich wie Francis - nicht zu sehr in das Thema
+    einmischen, auch wenn Noa nicht zul\xE4sst, dass nicht dar\xFCber gesprochen
+    wird. Aber nach vier monatiger Pause ist Safiya wieder zur\xFCck in ihrer Beziehung
+    und laut ihren Aussagen l\xE4uft es so gut wie noch nie. Noa ist noch nicht komplett
+    \xFCberzeugt. Dey sagt, dass das nur eine Frage der Zeit ist, bis die Beziehung
+    wieder in ihre alten Muster verf\xE4llt.\",Wer w\xFCrde sich am ehesten in die
+    Beziehung von jemand anderem einmischen?,,,,,,,,,,,\r\nDefault,Lovelife,,,20.03.,20.06.,Spring,\"Henry
     tut mir wirklich Leid. Wochenlang hat er sich damit gestresst, die Freunde von
     Francis kennenzulernen. Er wollte unbedingt einen guten Eindruck hinterlassen,
     weil Francis\u2019 Freunde praktisch seine Familie sind, und ausgerechnet Francis\u2019
@@ -76,4 +84,33 @@ MonoBehaviour:
     Freunde oder Familie deines*r Partner*in dich nicht leiden k\xF6nnen?\",Offen
     mit Partner*in dar\xFCber sprechen.,\"Gute Miene bewahren, ich muss sie ja nicht
     so oft sehen.\",Versuchen sie trotzdem von mir zu \xFCberzeugen.,\"Sie konfrontieren,
-    da es vielleicht nur ein Missverst\xE4ndnis ist.\",,,,,,,"
+    da es vielleicht nur ein Missverst\xE4ndnis ist.\",,,,,,,\r\nAllPlayers,Alcohol,,,20.03.,20.06.,Spring,\"Alles,
+    was ich wollte, war ein lustiger Abend mit Freunden, bisschen tanzen und eine
+    Menge Alkohol. Was habe ich stattdessen bekommen? Einen emotional sehr auslaugenden
+    Abend, weil ich aus irgendeinem Grund ein Magnet f\xFCr Leute mit Problemen bin.
+    Eine Person nach der anderen kommt an und erz\xE4hlt mir einfach, was in ihrem
+    Leben gerade so schief l\xE4uft. Die einzige Option war, wirklich nur fluchtartig
+    die Party zu verlassen. Safiya war unglaublich w\xFCtend, dass ich einfach alleine
+    nach Hause gelaufen bin, ohne Bescheid zu sagen.\",Wem w\xFCrde es am ehesten
+    passieren auf der Party Seelenklempner*in zu spielen?,,,,,,,,,,,\r\nDefault,Alcohol,,,20.03.,20.06.,Spring,\"Henry
+    war mal wieder nicht zu halten heute Nacht. St\xE4ndig mussten wir die Party
+    nach ihm absuchen, weil er abgehauen ist, um mit irgendwelchen fremden Leuten
+    zu reden. Heute h\xE4tte er sogar fast die Party mit ihnen verlassen. Safiya
+    ist ernsthaft am \xFCberlegen, ob wir eine Leine f\xFCr ihn kaufen sollten. Und
+    ganz ehrlich? Mir f\xE4llt absolut nichts ein, was gegen die Idee spricht.\",\"Was
+    ist das anstrengendste, was du betrunken gemacht hast?\",Gekotzt und Freund*in
+    musste meine Haar halten.,Wollte mit fremden Leuten mitgehen und meine Freunde
+    mussten mich davon abhalten.,Auf dem Heimweg laut gesungen oder geredet.,\"Nichts
+    davon. Ich bin immer die Person, die sich um die Trunkenbolde k\xFCmmert.\",,,,,,,\r\nDefault,Alcohol,,,20.03.,20.06.,Spring,\"Normalerweise
+    w\xFCrde ich immer sagen, dass das Highlight jedes Abends das Vorgl\xFChen ist.
+    Aber der Nachhauseweg mit Henry hat das diesmal um L\xE4ngen geschlagen. Bisschen
+    ausn\xFCchtern und dabei \xFCber alles reden, was einem auf dem Herzen liegt,
+    sollte ich deutlich \xF6fter machen.\",Was ist f\xFCr dich das Highlight jeder
+    Party?,Mit neuen Leuten reden.,Einfach die Nacht durch tanzen.,Alle Hemmungen
+    fallen lassen.,Das Vorgl\xFChen.,,,,,,,\r\nDefault,Sex,,,27.03.,02.04.,Spring,\"Vielleicht
+    bin ich doch keine Person f\xFCr One Night Stands. Der Abend mit Mia hat mir
+    wirklich gut gefallen und je l\xE4nger ich dar\xFCber nachdenke, desto lieber
+    w\xFCrde ich sie wiedersehen. Es muss nicht mal auf Sex hinaus laufen (auch wenn
+    ich da wirklich nichts gegen h\xE4tte), aber ich w\xFCrde mich einfach gerne
+    wieder mit ihr unterhalten. Keine Ahnung\u2026 Vielleicht meldet sie sich. Meine
+    Nummer hat sie ja.\",,,,,,,,,,,,"
