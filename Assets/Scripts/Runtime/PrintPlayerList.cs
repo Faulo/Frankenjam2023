@@ -13,7 +13,7 @@ namespace GossipGang {
             if (TryGetComponent<TMP_Text>(out var playerText)) {
                 playerText.text = models.Length == 0
                     ? nobodyText
-                    : string.Join(separator, models.Select(p => p.name));
+                    : string.Join(separator, models.Select(p => p.nameWithColor));
             }
         }
     }

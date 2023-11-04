@@ -85,6 +85,17 @@ namespace GossipGang {
             return m_players[(index + 1) % playerCount];
         }
 
+        [Header("Player Colors")]
+        [SerializeField, Range(0, 1)]
+        float playerSaturation = 0.5f;
+        [SerializeField, Range(0, 1)]
+        float playerValue = 0.25f;
+
+        public Color GetPlayerColor(Player player) {
+            float index = m_players.IndexOf(player);
+            return Color.HSVToRGB(index / playerCount, playerSaturation, playerValue);
+        }
+
         public void AdvancePlayer() => activePlayerIndex++;
     }
 }
