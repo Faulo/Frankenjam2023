@@ -4,15 +4,40 @@ using UnityEngine;
 
 namespace GossipGang {
     sealed class ApplicationInfo : MonoBehaviour {
-        void Start() {
-            if (TryGetComponent<TMP_Text>(out var text)) {
-                text.text = ReplaceTokens(text.text);
+        TMP_Text component;
+        string template;
+
+        void Awake() {
+            if (TryGetComponent(out component)) {
+                template = component.text;
             }
         }
 
+        void Start() {
+            UpdateText();
+        }
+
+        void OnEnable() {
+            GameManager.onAddDay += HandleDay;
+        }
+
+        void OnDisable() {
+            GameManager.onAddDay -= HandleDay;
+        }
+
+        void HandleDay(Day day) {
+            UpdateText();
+        }
         IEnumerable<(string, string)> tokens {
             get {
                 yield return ("Application.version", Application.version);
+                yield return ("Game.dayCount", GameManager.instance.days.Count.ToString());
+            }
+        }
+
+        void UpdateText() {
+            if (component) {
+                component.text = ReplaceTokens(template);
             }
         }
 

@@ -1,9 +1,16 @@
+using System;
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 namespace GossipGang {
     sealed class GameManager : MonoBehaviour {
         public static GameManager instance;
+        public static event Action<Action<Day>> onLoadResources;
+        public static event Action<Day> onAddDay;
+
+        [SerializeField]
+        MainMenuState mainMenuState;
 
         [SerializeField]
         NewPlayerState newPlayerState;
@@ -11,24 +18,49 @@ namespace GossipGang {
         [SerializeField]
         NewRoundState newRoundState;
 
+        readonly HashSet<Day> m_days = new();
+        public IReadOnlyCollection<Day> days => m_days;
+        void AddDay(Day day) {
+            if (m_days.Add(day)) {
+                onAddDay?.Invoke(day);
+            }
+        }
+
         void Awake() {
             instance = this;
         }
 
         public IEnumerator Start() {
-            yield return AddPlayer();
+            onLoadResources?.Invoke(AddDay);
 
-            yield return NextRound();
+            yield return LoadMainMenu();
+        }
+
+        public IEnumerator LoadMainMenu() {
+            yield return null;
+
+            var state = Instantiate(mainMenuState);
+            yield return state.WaitForDone();
         }
 
         public IEnumerator AddPlayer() {
-            var newPlayer = Instantiate(newPlayerState);
-            yield return newPlayer.WaitForDone();
+            yield return null;
+
+            var state = Instantiate(newPlayerState);
+            yield return state.WaitForDone();
         }
 
         public IEnumerator NextRound() {
-            var newRound = Instantiate(newRoundState);
-            yield return newRound.WaitForDone();
+            yield return null;
+
+            var state = Instantiate(newRoundState);
+            yield return state.WaitForDone();
+        }
+
+        public IEnumerator ShowDays() {
+            yield return null;
+
+            yield return LoadMainMenu();
         }
     }
 }

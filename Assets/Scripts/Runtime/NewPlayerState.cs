@@ -4,19 +4,27 @@ using UnityEngine.UI;
 
 namespace GossipGang {
     sealed class NewPlayerState : MonoBehaviour {
+        enum NextState {
+            Unknown,
+            AddMorePlayers,
+            StartGame,
+            Cancel
+        }
+
         [SerializeField]
         InputField nameField;
         [SerializeField]
         InputField birthdayField;
         [SerializeField]
         InputField secretField;
+
+        [Space]
         [SerializeField]
         Button nextPlayerButton;
         [SerializeField]
         Button donePlayerButton;
-
-        bool isDone;
-        bool nextPlayer;
+        [SerializeField]
+        Button cancelButton;
 
         [Space]
         [SerializeField]
@@ -24,15 +32,23 @@ namespace GossipGang {
         [SerializeField]
         Color invalidColor = Color.red;
 
+        NextState state = NextState.Unknown;
+
         void Start() {
             nextPlayerButton.onClick.AddListener(() => {
-                nextPlayer = true;
-                isDone = Validate();
+                if (Validate()) {
+                    state = NextState.AddMorePlayers;
+                }
             });
 
             donePlayerButton.onClick.AddListener(() => {
-                nextPlayer = false;
-                isDone = Validate();
+                if (Validate()) {
+                    state = NextState.StartGame;
+                }
+            });
+
+            cancelButton.onClick.AddListener(() => {
+                state = NextState.Cancel;
             });
         }
 
@@ -58,12 +74,20 @@ namespace GossipGang {
         bool ValidateString(string text) => !string.IsNullOrWhiteSpace(text);
 
         public IEnumerator WaitForDone() {
-            yield return new WaitUntil(() => isDone);
+            yield return new WaitWhile(() => state == NextState.Unknown);
 
             Destroy(gameObject);
 
-            if (nextPlayer) {
-                yield return GameManager.instance.AddPlayer();
+            switch (state) {
+                case NextState.AddMorePlayers:
+                    yield return GameManager.instance.AddPlayer();
+                    break;
+                case NextState.StartGame:
+                    yield return GameManager.instance.NextRound();
+                    break;
+                case NextState.Cancel:
+                    yield return GameManager.instance.LoadMainMenu();
+                    break;
             }
         }
     }
