@@ -7,7 +7,7 @@ namespace GossipGang {
         [SerializeField]
         GoogleSheetAsset[] sheets = Array.Empty<GoogleSheetAsset>();
 
-        void Start() {
+        void OnEnable() {
             GameManager.RegisterDayLoader(Load_Co);
         }
         void OnDisable() {

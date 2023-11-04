@@ -119,8 +119,8 @@ namespace GossipGang {
         }
 
         public IEnumerator DownloadSheet_Co() {
-#if UNITY_EDITOR
             using var request = UnityWebRequest.Get(url);
+
             yield return request.SendWebRequest();
 
             switch (request.result) {
@@ -136,9 +136,6 @@ namespace GossipGang {
 #endif
                     break;
             }
-#else
-            yield break;
-#endif
         }
     }
 }
