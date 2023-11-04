@@ -93,3 +93,5 @@ MonoBehaviour:
   newPlayerState: {fileID: 4731318394138481114, guid: 4a854f572741c1141ac8648389b3b7b7, type: 3}
   newRoundState: {fileID: 4975614860496351151, guid: 6c37c2e6a633a994aa810fb684f859e6, type: 3}
   showDaysState: {fileID: 2883313632550808200, guid: 7d93fab8bedeec7459e34c7585ab2e40, type: 3}
+  playerSaturation: 0.75
+  playerValue: 0.5

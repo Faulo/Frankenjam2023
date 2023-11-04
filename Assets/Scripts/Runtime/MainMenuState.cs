@@ -36,7 +36,6 @@ namespace GossipGang {
         public override IEnumerator WaitForDone() {
             yield return new WaitWhile(() => state == NextState.Unknown);
 
-
             switch (state) {
                 case NextState.StartGame:
                     Destroy(gameObject);

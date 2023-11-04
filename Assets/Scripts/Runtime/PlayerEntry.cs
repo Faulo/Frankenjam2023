@@ -8,14 +8,15 @@ namespace GossipGang {
         public readonly DateTime date;
         public string dateString => date.ToShortDateString();
         public readonly Player player;
-        public readonly Dictionary<Player, int> answers;
+        public readonly Dictionary<Player, int> playerAnswers;
+        public int answerCount => day.answers.Count;
 
         public PlayerEntry(Day day, DateTime date, Player player, IEnumerable<Player> allPlayers) {
             this.day = day;
             this.date = date;
             this.player = player;
 
-            answers = allPlayers.ToDictionary(p => p, p => -1);
+            playerAnswers = allPlayers.ToDictionary(p => p, p => -1);
         }
     }
 }

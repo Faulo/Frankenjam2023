@@ -1,8 +1,13 @@
-﻿namespace GossipGang {
+﻿using UnityEngine;
+
+namespace GossipGang {
     sealed class Player {
         public readonly string name;
         public readonly string birthday;
         public readonly string secret;
+
+        public Color color => GameManager.instance.GetPlayerColor(this);
+        public string nameWithColor => $"<color=#{ColorUtility.ToHtmlStringRGB(color)}>{name}</color>";
 
         public Player(string name, string birthday, string secret) {
             this.name = name;
