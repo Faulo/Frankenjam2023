@@ -22,8 +22,10 @@ namespace GossipGang {
 
         [SerializeField]
         UIState popupPrefab;
+        [SerializeField]
+        UIState resultsPrefab;
 
-        bool isDone => entry is not null && entry.answers.Values.All(a => a != -1);
+        bool isDone => entry is not null && entry.playerAnswers.Values.All(a => a != -1);
 
         void Start() {
         }
@@ -36,6 +38,10 @@ namespace GossipGang {
             yield return instance.WaitForDone();
 
             Destroy(gameObject);
+
+            instance = Instantiate(resultsPrefab);
+            instance.BindTo(entry);
+            yield return instance.WaitForDone();
 
             GameManager.instance.AdvancePlayer();
 
@@ -72,7 +78,7 @@ namespace GossipGang {
                 instance.BindTo(answer);
 
                 if (instance.TryGetComponent<Button>(out var button)) {
-                    button.onClick.AddListener(() => SetAnswer(i));
+                    button.onClick.AddListener(() => SetAnswer(button.transform.GetSiblingIndex()));
                 }
 
                 i++;
@@ -80,7 +86,7 @@ namespace GossipGang {
         }
 
         void SetAnswer(int answer) {
-            entry.answers[answeringPlayer] = answer;
+            entry.playerAnswers[answeringPlayer] = answer;
 
             answeringPlayer = GameManager.instance.GetNextPlayer(answeringPlayer);
         }

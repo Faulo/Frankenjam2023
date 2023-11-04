@@ -186,6 +186,7 @@ MonoBehaviour:
   buttonContainer: {fileID: 1474715827766729450}
   answerPrefab: {fileID: 511380486389156329, guid: c3562e88463d45f42a4adce7876ec7cc, type: 3}
   popupPrefab: {fileID: 5503263174425747061, guid: 0439afdf7c13de84f95e96c64e077c7e, type: 3}
+  resultsPrefab: {fileID: 5630797618286508237, guid: d3e1c361a0ad1ea44bbf4d1fe0d1da1f, type: 3}
 --- !u!1 &1036940295003282604
 GameObject:
   m_ObjectHideFlags: 0
