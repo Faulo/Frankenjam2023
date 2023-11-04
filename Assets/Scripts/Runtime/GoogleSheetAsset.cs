@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Globalization;
 using System.IO;
 using System.Linq;
 using CsvHelper;
@@ -85,16 +86,23 @@ namespace GossipGang {
             public string Image { get; set; }
         }
 #pragma warning restore IDE1006 // Naming Styles
+
         [SerializeField]
         ImageLibrary library;
         [SerializeField]
         string id = "1gfnagqw3ySRh9GeTb3Emuy3RAd96msUj7WpWPA0rB2M";
+
+        string url => $"https://docs.google.com/spreadsheets/d/{id}/export?format=csv";
+
         [SerializeField, TextArea(10, 100)]
         string data = "";
 
         public IEnumerable<Day> days {
             get {
-                var config = new Configuration();
+                var config = new Configuration {
+                    CultureInfo = CultureInfo.InvariantCulture,
+                    TrimOptions = TrimOptions.Trim | TrimOptions.InsideQuotes
+                };
                 using var reader = new StringReader(data);
                 using var parser = new CsvReader(reader, config);
 
@@ -111,8 +119,6 @@ namespace GossipGang {
                 }
             }
         }
-
-        string url => $"https://docs.google.com/spreadsheets/d/{id}/export?format=csv";
 
         public IEnumerator DownloadSheet_Co() {
 #if UNITY_EDITOR
