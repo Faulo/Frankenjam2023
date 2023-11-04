@@ -11,12 +11,12 @@ GameObject:
   - component: {fileID: 4679839738532578249}
   - component: {fileID: 7532646954017067878}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: LoadDayResources
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &4679839738532578249
 Transform:
   m_ObjectHideFlags: 0
