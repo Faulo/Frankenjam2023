@@ -19,5 +19,11 @@ namespace GossipGang {
         [SerializeField]
         string[] m_answers = new[] { "A", "B", "C", "D" };
         public IReadOnlyList<string> answers => m_answers;
+
+        public void BindTo(GameObject gameObject) {
+            foreach (var receiver in gameObject.GetComponents<IDayReceiver>()) {
+                receiver.Bind(this);
+            }
+        }
     }
 }

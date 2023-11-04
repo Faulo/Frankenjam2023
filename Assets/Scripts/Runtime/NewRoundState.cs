@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 
 namespace GossipGang {
-    sealed class NewRoundState : MonoBehaviour {
+    sealed class NewRoundState : UIState {
         static int round = 0;
 
         [SerializeField]
@@ -25,7 +25,7 @@ namespace GossipGang {
             });
         }
 
-        public IEnumerator WaitForDone() {
+        public override IEnumerator WaitForDone() {
             yield return new WaitUntil(() => isDone);
 
             Destroy(gameObject);

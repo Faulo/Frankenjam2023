@@ -3,7 +3,7 @@ using UnityEngine;
 using UnityEngine.UI;
 
 namespace GossipGang {
-    sealed class NewPlayerState : MonoBehaviour {
+    sealed class NewPlayerState : UIState {
         enum NextState {
             Unknown,
             AddMorePlayers,
@@ -73,7 +73,7 @@ namespace GossipGang {
 
         bool ValidateString(string text) => !string.IsNullOrWhiteSpace(text);
 
-        public IEnumerator WaitForDone() {
+        public override IEnumerator WaitForDone() {
             yield return new WaitWhile(() => state == NextState.Unknown);
 
             Destroy(gameObject);

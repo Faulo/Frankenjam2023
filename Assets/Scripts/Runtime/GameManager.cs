@@ -10,13 +10,16 @@ namespace GossipGang {
         public static event Action<Day> onAddDay;
 
         [SerializeField]
-        MainMenuState mainMenuState;
+        UIState mainMenuState;
 
         [SerializeField]
-        NewPlayerState newPlayerState;
+        UIState newPlayerState;
 
         [SerializeField]
-        NewRoundState newRoundState;
+        UIState newRoundState;
+
+        [SerializeField]
+        UIState showDaysState;
 
         readonly HashSet<Day> m_days = new();
         public IReadOnlyCollection<Day> days => m_days;
@@ -37,30 +40,25 @@ namespace GossipGang {
         }
 
         public IEnumerator LoadMainMenu() {
-            yield return null;
-
-            var state = Instantiate(mainMenuState);
-            yield return state.WaitForDone();
+            yield return ProcessState(mainMenuState);
         }
 
         public IEnumerator AddPlayer() {
-            yield return null;
-
-            var state = Instantiate(newPlayerState);
-            yield return state.WaitForDone();
+            yield return ProcessState(newPlayerState);
         }
 
         public IEnumerator NextRound() {
-            yield return null;
-
-            var state = Instantiate(newRoundState);
-            yield return state.WaitForDone();
+            yield return ProcessState(newRoundState);
         }
 
         public IEnumerator ShowDays() {
-            yield return null;
+            yield return ProcessState(showDaysState);
+        }
 
-            yield return LoadMainMenu();
+        IEnumerator ProcessState(UIState prefab) {
+            yield return null;
+            yield return Instantiate(prefab).WaitForDone();
+            yield return null;
         }
     }
 }

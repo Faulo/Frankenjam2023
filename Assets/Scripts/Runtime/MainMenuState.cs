@@ -3,7 +3,7 @@ using UnityEngine;
 using UnityEngine.UI;
 
 namespace GossipGang {
-    sealed class MainMenuState : MonoBehaviour {
+    sealed class MainMenuState : UIState {
         enum NextState {
             Unknown,
             StartGame,
@@ -33,7 +33,7 @@ namespace GossipGang {
             });
         }
 
-        public IEnumerator WaitForDone() {
+        public override IEnumerator WaitForDone() {
             yield return new WaitWhile(() => state == NextState.Unknown);
 
             Destroy(gameObject);
