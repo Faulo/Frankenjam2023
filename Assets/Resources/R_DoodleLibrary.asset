@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_asset: {fileID: 11400000}
   path: Doodles
-  defaultImage: {fileID: 21300000, guid: 268a148b8c4ad6d44bc5629f8eb8eb48, type: 3}
+  defaultImage: {fileID: 21300000, guid: 91bc808cc980b05458eab414128cbecb, type: 3}

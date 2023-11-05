@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8fac4318f03ac2947b8ec74e36a147df, type: 3}
   m_Name: R_Day_Debug
   m_EditorClassIdentifier: 
+  m_tags: 
+  m_category: 0
   m_title: title
   m_description: description
   m_question: "Welche Ausrede w\xFCrdest du gebrauchen, wenn du dir jemand ein Weihnachtsgeschenk
@@ -23,3 +25,6 @@ MonoBehaviour:
     ausgedacht. "
   - "Ich bedanke mich f\xFCr das Geschenk, gestehe aber, dass ich nichts f\xFCr die
     Person habe. "
+  m_start: 638347973167030995
+  m_end: 638347973167030995
+  m_image: {fileID: 0}
