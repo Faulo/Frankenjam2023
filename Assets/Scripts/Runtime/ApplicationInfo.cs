@@ -31,6 +31,7 @@ namespace GossipGang {
         }
         IEnumerable<(string, object)> tokens {
             get {
+                yield return ("Application.name", Application.productName);
                 yield return ("Application.version", Application.version);
                 yield return ("Game.dayCount", GameManager.instance.allDays.Count);
 

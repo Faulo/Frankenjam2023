@@ -137,7 +137,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f22b2a6673fc4d4e9877360d7db6bee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  roundMaximum: 3
+  roundMaximum: 4
+  allowedCategories:
+    items:
+    - key: 0
+      value: 1
+    - key: 1
+      value: 1
+    - key: 2
+      value: 1
+    - key: 3
+      value: 1
   mainMenuState: {fileID: 6583839949492670992, guid: c75e34d373e508442af3889bf3349f3f, type: 3}
   newPlayerState: {fileID: 4731318394138481114, guid: 4a854f572741c1141ac8648389b3b7b7, type: 3}
   newRoundState: {fileID: 4975614860496351151, guid: 6c37c2e6a633a994aa810fb684f859e6, type: 3}

@@ -64,8 +64,19 @@ namespace GossipGang {
                 return false;
             }
 
-            if (day.m_answers.Length == 0) {
-                return false;
+            switch (day.m_category) {
+                case DayCategory.Default:
+                    if (day.m_answers.Length == 0) {
+                        return false;
+                    }
+
+                    break;
+                case DayCategory.AllPlayers:
+                    break;
+                case DayCategory.AllPlayersExceptSpeaker:
+                    break;
+                case DayCategory.Event:
+                    break;
             }
 
             return true;

@@ -1,6 +1,8 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using MyBox;
+using Slothsoft.UnityExtensions;
 using UnityEngine;
 
 namespace GossipGang {
@@ -14,6 +16,10 @@ namespace GossipGang {
         [SerializeField]
         int roundMaximum = 3;
 
+        [SerializeField]
+        SerializableKeyValuePairs<DayCategory, bool> allowedCategories = new();
+
+        [Separator]
         [SerializeField]
         UIState mainMenuState;
 
@@ -33,6 +39,10 @@ namespace GossipGang {
         int dayCount => m_days.Count;
         public IReadOnlyCollection<Day> allDays => m_days.Values;
         public void AddDay(Day day) {
+            if (!allowedCategories[day.category]) {
+                return;
+            }
+
             m_days[day.name] = day;
             onAddDay?.Invoke(day);
         }
