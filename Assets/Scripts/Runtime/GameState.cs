@@ -70,6 +70,8 @@ namespace GossipGang {
             removedSecrets.Add(player);
         }
 
+        public bool IsSecretAvailable(Player player) => !removedSecrets.Contains(player);
+
         public void AwardPointTo(Player player) {
             Debug.Log($"Awarding point to {player}");
             m_points[player]++;
