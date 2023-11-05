@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.Linq;
 using TMPro;
 using UnityEngine;
 
@@ -28,11 +29,17 @@ namespace GossipGang {
         void HandleDay(Day day) {
             UpdateText();
         }
-        IEnumerable<(string, string)> tokens {
+        IEnumerable<(string, object)> tokens {
             get {
                 yield return ("Application.version", Application.version);
-                yield return ("Game.dayCount", GameManager.instance.days.Count.ToString());
-                yield return ("Game.firstPlayer", GameManager.instance.firstPlayer.nameWithColor);
+                yield return ("Game.dayCount", GameManager.instance.allDays.Count);
+
+                if (GameManager.state is not null) {
+                    yield return ("Game.currentRound", GameManager.state.currentRound);
+                    yield return ("Game.lastRound", GameManager.state.lastRound);
+                    yield return ("Game.firstPlayer", string.Join(", ", GameManager.state.firstPlayers.Select(p => p.nameWithColor)));
+                    yield return ("Game.playerCount", GameManager.state.playerCount);
+                }
             }
         }
 
@@ -44,7 +51,7 @@ namespace GossipGang {
 
         string ReplaceTokens(string text) {
             foreach (var (key, value) in tokens) {
-                text = text.Replace($"{{{key}}}", value);
+                text = text.Replace($"{{{key}}}", value.ToString());
             }
 
             return text;

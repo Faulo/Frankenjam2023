@@ -1,7 +1,6 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using Slothsoft.UnityExtensions;
 using UnityEngine;
 
 namespace GossipGang {
@@ -10,12 +9,10 @@ namespace GossipGang {
         public static event Action<Day> onAddDay;
         public static event Action<Player> onAddPlayer;
 
-        int currentRound = 0;
+        public static GameState state;
 
         [SerializeField]
         int roundMaximum = 3;
-
-        bool hasFinished => currentRound >= roundMaximum;
 
         [SerializeField]
         UIState mainMenuState;
@@ -33,22 +30,16 @@ namespace GossipGang {
         UIState showDaysState;
 
         readonly Dictionary<string, Day> m_days = new();
-        public int dayCount => m_days.Count;
-        public IReadOnlyCollection<Day> days => m_days.Values;
+        int dayCount => m_days.Count;
+        public IReadOnlyCollection<Day> allDays => m_days.Values;
         public void AddDay(Day day) {
             m_days[day.name] = day;
             onAddDay?.Invoke(day);
         }
 
-        int activePlayerIndex = 0;
         readonly List<Player> m_players = new();
-        public IReadOnlyList<Player> players => m_players;
+        IReadOnlyList<Player> players => m_players;
         public int playerCount => m_players.Count;
-        public Player activePlayer => m_players[activePlayerIndex % m_players.Count];
-
-        public Player firstPlayer => playerCount == 0
-            ? new Player()
-            : m_players[0];
 
         public void AddPlayer(Player player) {
             m_players.Add(player);
@@ -66,6 +57,8 @@ namespace GossipGang {
         }
 
         public IEnumerator LoadMainMenu() {
+            state = null;
+
             yield return ProcessState(mainMenuState);
         }
 
@@ -76,14 +69,20 @@ namespace GossipGang {
         public IEnumerator LoadNewRoundState() {
             yield return null;
 
-            if (hasFinished) {
+            if (state is null) {
+                var entries = new List<PlayerEntry>();
+                state = new(roundMaximum, allDays, players);
+            } else {
+                state.AdvancePlayer();
+            }
+
+            if (state.hasFinished) {
                 var instance = Instantiate(endgameState);
                 instance.gameObject.BindTo(this);
                 yield return instance.WaitForDone();
             } else {
                 var instance = Instantiate(newRoundState);
-                var entry = new PlayerEntry(days.RandomElement(), activePlayer, m_players);
-                instance.gameObject.BindTo(entry);
+                instance.gameObject.BindTo(state.currentEntry);
                 yield return instance.WaitForDone();
             }
 
@@ -115,15 +114,5 @@ namespace GossipGang {
             float index = m_players.IndexOf(player);
             return Color.HSVToRGB(index / playerCount, playerSaturation, playerValue);
         }
-
-        public void AdvancePlayer() {
-            activePlayerIndex = (activePlayerIndex + 1) % playerCount;
-
-            if (activePlayerIndex == 0) {
-                AdvanceRound();
-            }
-        }
-
-        void AdvanceRound() => currentRound++;
     }
 }
