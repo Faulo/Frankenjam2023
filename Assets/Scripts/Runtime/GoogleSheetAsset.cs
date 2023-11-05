@@ -102,8 +102,7 @@ namespace GossipGang {
                     yield break;
                 }
 
-                var config = new Configuration {
-                    CultureInfo = CultureInfo.InvariantCulture,
+                var config = new CsvConfiguration(CultureInfo.InvariantCulture) {
                     TrimOptions = TrimOptions.Trim
                 };
                 using var reader = new StringReader(data);
