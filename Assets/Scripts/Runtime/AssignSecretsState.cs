@@ -7,6 +7,8 @@ using UnityEngine.UI;
 namespace GossipGang {
     sealed class AssignSecretsState : UIState, IBindingReceiver<Player> {
         [SerializeField]
+        GameObject nameField;
+        [SerializeField]
         Transform secretContainer;
         [SerializeField]
         GameObject secretPrefab;
@@ -22,7 +24,7 @@ namespace GossipGang {
         public void Bind(Player model) {
             activePlayer = model;
 
-            gameObject.BindTo(model.nameWithColor);
+            nameField.BindTo(model.nameWithColor);
 
             foreach (var player in GameManager.state.playersWithSecrets.Shuffle()) {
                 var instance = Instantiate(secretPrefab, secretContainer);
