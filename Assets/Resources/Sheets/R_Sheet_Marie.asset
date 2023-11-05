@@ -347,7 +347,7 @@ MonoBehaviour:
   - "Sie konfrontieren, da es vielleicht nur ein Missverst\xE4ndnis ist."
   m_start: 638148672000000000
   m_end: 638228160000000000
-  m_image: {fileID: 21300000, guid: 91bc808cc980b05458eab414128cbecb, type: 3}
+  m_image: {fileID: 21300000, guid: 6abdada28c9b6fc40b0c131b0e90f3ff, type: 3}
 --- !u!114 &-4320776359527923903
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -542,7 +542,7 @@ MonoBehaviour:
   m_answers: []
   m_start: 638148672000000000
   m_end: 638228160000000000
-  m_image: {fileID: 21300000, guid: 91bc808cc980b05458eab414128cbecb, type: 3}
+  m_image: {fileID: 21300000, guid: 2b25095dd63ee5a47b1c76fafe74ebe7, type: 3}
 --- !u!114 &-2578847963491323269
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -963,7 +963,7 @@ MonoBehaviour:
   - "Das Vorgl\xFChen."
   m_start: 638148672000000000
   m_end: 638228160000000000
-  m_image: {fileID: 21300000, guid: 91bc808cc980b05458eab414128cbecb, type: 3}
+  m_image: {fileID: 21300000, guid: 5996ae4068e868848961032428af0bd5, type: 3}
 --- !u!114 &2590983315984745866
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1351,7 +1351,7 @@ MonoBehaviour:
   m_answers: []
   m_start: 638229024000000000
   m_end: 638309376000000000
-  m_image: {fileID: 21300000, guid: 91bc808cc980b05458eab414128cbecb, type: 3}
+  m_image: {fileID: 21300000, guid: 13f6c095d36ae834cb1a4870f632382c, type: 3}
 --- !u!114 &7284544320246326729
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1467,7 +1467,7 @@ MonoBehaviour:
   - "Nein, w\xE4re mir auch sehr unangenehm."
   m_start: 638229024000000000
   m_end: 638309376000000000
-  m_image: {fileID: 21300000, guid: 91bc808cc980b05458eab414128cbecb, type: 3}
+  m_image: {fileID: 21300000, guid: 5996ae4068e868848961032428af0bd5, type: 3}
 --- !u!114 &8520445639488365695
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1528,7 +1528,7 @@ MonoBehaviour:
   - "Nein, der Devil\u2019s Tango ist Privatsache."
   m_start: 638229024000000000
   m_end: 638309376000000000
-  m_image: {fileID: 21300000, guid: 91bc808cc980b05458eab414128cbecb, type: 3}
+  m_image: {fileID: 21300000, guid: 13f6c095d36ae834cb1a4870f632382c, type: 3}
 --- !u!114 &9123882135734977891
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1559,7 +1559,7 @@ MonoBehaviour:
   - Ich heirate eine reiche Person.
   m_start: 638229024000000000
   m_end: 638309376000000000
-  m_image: {fileID: 21300000, guid: 91bc808cc980b05458eab414128cbecb, type: 3}
+  m_image: {fileID: 21300000, guid: 7d9c8ca69c63284429855f085ee42ff0, type: 3}
 --- !u!114 &9168621679752729843
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -31,7 +31,9 @@ namespace GossipGang {
             }
 
             startGameButton.onClick.AddListener(() => {
-                state = NextState.StartGame;
+                if (GameManager.instance.allDays.Count > 0) {
+                    state = NextState.StartGame;
+                }
             });
 
             showDaysButton.onClick.AddListener(() => {

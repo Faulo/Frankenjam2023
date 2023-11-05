@@ -17,6 +17,13 @@ namespace GossipGang {
             this.date = date;
             this.askingPlayer = askingPlayer;
 
+            playerAnswers = day.category switch {
+                DayCategory.Event => new Dictionary<Player, int>() {
+                    [askingPlayer] = -1,
+                },
+                _ => allPlayers.ToDictionary(p => p, p => -1),
+            };
+
             answers = day.category switch {
                 DayCategory.AllPlayers => playerAnswers
                     .Keys
@@ -35,13 +42,6 @@ namespace GossipGang {
             };
 
             answerCount = answers.Count;
-
-            playerAnswers = day.category switch {
-                DayCategory.Event => new Dictionary<Player, int>() {
-                    [askingPlayer] = -1,
-                },
-                _ => allPlayers.ToDictionary(p => p, p => -1),
-            };
         }
 
         public void AwardScores() {
