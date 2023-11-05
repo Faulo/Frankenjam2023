@@ -92,11 +92,14 @@ namespace GossipGang {
 
         string url => $"https://docs.google.com/spreadsheets/d/{id}/export?format=csv";
 
-        [SerializeField, TextArea(10, 100)]
-        string data = "";
+        string data;
 
         public IEnumerable<Day> days {
             get {
+                if (string.IsNullOrEmpty(data)) {
+                    yield break;
+                }
+
                 var config = new Configuration {
                     CultureInfo = CultureInfo.InvariantCulture,
                     TrimOptions = TrimOptions.Trim
@@ -132,10 +135,31 @@ namespace GossipGang {
                 case UnityWebRequest.Result.Success:
                     data = request.downloadHandler.text;
 #if UNITY_EDITOR
-                    UnityEditor.EditorUtility.SetDirty(this);
+                    CreateDays();
 #endif
                     break;
             }
         }
+
+#if UNITY_EDITOR
+        void CreateDays() {
+            var ids = days.ToDictionary(d => d.name);
+            string path = UnityEditor.AssetDatabase.GetAssetPath(this);
+
+            foreach (var day in UnityEditor.AssetDatabase.LoadAllAssetsAtPath(path).OfType<Day>()) {
+                if (ids.Remove(day.name, out var newDay)) {
+                    JsonUtility.FromJsonOverwrite(JsonUtility.ToJson(newDay), day);
+                } else {
+                    UnityEditor.AssetDatabase.RemoveObjectFromAsset(day);
+                }
+            }
+
+            foreach (var day in ids.Values) {
+                UnityEditor.AssetDatabase.AddObjectToAsset(day, this);
+            }
+
+            UnityEditor.AssetDatabase.SaveAssets();
+        }
+#endif
     }
 }

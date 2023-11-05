@@ -1,5 +1,89 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-4436255132289471204
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8fac4318f03ac2947b8ec74e36a147df, type: 3}
+  m_Name: Wasistdasanstrengendstewasdubetrunkengemachthast
+  m_EditorClassIdentifier: 
+  m_tags: 00000000
+  m_category: 0
+  m_title: title
+  m_description: "Henry war mal wieder nicht zu halten heute Nacht. St\xE4ndig mussten
+    wir die Party nach ihm absuchen, weil er abgehauen ist, um mit irgendwelchen
+    fremden Leuten zu reden. Heute h\xE4tte er sogar fast die Party mit ihnen verlassen.
+    Safiya ist ernsthaft am \xFCberlegen, ob wir eine Leine f\xFCr ihn kaufen sollten.
+    Und ganz ehrlich? Mir f\xE4llt absolut nichts ein, was gegen die Idee spricht."
+  m_question: Was ist das anstrengendste, was du betrunken gemacht hast?
+  m_answers:
+  - Gekotzt und Freund*in musste meine Haar halten.
+  - Wollte mit fremden Leuten mitgehen und meine Freunde mussten mich davon abhalten.
+  - Auf dem Heimweg laut gesungen oder geredet.
+  - "Nichts davon. Ich bin immer die Person, die sich um die Trunkenbolde k\xFCmmert."
+  m_image: {fileID: 21300000, guid: 268a148b8c4ad6d44bc5629f8eb8eb48, type: 3}
+--- !u!114 &-2372145471294516559
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8fac4318f03ac2947b8ec74e36a147df, type: 3}
+  m_Name: HattestduschonmaleinenSextraumvoneinerbefreundetenPerson
+  m_EditorClassIdentifier: 
+  m_tags: 01000000
+  m_category: 0
+  m_title: title
+  m_description: "Noa bleibt einfach eine Ikone. Wir sa\xDFen heute in gem\xFCtlicher
+    Runde zusammen, reden \xFCber Belanglosigkeiten bis Noa aus dem Nichts erz\xE4hlt,
+    dass dey letztens einen Sextraum mit einer Person aus unserer Runde hatte. Wir
+    haben alle auf Safiya getippt, aber nein\u2026 Der Star der Show war Henry, welcher
+    daraufhin auch sehr rot angelaufen ist und die Farbe auch den Rest des Abends
+    behalten hat zur Belustigung von uns anderen."
+  m_question: Hattest du schon mal einen Sextraum von einer befreundeten Person?
+  m_answers:
+  - Ja, denn meine Freunde sind super hot.
+  - Ja, aber das war mir mega unangenehm.
+  - Ich glaube ja, kann mich aber nicht mehr daran erinnern.
+  - "Nein, zum Gl\xFCck nicht."
+  m_image: {fileID: 21300000, guid: 268a148b8c4ad6d44bc5629f8eb8eb48, type: 3}
+--- !u!114 &-1182836734458881133
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8fac4318f03ac2947b8ec74e36a147df, type: 3}
+  m_Name: HastduschonmalmehrereLeutegleichzeitiggedatet
+  m_EditorClassIdentifier: 
+  m_tags: 04000000
+  m_category: 0
+  m_title: title
+  m_description: "Wirklich. Kann mir irgendwer erkl\xE4ren, wie das passiert ist?
+    Den ganzen Winter lang war ich das perfekte Abbild eines ungl\xFCcklichen Singles
+    und kaum beginnt der Fr\xFChling, sieht mein Dating-Leben aus wie bei \u2018ner
+    schlechten Dating-Show. Irgendwie date ich gerade zwei Leute gleichzeitig und
+    kann mich absolut nicht entscheiden. Oliver teilt so viele meiner Interessen
+    und hat immer ein offenes Ohr, aber Mia ist einfach von Grund auf faszinierend
+    und ich f\xFChle mich wirklich gut aufgehoben bei ihr."
+  m_question: Hast du schon mal mehrere Leute gleichzeitig gedatet?
+  m_answers:
+  - Ja, habe ich.
+  - "Ja, aber nur f\xFCr so ein oder zwei Dates."
+  - Nein, aber das ist doch in Ordnung.
+  - "Nein, w\xFCrde ich niemals machen."
+  m_image: {fileID: 21300000, guid: 268a148b8c4ad6d44bc5629f8eb8eb48, type: 3}
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15,121 +99,228 @@ MonoBehaviour:
   m_asset: {fileID: 11400000}
   library: {fileID: 11400000, guid: 34eb03dcc88f80c4ba1eea39e35eb958, type: 2}
   id: 1gfnagqw3ySRh9GeTb3Emuy3RAd96msUj7WpWPA0rB2M
-  data: "Category,Tag_1,Tag_2,Tag_3,Start,End,Season,Description,Question,Answer_1,Answer_2,Answer_3,Answer_4,Answer_5,Answer_6,Answer_7,Answer_8,Answer_9,Answer_10,Image\r\nDefault,Childhood,,,20.03.,20.06.,Spring,\"Henry
-    ist vor ein paar Tagen durch seine alten Sachen durchgegangen und hat seine Zeugnisse
-    von damals gefunden. Er hat sich sehr dar\xFCber am\xFCsiert, wie viel Stress
-    er sich damals um seine Noten gemacht hat. Bis in die tiefste Nacht hat er gelernt
-    und gef\xFChlt trotzdem nie etwas verstanden und all diese M\xFChen waren komplett
-    sinnlos, weil sich nach der Schule gef\xFChlt nie wieder jemand f\xFCr diese
-    Noten interessiert hat.\",Welcher Typ Sch\xFCler*in warst du in deiner Schulzeit?,Streber/Lehrerliebling,Coole
-    letzte Reihe/ Klassenclown,Solider Durchschnitt,\"Ein Bereich exzellent, sonst
-    nur bestanden.\",,,,,,,S_Doodle_Autumn_Alcohol_02\r\nDefault,Childhood,,,20.03.,20.06.,Spring,\"Ich
-    h\xE4tte wirklich nicht gedacht, dass die Teenager heutzutage das auch noch machen.
-    Als ich heute auf den Bus gewartet habe, war da ein Junge, der ganz sch\xFCchtern
-    einem M\xE4del einen Zettel in die Hand gedr\xFCckt hat und dann aber ganz schnell
-    abgehauen ist. Wie gerne ich damals den Mut gehabt h\xE4tte, das Gleiche zu tun.
-    Aber das h\xE4tte ich mich wirklich niemals getraut. Nicht mal f\xFCr Geld.\",\"Wenn
-    dir eine Person gef\xE4llt, dann...\",\u2026 machst du den ersten Schritt.,\"\u2026
-    wartest du geduldig, bis die Person den ersten Schritt macht.\",\"\u2026 bittest
-    ein*e Freund*in, Wing-person zu spielen\r\",\u2026 schmachtest du aus der Entfernung
-    und zerdenkst absolut alles.,,,,,,,\r\nAllPlayers,Childhood,,,20.03.,20.06.,Spring,\"Noa
-    bereitet sich momentan auf deren erste Unterrichtsstunde vor. Dey ist wahnsinnig
-    nerv\xF6s und hat uns den ganzen Abend dar\xFCber ausgefragt, was f\xFCr Lehrer*innen
-    wir hatten und was sie gut und was sie schlecht gemacht haben. Noa hatte gef\xFChlt
-    einen ganzen Fragenkatalog vorbereitet. Aber eigentlich war es auch echt sch\xF6n,
-    an ein paar meiner Lehrer*innen zur\xFCckzudenken. Unterricht mit Frau Ortiz
-    hat schon immer wirklich Spa\xDF gemacht, weil sie sehr viel mit Humor genommen
-    hat.\",Wer in dieser Runde w\xE4re der beste Lehrk\xF6rper?,,,,,,,,,,,\r\nDefault,Lovelife,,,20.03.,26.03.,Spring,\"Ob
-    ich je gedacht h\xE4tte, dass ich diese Zeilen mal schreibe? Um ehrlich zu sein,
-    nicht wirklich. Aber naja, jetzt sind wir hier. Seit Wochen geht mir diese eine
-    Person nicht aus dem Kopf. Das ist an sich v\xF6llig okay und sch\xF6n - vor
-    allem, da die Person auch Interesse an mir zu haben scheint. Was mich nur ein
-    bisschen aus dem Konzept bringt, ist, dass ich wirklich sehr \xFCberzeugt davon
-    war, hetero zu sein, und sie bringt das halt gerade komplett ins Schwanken. Aber
-    es gibt wohl anscheinend f\xFCr alles ein erstes Mal?\",Hast du schon mal deine
-    eigene Sexualit\xE4t hinterfragt?,Nein,\"Ja, durch einen Crush\",\"Ja, durch
-    einen sexy Traum\",\"Ja, durch neue Information\",,,,,,,\r\nDefault,Lovelife,,,03.04.,20.06.,Spring,\"Wirklich.
-    Kann mir irgendwer erkl\xE4ren, wie das passiert ist? Den ganzen Winter lang
-    war ich das perfekte Abbild eines ungl\xFCcklichen Singles und kaum beginnt der
-    Fr\xFChling, sieht mein Dating-Leben aus wie bei \u2018ner schlechten Dating-Show.
-    Irgendwie date ich gerade zwei Leute gleichzeitig und kann mich absolut nicht
-    entscheiden. Oliver teilt so viele meiner Interessen und hat immer ein offenes
-    Ohr, aber Mia ist einfach von Grund auf faszinierend und ich f\xFChle mich wirklich
-    gut aufgehoben bei ihr.\",Hast du schon mal mehrere Leute gleichzeitig gedatet?,\"Ja,
-    habe ich.\",\"Ja, aber nur f\xFCr so ein oder zwei Dates.\",\"Nein, aber das
-    ist doch in Ordnung.\",\"Nein, w\xFCrde ich niemals machen.\",,,,,,,\r\nDefault,Lovelife,,,10.04.,20.06.,Spring,\"Muss
-    ich mich denn wirklich entscheiden? Oliver und Mia sind beide wirklich tolle
-    Menschen, die mich sehr begeistern, und je mehr ich \xFCber sie erfahre, desto
-    weniger kann ich mich entscheiden. Noa hat mir auch letztens von einer Bekannten
-    erz\xE4hlt, die mehrere Monate in einer Beziehung mit zwei Leuten war. Sie hat
-    zwar sp\xE4ter festgestellt, dass es nichts f\xFCr sie ist, aber vielleicht w\xE4re
-    es ja genau das Richtige f\xFCr mich? Es f\xFChlt sich zumindest stark danach
-    an\u2026\",Was w\xFCrdest du in einer \xE4hnlichen Situation machen?,Ein*e Freund*in
-    um Rat bitten.,Mit beiden offen dar\xFCber reden.,\"Es weiterlaufen lassen und
-    warten, was sich ergibt.\",\"Kontakt abbrechen, das ist mir zu viel Drama.\",,,,,,,\r\nAllPlayers,Lovelife,,,20.03.,20.06.,Spring,\"Noa
-    hatte alles darauf verwettet, dass das nichts wird. Francis hat sich komplett
-    enthalten. Ich wollte mich - \xE4hnlich wie Francis - nicht zu sehr in das Thema
-    einmischen, auch wenn Noa nicht zul\xE4sst, dass nicht dar\xFCber gesprochen
-    wird. Aber nach vier monatiger Pause ist Safiya wieder zur\xFCck in ihrer Beziehung
-    und laut ihren Aussagen l\xE4uft es so gut wie noch nie. Noa ist noch nicht komplett
-    \xFCberzeugt. Dey sagt, dass das nur eine Frage der Zeit ist, bis die Beziehung
-    wieder in ihre alten Muster verf\xE4llt.\",Wer w\xFCrde sich am ehesten in die
-    Beziehung von jemand anderem einmischen?,,,,,,,,,,,\r\nDefault,Lovelife,,,20.03.,20.06.,Spring,\"Henry
-    tut mir wirklich Leid. Wochenlang hat er sich damit gestresst, die Freunde von
-    Francis kennenzulernen. Er wollte unbedingt einen guten Eindruck hinterlassen,
-    weil Francis\u2019 Freunde praktisch seine Familie sind, und ausgerechnet Francis\u2019
-    beste Freundin scheint ihn nicht leiden zu k\xF6nnen. Immer wieder l\xE4sst sie
-    ihn auflaufen oder verdreht ihm die Worte im Mund und er versteht beim besten
-    Willen nicht, was er ihr getan hat\u2026\",\"Was w\xFCrdest du tun, wenn die
-    Freunde oder Familie deines*r Partner*in dich nicht leiden k\xF6nnen?\",Offen
-    mit Partner*in dar\xFCber sprechen.,\"Gute Miene bewahren, ich muss sie ja nicht
-    so oft sehen.\",Versuchen sie trotzdem von mir zu \xFCberzeugen.,\"Sie konfrontieren,
-    da es vielleicht nur ein Missverst\xE4ndnis ist.\",,,,,,,\r\nAllPlayers,Alcohol,,,20.03.,20.06.,Spring,\"Alles,
-    was ich wollte, war ein lustiger Abend mit Freunden, bisschen tanzen und eine
-    Menge Alkohol. Was habe ich stattdessen bekommen? Einen emotional sehr auslaugenden
-    Abend, weil ich aus irgendeinem Grund ein Magnet f\xFCr Leute mit Problemen bin.
-    Eine Person nach der anderen kommt an und erz\xE4hlt mir einfach, was in ihrem
-    Leben gerade so schief l\xE4uft. Die einzige Option war, wirklich nur fluchtartig
-    die Party zu verlassen. Safiya war unglaublich w\xFCtend, dass ich einfach alleine
-    nach Hause gelaufen bin, ohne Bescheid zu sagen.\",Wem w\xFCrde es am ehesten
-    passieren auf der Party Seelenklempner*in zu spielen?,,,,,,,,,,,\r\nDefault,Alcohol,,,20.03.,20.06.,Spring,\"Henry
-    war mal wieder nicht zu halten heute Nacht. St\xE4ndig mussten wir die Party
-    nach ihm absuchen, weil er abgehauen ist, um mit irgendwelchen fremden Leuten
-    zu reden. Heute h\xE4tte er sogar fast die Party mit ihnen verlassen. Safiya
-    ist ernsthaft am \xFCberlegen, ob wir eine Leine f\xFCr ihn kaufen sollten. Und
-    ganz ehrlich? Mir f\xE4llt absolut nichts ein, was gegen die Idee spricht.\",\"Was
-    ist das anstrengendste, was du betrunken gemacht hast?\",Gekotzt und Freund*in
-    musste meine Haar halten.,Wollte mit fremden Leuten mitgehen und meine Freunde
-    mussten mich davon abhalten.,Auf dem Heimweg laut gesungen oder geredet.,\"Nichts
-    davon. Ich bin immer die Person, die sich um die Trunkenbolde k\xFCmmert.\",,,,,,,\r\nDefault,Alcohol,,,20.03.,20.06.,Spring,\"Normalerweise
-    w\xFCrde ich immer sagen, dass das Highlight jedes Abends das Vorgl\xFChen ist.
-    Aber der Nachhauseweg mit Henry hat das diesmal um L\xE4ngen geschlagen. Bisschen
-    ausn\xFCchtern und dabei \xFCber alles reden, was einem auf dem Herzen liegt,
-    sollte ich deutlich \xF6fter machen.\",Was ist f\xFCr dich das Highlight jeder
-    Party?,Mit neuen Leuten reden.,Einfach die Nacht durch tanzen.,Alle Hemmungen
-    fallen lassen.,Das Vorgl\xFChen.,,,,,,,\r\nDefault,Sex,,,27.03.,02.04.,Spring,\"Vielleicht
-    bin ich doch keine Person f\xFCr One Night Stands. Der Abend mit Mia hat mir
-    wirklich gut gefallen und je l\xE4nger ich dar\xFCber nachdenke, desto lieber
-    w\xFCrde ich sie wiedersehen. Es muss nicht mal auf Sex hinaus laufen (auch wenn
-    ich da wirklich nichts gegen h\xE4tte), aber ich w\xFCrde mich einfach gerne
-    wieder mit ihr unterhalten. Keine Ahnung\u2026 Vielleicht meldet sie sich. Meine
-    Nummer hat sie ja.\",Wie stehst du zu One Night Stands?,Gro\xDFer Fan von unverbindlichem
-    Spa\xDF.,\"Ich w\xE4re es gerne, aber bin es nicht.\",\"Nicht so meins, aber
-    wer es mag.\",Sehr unangenehmes Konzept.,,,,,,,\r\nDefault,Sex,,,20.03.,20.06.,Spring,\"Dieses
-    Jahr haben sich Noa und Safiya wohl wirklich lustig gefunden. Damit ich an meinem
-    Geburtstag nicht so alleine bin, haben die beiden mir gn\xE4digerweise ein Sex
-    Toy geschenkt. Der gr\xF6\xDFere Witz an der Sache ist nur, dass ich dieses Toy
-    schon l\xE4ngst besitze. Zum Gl\xFCck wollte Noa sich sowas schon l\xE4nger selbst
-    holen, weswegen dey es dann einfach selbst wieder mitgenommen hat.\",\"Besitzt
-    du ein Sex Toy und wenn ja, welches?\",\"Ja, Sexspielzeug mit Genitalfokus.\",\"Ja,
-    Sexspielzeug mit Analfokus.\",\"Nein, meine H\xE4nde sind alles, was ich brauche.\",\"Nein,
-    ich sehe mich da generell gar nicht.\",,,,,,,\r\nDefault,Sex,,,20.03.,20.06.,Spring,\"Noa
-    bleibt einfach eine Ikone. Wir sa\xDFen heute in gem\xFCtlicher Runde zusammen,
-    reden \xFCber Belanglosigkeiten bis Noa aus dem Nichts erz\xE4hlt, dass dey letztens
-    einen Sextraum mit einer Person aus unserer Runde hatte. Wir haben alle auf Safiya
-    getippt, aber nein\u2026 Der Star der Show war Henry, welcher daraufhin auch
-    sehr rot angelaufen ist und die Farbe auch den Rest des Abends behalten hat zur
-    Belustigung von uns anderen.\",Hattest du schon mal einen Sextraum von einer
-    befreundeten Person?,\"Ja, denn meine Freunde sind super hot.\",\"Ja, aber das
-    war mir mega unangenehm.\",\"Ich glaube ja, kann mich aber nicht mehr daran erinnern.\",\"Nein,
-    zum Gl\xFCck nicht.\",,,,,,,"
+--- !u!114 &1389385538057304050
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8fac4318f03ac2947b8ec74e36a147df, type: 3}
+  m_Name: BesitztdueinSexToyundwennjawelches
+  m_EditorClassIdentifier: 
+  m_tags: 01000000
+  m_category: 0
+  m_title: title
+  m_description: "Dieses Jahr haben sich Noa und Safiya wohl wirklich lustig gefunden.
+    Damit ich an meinem Geburtstag nicht so alleine bin, haben die beiden mir gn\xE4digerweise
+    ein Sex Toy geschenkt. Der gr\xF6\xDFere Witz an der Sache ist nur, dass ich
+    dieses Toy schon l\xE4ngst besitze. Zum Gl\xFCck wollte Noa sich sowas schon
+    l\xE4nger selbst holen, weswegen dey es dann einfach selbst wieder mitgenommen
+    hat."
+  m_question: Besitzt du ein Sex Toy und wenn ja, welches?
+  m_answers:
+  - Ja, Sexspielzeug mit Genitalfokus.
+  - Ja, Sexspielzeug mit Analfokus.
+  - "Nein, meine H\xE4nde sind alles, was ich brauche."
+  - Nein, ich sehe mich da generell gar nicht.
+  m_image: {fileID: 21300000, guid: 268a148b8c4ad6d44bc5629f8eb8eb48, type: 3}
+--- !u!114 &3527134714977749714
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8fac4318f03ac2947b8ec74e36a147df, type: 3}
+  m_Name: WasistfrdichdasHighlightjederParty
+  m_EditorClassIdentifier: 
+  m_tags: 00000000
+  m_category: 0
+  m_title: title
+  m_description: "Normalerweise w\xFCrde ich immer sagen, dass das Highlight jedes
+    Abends das Vorgl\xFChen ist. Aber der Nachhauseweg mit Henry hat das diesmal
+    um L\xE4ngen geschlagen. Bisschen ausn\xFCchtern und dabei \xFCber alles reden,
+    was einem auf dem Herzen liegt, sollte ich deutlich \xF6fter machen."
+  m_question: "Was ist f\xFCr dich das Highlight jeder Party?"
+  m_answers:
+  - Mit neuen Leuten reden.
+  - Einfach die Nacht durch tanzen.
+  - Alle Hemmungen fallen lassen.
+  - "Das Vorgl\xFChen."
+  m_image: {fileID: 21300000, guid: 268a148b8c4ad6d44bc5629f8eb8eb48, type: 3}
+--- !u!114 &4335066486818355861
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8fac4318f03ac2947b8ec74e36a147df, type: 3}
+  m_Name: WenndireinePersongeflltdann
+  m_EditorClassIdentifier: 
+  m_tags: 02000000
+  m_category: 0
+  m_title: title
+  m_description: "Ich h\xE4tte wirklich nicht gedacht, dass die Teenager heutzutage
+    das auch noch machen. Als ich heute auf den Bus gewartet habe, war da ein Junge,
+    der ganz sch\xFCchtern einem M\xE4del einen Zettel in die Hand gedr\xFCckt hat
+    und dann aber ganz schnell abgehauen ist. Wie gerne ich damals den Mut gehabt
+    h\xE4tte, das Gleiche zu tun. Aber das h\xE4tte ich mich wirklich niemals getraut.
+    Nicht mal f\xFCr Geld."
+  m_question: "Wenn dir eine Person gef\xE4llt, dann..."
+  m_answers:
+  - "\u2026 machst du den ersten Schritt."
+  - "\u2026 wartest du geduldig, bis die Person den ersten Schritt macht."
+  - "\u2026 bittest ein*e Freund*in, Wing-person zu spielen\r"
+  - "\u2026 schmachtest du aus der Entfernung und zerdenkst absolut alles."
+  m_image: {fileID: 21300000, guid: 268a148b8c4ad6d44bc5629f8eb8eb48, type: 3}
+--- !u!114 &4664868171369772849
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8fac4318f03ac2947b8ec74e36a147df, type: 3}
+  m_Name: HastduschonmaldeineeigeneSexualitthinterfragt
+  m_EditorClassIdentifier: 
+  m_tags: 04000000
+  m_category: 0
+  m_title: title
+  m_description: "Ob ich je gedacht h\xE4tte, dass ich diese Zeilen mal schreibe?
+    Um ehrlich zu sein, nicht wirklich. Aber naja, jetzt sind wir hier. Seit Wochen
+    geht mir diese eine Person nicht aus dem Kopf. Das ist an sich v\xF6llig okay
+    und sch\xF6n - vor allem, da die Person auch Interesse an mir zu haben scheint.
+    Was mich nur ein bisschen aus dem Konzept bringt, ist, dass ich wirklich sehr
+    \xFCberzeugt davon war, hetero zu sein, und sie bringt das halt gerade komplett
+    ins Schwanken. Aber es gibt wohl anscheinend f\xFCr alles ein erstes Mal?"
+  m_question: "Hast du schon mal deine eigene Sexualit\xE4t hinterfragt?"
+  m_answers:
+  - Nein
+  - Ja, durch einen Crush
+  - Ja, durch einen sexy Traum
+  - Ja, durch neue Information
+  m_image: {fileID: 21300000, guid: 268a148b8c4ad6d44bc5629f8eb8eb48, type: 3}
+--- !u!114 &4703132533638230502
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8fac4318f03ac2947b8ec74e36a147df, type: 3}
+  m_Name: WaswrdestduineinerhnlichenSituationmachen
+  m_EditorClassIdentifier: 
+  m_tags: 04000000
+  m_category: 0
+  m_title: title
+  m_description: "Muss ich mich denn wirklich entscheiden? Oliver und Mia sind beide
+    wirklich tolle Menschen, die mich sehr begeistern, und je mehr ich \xFCber sie
+    erfahre, desto weniger kann ich mich entscheiden. Noa hat mir auch letztens von
+    einer Bekannten erz\xE4hlt, die mehrere Monate in einer Beziehung mit zwei Leuten
+    war. Sie hat zwar sp\xE4ter festgestellt, dass es nichts f\xFCr sie ist, aber
+    vielleicht w\xE4re es ja genau das Richtige f\xFCr mich? Es f\xFChlt sich zumindest
+    stark danach an\u2026"
+  m_question: "Was w\xFCrdest du in einer \xE4hnlichen Situation machen?"
+  m_answers:
+  - Ein*e Freund*in um Rat bitten.
+  - "Mit beiden offen dar\xFCber reden."
+  - Es weiterlaufen lassen und warten, was sich ergibt.
+  - Kontakt abbrechen, das ist mir zu viel Drama.
+  m_image: {fileID: 21300000, guid: 268a148b8c4ad6d44bc5629f8eb8eb48, type: 3}
+--- !u!114 &4914865578710621282
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8fac4318f03ac2947b8ec74e36a147df, type: 3}
+  m_Name: WiestehstduzuOneNightStands
+  m_EditorClassIdentifier: 
+  m_tags: 01000000
+  m_category: 0
+  m_title: title
+  m_description: "Vielleicht bin ich doch keine Person f\xFCr One Night Stands. Der
+    Abend mit Mia hat mir wirklich gut gefallen und je l\xE4nger ich dar\xFCber nachdenke,
+    desto lieber w\xFCrde ich sie wiedersehen. Es muss nicht mal auf Sex hinaus laufen
+    (auch wenn ich da wirklich nichts gegen h\xE4tte), aber ich w\xFCrde mich einfach
+    gerne wieder mit ihr unterhalten. Keine Ahnung\u2026 Vielleicht meldet sie sich.
+    Meine Nummer hat sie ja."
+  m_question: Wie stehst du zu One Night Stands?
+  m_answers:
+  - "Gro\xDFer Fan von unverbindlichem Spa\xDF."
+  - "Ich w\xE4re es gerne, aber bin es nicht."
+  - Nicht so meins, aber wer es mag.
+  - Sehr unangenehmes Konzept.
+  m_image: {fileID: 21300000, guid: 268a148b8c4ad6d44bc5629f8eb8eb48, type: 3}
+--- !u!114 &5247084664365738946
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8fac4318f03ac2947b8ec74e36a147df, type: 3}
+  m_Name: WaswrdestdutunwenndieFreundeoderFamiliedeinesrPartnerindichnichtleidenknnen
+  m_EditorClassIdentifier: 
+  m_tags: 04000000
+  m_category: 0
+  m_title: title
+  m_description: "Henry tut mir wirklich Leid. Wochenlang hat er sich damit gestresst,
+    die Freunde von Francis kennenzulernen. Er wollte unbedingt einen guten Eindruck
+    hinterlassen, weil Francis\u2019 Freunde praktisch seine Familie sind, und ausgerechnet
+    Francis\u2019 beste Freundin scheint ihn nicht leiden zu k\xF6nnen. Immer wieder
+    l\xE4sst sie ihn auflaufen oder verdreht ihm die Worte im Mund und er versteht
+    beim besten Willen nicht, was er ihr getan hat\u2026"
+  m_question: "Was w\xFCrdest du tun, wenn die Freunde oder Familie deines*r Partner*in
+    dich nicht leiden k\xF6nnen?"
+  m_answers:
+  - "Offen mit Partner*in dar\xFCber sprechen."
+  - Gute Miene bewahren, ich muss sie ja nicht so oft sehen.
+  - "Versuchen sie trotzdem von mir zu \xFCberzeugen."
+  - "Sie konfrontieren, da es vielleicht nur ein Missverst\xE4ndnis ist."
+  m_image: {fileID: 21300000, guid: 268a148b8c4ad6d44bc5629f8eb8eb48, type: 3}
+--- !u!114 &7669943104430920537
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8fac4318f03ac2947b8ec74e36a147df, type: 3}
+  m_Name: WelcherTypSchlerinwarstduindeinerSchulzeit
+  m_EditorClassIdentifier: 
+  m_tags: 02000000
+  m_category: 0
+  m_title: title
+  m_description: "Henry ist vor ein paar Tagen durch seine alten Sachen durchgegangen
+    und hat seine Zeugnisse von damals gefunden. Er hat sich sehr dar\xFCber am\xFCsiert,
+    wie viel Stress er sich damals um seine Noten gemacht hat. Bis in die tiefste
+    Nacht hat er gelernt und gef\xFChlt trotzdem nie etwas verstanden und all diese
+    M\xFChen waren komplett sinnlos, weil sich nach der Schule gef\xFChlt nie wieder
+    jemand f\xFCr diese Noten interessiert hat."
+  m_question: "Welcher Typ Sch\xFCler*in warst du in deiner Schulzeit?"
+  m_answers:
+  - Streber/Lehrerliebling
+  - Coole letzte Reihe/ Klassenclown
+  - Solider Durchschnitt
+  - Ein Bereich exzellent, sonst nur bestanden.
+  m_image: {fileID: 21300000, guid: 268a148b8c4ad6d44bc5629f8eb8eb48, type: 3}

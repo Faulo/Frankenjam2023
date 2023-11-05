@@ -1,18 +1,13 @@
-﻿using System;
-using System.Collections;
+﻿using System.Collections;
 using UnityEngine;
 
 namespace GossipGang {
     sealed class LoadSheetResources : MonoBehaviour {
         [SerializeField]
-        GoogleSheetAsset[] sheets = Array.Empty<GoogleSheetAsset>();
+        string path;
 
         IEnumerator Start() {
-            foreach (var sheet in sheets) {
-                foreach (var day in sheet.days) {
-                    GameManager.instance.AddDay(day);
-                }
-
+            foreach (var sheet in Resources.LoadAll<GoogleSheetAsset>(path)) {
                 yield return sheet.DownloadSheet_Co();
 
                 foreach (var day in sheet.days) {

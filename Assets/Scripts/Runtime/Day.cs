@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text.RegularExpressions;
 using UnityEngine;
 using UnityRandom = UnityEngine.Random;
 
@@ -45,10 +46,10 @@ namespace GossipGang {
         Sprite m_image;
         public Sprite image => m_image;
 
-        public string id => m_description;
-
         public static bool TryCreateFromCSV(out Day day, DayCategory category, string description, string question, IEnumerable<string> answers, IEnumerable<DayTag> tags, DateTime start, DateTime end, Sprite image) {
             day = CreateInstance<Day>();
+
+            day.name = Regex.Replace(question, "[^a-zA-Z]", "");
 
             day.m_category = category;
             day.m_description = description.Trim();
