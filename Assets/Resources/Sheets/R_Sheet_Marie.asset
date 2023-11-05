@@ -26,6 +26,8 @@ MonoBehaviour:
   - Wollte mit fremden Leuten mitgehen und meine Freunde mussten mich davon abhalten.
   - Auf dem Heimweg laut gesungen oder geredet.
   - "Nichts davon. Ich bin immer die Person, die sich um die Trunkenbolde k\xFCmmert."
+  m_start: 638148672000000000
+  m_end: 638228160000000000
   m_image: {fileID: 21300000, guid: 268a148b8c4ad6d44bc5629f8eb8eb48, type: 3}
 --- !u!114 &-2372145471294516559
 MonoBehaviour:
@@ -54,6 +56,8 @@ MonoBehaviour:
   - Ja, aber das war mir mega unangenehm.
   - Ich glaube ja, kann mich aber nicht mehr daran erinnern.
   - "Nein, zum Gl\xFCck nicht."
+  m_start: 638148672000000000
+  m_end: 638228160000000000
   m_image: {fileID: 21300000, guid: 268a148b8c4ad6d44bc5629f8eb8eb48, type: 3}
 --- !u!114 &-1182836734458881133
 MonoBehaviour:
@@ -83,6 +87,8 @@ MonoBehaviour:
   - "Ja, aber nur f\xFCr so ein oder zwei Dates."
   - Nein, aber das ist doch in Ordnung.
   - "Nein, w\xFCrde ich niemals machen."
+  m_start: 638160768000000000
+  m_end: 638228160000000000
   m_image: {fileID: 21300000, guid: 268a148b8c4ad6d44bc5629f8eb8eb48, type: 3}
 --- !u!114 &11400000
 MonoBehaviour:
@@ -127,6 +133,8 @@ MonoBehaviour:
   - Ja, Sexspielzeug mit Analfokus.
   - "Nein, meine H\xE4nde sind alles, was ich brauche."
   - Nein, ich sehe mich da generell gar nicht.
+  m_start: 638148672000000000
+  m_end: 638228160000000000
   m_image: {fileID: 21300000, guid: 268a148b8c4ad6d44bc5629f8eb8eb48, type: 3}
 --- !u!114 &3527134714977749714
 MonoBehaviour:
@@ -153,6 +161,8 @@ MonoBehaviour:
   - Einfach die Nacht durch tanzen.
   - Alle Hemmungen fallen lassen.
   - "Das Vorgl\xFChen."
+  m_start: 638148672000000000
+  m_end: 638228160000000000
   m_image: {fileID: 21300000, guid: 268a148b8c4ad6d44bc5629f8eb8eb48, type: 3}
 --- !u!114 &4335066486818355861
 MonoBehaviour:
@@ -181,6 +191,8 @@ MonoBehaviour:
   - "\u2026 wartest du geduldig, bis die Person den ersten Schritt macht."
   - "\u2026 bittest ein*e Freund*in, Wing-person zu spielen\r"
   - "\u2026 schmachtest du aus der Entfernung und zerdenkst absolut alles."
+  m_start: 638148672000000000
+  m_end: 638228160000000000
   m_image: {fileID: 21300000, guid: 268a148b8c4ad6d44bc5629f8eb8eb48, type: 3}
 --- !u!114 &4664868171369772849
 MonoBehaviour:
@@ -210,6 +222,8 @@ MonoBehaviour:
   - Ja, durch einen Crush
   - Ja, durch einen sexy Traum
   - Ja, durch neue Information
+  m_start: 638148672000000000
+  m_end: 638153856000000000
   m_image: {fileID: 21300000, guid: 268a148b8c4ad6d44bc5629f8eb8eb48, type: 3}
 --- !u!114 &4703132533638230502
 MonoBehaviour:
@@ -239,6 +253,8 @@ MonoBehaviour:
   - "Mit beiden offen dar\xFCber reden."
   - Es weiterlaufen lassen und warten, was sich ergibt.
   - Kontakt abbrechen, das ist mir zu viel Drama.
+  m_start: 638166816000000000
+  m_end: 638228160000000000
   m_image: {fileID: 21300000, guid: 268a148b8c4ad6d44bc5629f8eb8eb48, type: 3}
 --- !u!114 &4914865578710621282
 MonoBehaviour:
@@ -267,6 +283,8 @@ MonoBehaviour:
   - "Ich w\xE4re es gerne, aber bin es nicht."
   - Nicht so meins, aber wer es mag.
   - Sehr unangenehmes Konzept.
+  m_start: 638154720000000000
+  m_end: 638159904000000000
   m_image: {fileID: 21300000, guid: 268a148b8c4ad6d44bc5629f8eb8eb48, type: 3}
 --- !u!114 &5247084664365738946
 MonoBehaviour:
@@ -296,6 +314,8 @@ MonoBehaviour:
   - Gute Miene bewahren, ich muss sie ja nicht so oft sehen.
   - "Versuchen sie trotzdem von mir zu \xFCberzeugen."
   - "Sie konfrontieren, da es vielleicht nur ein Missverst\xE4ndnis ist."
+  m_start: 638148672000000000
+  m_end: 638228160000000000
   m_image: {fileID: 21300000, guid: 268a148b8c4ad6d44bc5629f8eb8eb48, type: 3}
 --- !u!114 &7669943104430920537
 MonoBehaviour:
@@ -324,4 +344,6 @@ MonoBehaviour:
   - Coole letzte Reihe/ Klassenclown
   - Solider Durchschnitt
   - Ein Bereich exzellent, sonst nur bestanden.
+  m_start: 638148672000000000
+  m_end: 638228160000000000
   m_image: {fileID: 21300000, guid: 268a148b8c4ad6d44bc5629f8eb8eb48, type: 3}

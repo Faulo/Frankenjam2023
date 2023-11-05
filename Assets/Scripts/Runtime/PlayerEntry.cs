@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 
 namespace GossipGang {
-    sealed class PlayerEntry {
+    sealed record PlayerEntry {
         public readonly Day day;
         public readonly DateTime date;
         public string dateString => date.ToShortDateString();

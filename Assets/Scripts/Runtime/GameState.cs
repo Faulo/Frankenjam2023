@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 using Slothsoft.UnityExtensions;
+using UnityEngine;
 
 namespace GossipGang {
     sealed class GameState {
@@ -44,6 +45,8 @@ namespace GossipGang {
             for (int i = 0; i < entries.Count; i++) {
                 var (day, date) = entries[i];
                 m_entries.Add(new(day, date, GetPlayer(i), players));
+
+                Debug.Log(m_entries[^1]);
             }
         }
 

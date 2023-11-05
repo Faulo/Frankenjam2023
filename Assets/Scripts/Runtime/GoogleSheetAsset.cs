@@ -150,6 +150,7 @@ namespace GossipGang {
             foreach (var day in UnityEditor.AssetDatabase.LoadAllAssetsAtPath(path).OfType<Day>()) {
                 if (ids.Remove(day.name, out var newDay)) {
                     JsonUtility.FromJsonOverwrite(JsonUtility.ToJson(newDay), day);
+                    UnityEditor.EditorUtility.SetDirty(day);
                 } else {
                     UnityEditor.AssetDatabase.RemoveObjectFromAsset(day);
                 }
@@ -157,8 +158,10 @@ namespace GossipGang {
 
             foreach (var day in ids.Values) {
                 UnityEditor.AssetDatabase.AddObjectToAsset(day, this);
+                UnityEditor.EditorUtility.SetDirty(day);
             }
 
+            UnityEditor.EditorUtility.SetDirty(this);
             UnityEditor.AssetDatabase.SaveAssets();
         }
 #endif
