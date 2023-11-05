@@ -18,6 +18,17 @@ namespace GossipGang {
 
         [SerializeField]
         SerializableKeyValuePairs<DayCategory, bool> allowedCategories = new();
+        public IEnumerable<DayCategory> allCategories => allowedCategories.Keys;
+
+        [SerializeField]
+        SerializableKeyValuePairs<DayTag, bool> allowedTags = new();
+        public IEnumerable<DayTag> allTags => allowedTags.Keys;
+        public void SetTag(DayTag tag, bool value) {
+            var dictionary = new Dictionary<DayTag, bool>(allowedTags) {
+                [tag] = value
+            };
+            allowedTags.SetItems(dictionary);
+        }
 
         [Separator]
         [SerializeField]

@@ -11,6 +11,11 @@ namespace GossipGang {
             Exit
         }
         [SerializeField]
+        Transform tagContainer;
+        [SerializeField]
+        GameObject tagPrefab;
+
+        [SerializeField]
         Button startGameButton;
         [SerializeField]
         Button showDaysButton;
@@ -20,6 +25,11 @@ namespace GossipGang {
         NextState state = NextState.Unknown;
 
         void Start() {
+            foreach (var tag in GameManager.instance.allTags) {
+                var instance = Instantiate(tagPrefab, tagContainer);
+                instance.BindTo(tag);
+            }
+
             startGameButton.onClick.AddListener(() => {
                 state = NextState.StartGame;
             });
