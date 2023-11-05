@@ -9,19 +9,20 @@ namespace GossipGang {
         [SerializeField]
         GameObject personPrefab;
 
-        [Space]
-        [SerializeField]
-        Button nextButton;
-
-        bool isDone;
+        Player pickedPlayer;
 
         void Start() {
-            nextButton.onClick.AddListener(() => isDone = true);
+            foreach (var player in GameManager.state.players) {
+                var instance = Instantiate(personPrefab, personContainer);
+                instance.BindTo(player.nameWithColor);
+                instance.GetComponent<Button>().onClick.AddListener(() => pickedPlayer = player);
+            }
         }
 
         public override IEnumerator WaitForDone() {
-            yield return new WaitUntil(() => isDone);
+            yield return new WaitWhile(() => pickedPlayer is null);
 
+            Debug.Log(pickedPlayer.nameWithColor);
             Destroy(gameObject);
         }
     }
