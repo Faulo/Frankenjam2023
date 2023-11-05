@@ -12,6 +12,10 @@ namespace GossipGang {
         [Space]
         [SerializeField]
         UIState assignSecretState;
+        [SerializeField]
+        UIState returnSecretState;
+        [SerializeField]
+        UIState leaderboardState;
 
         Player pickedPlayer;
 
@@ -37,6 +41,12 @@ namespace GossipGang {
 
                 yield return instance.WaitForDone();
             }
+
+            yield return Instantiate(returnSecretState).WaitForDone();
+
+            yield return Instantiate(leaderboardState).WaitForDone();
+
+            yield return GameManager.instance.LoadMainMenu();
         }
     }
 }

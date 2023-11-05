@@ -332,6 +332,36 @@ MonoBehaviour:
   m_start: 638148672000000000
   m_end: 638228160000000000
   m_image: {fileID: 21300000, guid: 268a148b8c4ad6d44bc5629f8eb8eb48, type: 3}
+--- !u!114 &-2350748833095173414
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8fac4318f03ac2947b8ec74e36a147df, type: 3}
+  m_Name: WelcheArtvonTraumhattestduzuletzt
+  m_EditorClassIdentifier: 
+  m_tags: 02000000
+  m_category: 0
+  m_title: title
+  m_description: "Die Albtr\xE4ume haben wieder angefangen. Immer wieder das gleiche
+    dumme Szenario, in dem ich von meinem Wecker geweckt werde, weil ich zur Schule
+    muss und von nichts anderem erf\xFCllt bin als Panik. Dieses Zusammenspiel aus
+    der schnellen Verurteilung meiner Mitsch\xFCler*innen, der st\xE4ndigen Beurteilung
+    der Lehrer*innen und den Druck immer alles richtig zu machen\u2026 Das schafft
+    mich bis heute."
+  m_question: Welche Art von Traum hattest du zuletzt?
+  m_answers:
+  - "Etwas total Verr\xFCcktes."
+  - Die absolute Horrorshow.
+  - Zukunftsvorstellung.
+  - Mix aus Erinnerungen.
+  m_start: 638388864000000000
+  m_end: 638147808000000000
+  m_image: {fileID: 21300000, guid: 268a148b8c4ad6d44bc5629f8eb8eb48, type: 3}
 --- !u!114 &-1182836734458881133
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -498,6 +528,36 @@ MonoBehaviour:
   - "Nein, der Devil\u2019s Tango ist Privatsache."
   m_start: 638229024000000000
   m_end: 638309376000000000
+  m_image: {fileID: 21300000, guid: 268a148b8c4ad6d44bc5629f8eb8eb48, type: 3}
+--- !u!114 &419579852008603082
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8fac4318f03ac2947b8ec74e36a147df, type: 3}
+  m_Name: WelchePersonwarstduimmerinGruppenarbeiten
+  m_EditorClassIdentifier: 
+  m_tags: 02000000
+  m_category: 0
+  m_title: title
+  m_description: "Henry hat sich den ganzen Abend \xFCber seine Arbeitsgruppe f\xFCr
+    ein Uni-Projekt beschwert. Er meint, dass es genau wie in der Schule damals ist.
+    Eine Person macht die ganze Arbeit und die anderen sitzen auf der faulen Haut.
+    Und wer ist der Trottel, der alles machen muss? Nat\xFCrlich Henry. Francis versucht,
+    ihn zu motivieren, den anderen eine Ansage zu machen, aber Henry beteuert immer
+    und immer wieder, dass das mehr Stress ist als dass es wert ist."
+  m_question: Welche Person warst du immer in Gruppenarbeiten?
+  m_answers:
+  - Faulenzer*in.
+  - "Bei mir waren alle gleicherma\xDFen beteiligt."
+  - Die Person, die alles gemacht hat.
+  - "Die Person, die immer vortr\xE4gt, weil sich keiner traut."
+  m_start: 638388864000000000
+  m_end: 638147808000000000
   m_image: {fileID: 21300000, guid: 268a148b8c4ad6d44bc5629f8eb8eb48, type: 3}
 --- !u!114 &611799025044674875
 MonoBehaviour:
@@ -739,6 +799,36 @@ MonoBehaviour:
   - "Das Vorgl\xFChen."
   m_start: 638148672000000000
   m_end: 638228160000000000
+  m_image: {fileID: 21300000, guid: 268a148b8c4ad6d44bc5629f8eb8eb48, type: 3}
+--- !u!114 &4088230328287206774
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8fac4318f03ac2947b8ec74e36a147df, type: 3}
+  m_Name: FandestdueinendeinerLehrerinnenattraktiv
+  m_EditorClassIdentifier: 
+  m_tags: 02000000
+  m_category: 0
+  m_title: title
+  m_description: "Noa hat kein Problem damit, Menschen einen Korb zu geben. Nichts
+    leichter als das, sagt dey. Aber bei deren Sch\xFCler f\xE4llt es denen dann
+    schon direkt nicht so einfach. Vor allem, wenn Safiya gleichzeitig die Geschichte
+    erz\xE4hlt, wie sie ihrer Lehrerin mal ihre Liebe gestanden hat und dann nat\xFCrlich
+    (oder zum Gl\xFCck?) einen Korb bekommen hat. Den Herzschmerz hat Safiya bis
+    heute nicht vergessen\u2026 und auch wie peinlich das eigentlich war."
+  m_question: Fandest du einen deiner Lehrer*innen attraktiv?
+  m_answers:
+  - 'Auf jeden Fall. '
+  - Klar, und ich habe es dem*r Lehrer*in auch gesagt.
+  - Ew, nein.
+  - "Keine*n Lehrer*in, aber daf\xFCr meine*n Dozent*in."
+  m_start: 638388864000000000
+  m_end: 638147808000000000
   m_image: {fileID: 21300000, guid: 268a148b8c4ad6d44bc5629f8eb8eb48, type: 3}
 --- !u!114 &4335066486818355861
 MonoBehaviour:
