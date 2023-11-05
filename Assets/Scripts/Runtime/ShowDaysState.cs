@@ -20,7 +20,7 @@ namespace GossipGang {
         NextState state = NextState.Unknown;
 
         void Start() {
-            foreach (var day in GameManager.instance.days) {
+            foreach (var day in GameManager.instance.allDays) {
                 var instance = Instantiate(dayPrefab, dayContainer);
                 instance.BindTo(day);
             }

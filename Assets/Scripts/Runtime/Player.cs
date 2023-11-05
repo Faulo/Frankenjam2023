@@ -16,5 +16,7 @@ namespace GossipGang {
             this.birthday = birthday;
             this.secret = secret;
         }
+
+        public override string ToString() => name;
     }
 }

@@ -33,14 +33,14 @@ namespace GossipGang {
         public IReadOnlyList<string> answers => m_answers;
 
         [SerializeField]
-        DateTime m_start = DateTime.Now;
-        public DateTime start => m_start;
+        long m_start = DateTime.Now.Ticks;
+        public DateTime start => new(m_start);
 
         [SerializeField]
-        DateTime m_end = DateTime.Now;
-        public DateTime end => m_end;
+        long m_end = DateTime.Now.Ticks;
+        public DateTime end => new(m_end);
 
-        public DateTime randomDate => new((long)UnityRandom.Range(start.Ticks, end.Ticks));
+        public DateTime randomDate => new((long)UnityRandom.Range(m_start, m_end));
 
         [SerializeField]
         Sprite m_image;
@@ -56,8 +56,8 @@ namespace GossipGang {
             day.m_question = question.Trim();
             day.m_answers = answers.ToArray();
             day.m_tags = tags.ToArray();
-            day.m_start = start;
-            day.m_end = end;
+            day.m_start = start.Ticks;
+            day.m_end = end.Ticks;
             day.m_image = image;
 
             if (string.IsNullOrWhiteSpace(day.m_question)) {

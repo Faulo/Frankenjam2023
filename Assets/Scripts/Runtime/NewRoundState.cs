@@ -43,14 +43,12 @@ namespace GossipGang {
             instance.BindTo(entry);
             yield return instance.WaitForDone();
 
-            GameManager.instance.AdvancePlayer();
-
             yield return GameManager.instance.LoadNewRoundState();
         }
 
         PlayerEntry entry;
         bool activePlayerIsSelf => answeringPlayer == askingPlayer;
-        Player askingPlayer => entry.player;
+        Player askingPlayer => entry.askingPlayer;
 
         Player m_answeringPlayer;
         Player answeringPlayer {
@@ -66,7 +64,7 @@ namespace GossipGang {
 
         public void Bind(PlayerEntry entry) {
             this.entry = entry;
-            answeringPlayer = entry.player;
+            answeringPlayer = entry.askingPlayer;
 
             dateText.text = entry.dateString;
             descriptionText.text = entry.day.description;
