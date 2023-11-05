@@ -33,7 +33,7 @@ namespace GossipGang {
             Destroy(gameObject);
 
             if (answer == Answer.Yes) {
-
+                GameManager.state.RestoreSecrets();
             }
         }
     }
