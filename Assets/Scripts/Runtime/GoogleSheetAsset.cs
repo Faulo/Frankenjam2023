@@ -161,7 +161,6 @@ namespace GossipGang {
                 UnityEditor.EditorUtility.SetDirty(day);
             }
 
-            UnityEditor.EditorUtility.SetDirty(this);
             UnityEditor.AssetDatabase.SaveAssets();
         }
 #endif
