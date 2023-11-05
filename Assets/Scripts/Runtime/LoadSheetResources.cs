@@ -9,6 +9,10 @@ namespace GossipGang {
 
         IEnumerator Start() {
             foreach (var sheet in sheets) {
+                foreach (var day in sheet.days) {
+                    GameManager.instance.AddDay(day);
+                }
+
                 yield return sheet.DownloadSheet_Co();
 
                 foreach (var day in sheet.days) {

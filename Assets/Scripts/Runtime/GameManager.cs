@@ -36,9 +36,8 @@ namespace GossipGang {
         public int dayCount => m_days.Count;
         public IReadOnlyCollection<Day> days => m_days.Values;
         public void AddDay(Day day) {
-            if (m_days.TryAdd(day.id, day)) {
-                onAddDay?.Invoke(day);
-            }
+            m_days[day.id] = day;
+            onAddDay?.Invoke(day);
         }
 
         int activePlayerIndex = 0;
