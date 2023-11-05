@@ -44,11 +44,11 @@ namespace GossipGang {
 
             for (int i = 0; i < entries.Count; i++) {
                 var (day, date) = entries[i];
-                m_entries.Add(new(day, date, GetPlayer(i), players));
+                m_entries.Add(new(day, date, GetPlayerByIndex(i), players));
             }
         }
 
-        Player GetPlayer(int index) => players.ElementAt(index % playerCount);
+        public Player GetPlayerByIndex(int index) => players.ElementAt(index % playerCount);
 
         public void AdvancePlayer() {
             askingPlayerIndex = (askingPlayerIndex + 1) % playerCount;
@@ -59,5 +59,16 @@ namespace GossipGang {
         }
 
         void AdvanceRound() => currentRound++;
+
+        public IEnumerable<Player> playersWithSecrets => players
+            .Where(p => !removedSecrets.Contains(p));
+
+        readonly HashSet<Player> removedSecrets = new();
+
+        public void RemoveSecret(Player player) {
+            removedSecrets.Add(player);
+        }
+
+        public void AwardPointTo(Player player) => m_points[player]++;
     }
 }

@@ -9,6 +9,10 @@ namespace GossipGang {
         [SerializeField]
         GameObject personPrefab;
 
+        [Space]
+        [SerializeField]
+        UIState assignSecretState;
+
         Player pickedPlayer;
 
         void Start() {
@@ -22,8 +26,17 @@ namespace GossipGang {
         public override IEnumerator WaitForDone() {
             yield return new WaitWhile(() => pickedPlayer is null);
 
-            Debug.Log(pickedPlayer.nameWithColor);
             Destroy(gameObject);
+
+            GameManager.state.RemoveSecret(pickedPlayer);
+
+            foreach (var player in GameManager.state.players) {
+                var instance = Instantiate(assignSecretState);
+
+                instance.BindTo(player);
+
+                yield return instance.WaitForDone();
+            }
         }
     }
 }

@@ -1,5 +1,127 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8914410314154838648
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8fac4318f03ac2947b8ec74e36a147df, type: 3}
+  m_Name: KnntestdudirvorstellenmitdemrExbefreundetzubleiben
+  m_EditorClassIdentifier: 
+  m_tags: 04000000
+  m_category: 0
+  m_title: title
+  m_description: "Francis\u2019 beste Freundin war wohl nicht einfach komplett grundlos
+    so fies zu Henry. Wie es sich herausgestellt hat, ist die gute Michelle nicht
+    nur die beste Freundin sondern auch die Ex-Freundin. Henry ist au\xDFer sich
+    vor Wut, dass Francis ihm das nicht fr\xFCher erz\xE4hlt hat und zus\xE4tzlich,
+    dass Francis Michelles Verhalten auch einfach toleriert. Dabei wirkt sie viel
+    eher wie eine eifers\xFCchtige Partnerin und weniger wie eine besorgte beste
+    Freundin."
+  m_question: "K\xF6nntest du dir vorstellen mit dem*r Ex befreundet zu bleiben?"
+  m_answers:
+  - Auf jeden Fall!
+  - "Ich w\xFCrde es mir w\xFCnschen."
+  - Kommt auf die Trennung an.
+  - Das geht niemals gut.
+  m_start: 638229024000000000
+  m_end: 638309376000000000
+  m_image: {fileID: 21300000, guid: 268a148b8c4ad6d44bc5629f8eb8eb48, type: 3}
+--- !u!114 &-8482879899817368415
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8fac4318f03ac2947b8ec74e36a147df, type: 3}
+  m_Name: HastduschonmalbetrunkeneineStraftatbegangen
+  m_EditorClassIdentifier: 
+  m_tags: 00000000
+  m_category: 0
+  m_title: title
+  m_description: "Noa betrunken ist absolut unm\xF6glich und heute hat dey es erst
+    recht wieder unter Beweis gestellt. Dey hat einfach ein Stra\xDFenschild umgetreten.
+    Ich verstehe absolut nicht, wie man auf so eine d\xE4mliche Idee kommt, aber
+    keine Ahnung\u2026 Das ist wohl einfach Noa, wie dey leibt und lebt. Gr\xF6\xDFtes
+    Problem war dann nur, als Leute auf uns aufmerksam wurden und die Polizei gerufen
+    haben. Ich wei\xDF nicht, wann ich das letzte Mal so schnell gerannt bin."
+  m_question: Hast du schon mal betrunken eine Straftat begangen?
+  m_answers:
+  - Ja, ich habe was geklaut.
+  - "Ja, eine Pr\xFCgelei angefangen."
+  - "Nein, daf\xFCr trinke ich nicht genug."
+  - "Daf\xFCr brauche ich keinen Alkohol."
+  m_start: 638310240000000000
+  m_end: 638388000000000000
+  m_image: {fileID: 21300000, guid: 268a148b8c4ad6d44bc5629f8eb8eb48, type: 3}
+--- !u!114 &-8207620903673512548
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8fac4318f03ac2947b8ec74e36a147df, type: 3}
+  m_Name: WashltstduvomThemaEhe
+  m_EditorClassIdentifier: 
+  m_tags: 04000000
+  m_category: 0
+  m_title: title
+  m_description: "Henry wird Noa das im Lebtag nicht mehr vergessen lag, wie falsch
+    dey lag. Ein paar Monate nachdem Safiya ihre Beziehung nach der Pause fortgesetzt
+    hat, kommt sie mit den n\xE4chsten gro\xDFen Neuigkeiten an. Sie ist einfach
+    seit heute Mittag verlobt. Da muss ich wirklich ganz ehrlich sein, das hat wirklich
+    niemand kommen sehen. Entsprechend schockiert war auch die Stille, nachdem Safiya
+    uns das erz\xE4hlt hat."
+  m_question: "Was h\xE4ltst du vom Thema Ehe?"
+  m_answers:
+  - Altmodischer Quatsch
+  - "Ehe und Familie geh\xF6ren zusammen"
+  - Guter Steuervorteil
+  - Zu teuer
+  m_start: 638229024000000000
+  m_end: 638309376000000000
+  m_image: {fileID: 21300000, guid: 268a148b8c4ad6d44bc5629f8eb8eb48, type: 3}
+--- !u!114 &-7025403150043688349
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8fac4318f03ac2947b8ec74e36a147df, type: 3}
+  m_Name: WelcheGedankenhastduzudeinerberuflichenZukunft
+  m_EditorClassIdentifier: 
+  m_tags: 02000000
+  m_category: 0
+  m_title: title
+  m_description: "Man denkt immer so gerne daran zur\xFCck, wie einfach man es hatte
+    w\xE4hrend der Schulzeit. Die gr\xF6\xDFten Probleme waren Hausaufgaben, Noten
+    und fr\xFCh aufstehen. Zumindest sind das die Dinge, \xFCber die man am meisten
+    redet. Aber wenn ich an die Zeit denke, wo ich entscheiden musste, was ich nach
+    der Schule machen will, mit dem Druck, dass ich das vielleicht den Rest meines
+    Lebens machen werde\u2026 Ich wei\xDF nicht, da habe ich deutlich lieber das
+    Problem zu entscheiden, was ich denn heute Abend kochen m\xF6chte."
+  m_question: Welche Gedanken hast du zu deiner beruflichen Zukunft?
+  m_answers:
+  - Daran denke ich momentan nicht.
+  - Wer Macht hat, bekommt immer Arbeit.
+  - Etwas mulmig ist mir schon.
+  - Ich heirate eine reiche Person.
+  m_start: 638229024000000000
+  m_end: 638309376000000000
+  m_image: {fileID: 21300000, guid: 268a148b8c4ad6d44bc5629f8eb8eb48, type: 3}
 --- !u!114 &-4436255132289471204
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28,6 +150,65 @@ MonoBehaviour:
   - "Nichts davon. Ich bin immer die Person, die sich um die Trunkenbolde k\xFCmmert."
   m_start: 638148672000000000
   m_end: 638228160000000000
+  m_image: {fileID: 21300000, guid: 268a148b8c4ad6d44bc5629f8eb8eb48, type: 3}
+--- !u!114 &-3843956175984191900
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8fac4318f03ac2947b8ec74e36a147df, type: 3}
+  m_Name: WurdestduinderSchulegemobbtoderwarstduderdieMobberin
+  m_EditorClassIdentifier: 
+  m_tags: 02000000
+  m_category: 0
+  m_title: title
+  m_description: "Noa ist ein bisschen niedergeschlagen die letzten Tage. Ein Kind
+    in deren Klasse wird von den Mitsch\xFClern geh\xE4nselt und das erinnert dey
+    stark an deren eigene Schulzeit damals. Noa versucht deren bestes, um das Mobbing
+    zu unterbinden, aber dey wei\xDF selbst, dass es nur so viel gibt, das Lehrer*innen
+    machen k\xF6nnen. Trotzdem tut es dey im Herzen weh."
+  m_question: Wurdest du in der Schule gemobbt oder warst du der*die Mobber*in?
+  m_answers:
+  - "Wurde l\xE4nger gemobbt."
+  - Wurde ein bisschen gemobbt.
+  - War der*die Mobber*in.
+  - Weder noch.
+  m_start: 638229024000000000
+  m_end: 638309376000000000
+  m_image: {fileID: 21300000, guid: 268a148b8c4ad6d44bc5629f8eb8eb48, type: 3}
+--- !u!114 &-3325849445691795106
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8fac4318f03ac2947b8ec74e36a147df, type: 3}
+  m_Name: KamstduschonmalzusptwegenSex
+  m_EditorClassIdentifier: 
+  m_tags: 01000000
+  m_category: 0
+  m_title: title
+  m_description: "Safiya ist die schlechteste L\xFCgnerin der Welt. Komplett zerzaust
+    und durcheinander kommt sie zu sp\xE4t zu unserer Verabredung und versucht mir
+    allen ernstes wei\xDF zu machen, dass sie noch schnell ihr Fahrrad aufpumpen
+    musste, weil ihr Reifen platt war. Safiya f\xE4hrt kein Fahrrad. Sie hasst das.
+    Worauf ich sie auch anspreche und sie dann verlegen zugibt, dass ihr Freund sie
+    noch aufgehalten hat. Gekommen ist sie dann wohl anscheinend in mehreren Hinsichten."
+  m_question: "Kamst du schonmal zu sp\xE4t wegen Sex?"
+  m_answers:
+  - "\xD6fter als ich zugeben m\xF6chte."
+  - Joar, ist schonmal vorgekommen.
+  - "Nein, f\xE4nde ich aber lustig."
+  - "Nein, w\xE4re mir auch sehr unangenehm."
+  m_start: 638229024000000000
+  m_end: 638309376000000000
   m_image: {fileID: 21300000, guid: 268a148b8c4ad6d44bc5629f8eb8eb48, type: 3}
 --- !u!114 &-2372145471294516559
 MonoBehaviour:
@@ -106,6 +287,68 @@ MonoBehaviour:
   library: {fileID: 11400000, guid: 34eb03dcc88f80c4ba1eea39e35eb958, type: 2}
   id: 1gfnagqw3ySRh9GeTb3Emuy3RAd96msUj7WpWPA0rB2M
   sheet: Marie
+--- !u!114 &253262175589537779
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8fac4318f03ac2947b8ec74e36a147df, type: 3}
+  m_Name: HattestduschonmaloderwrdestduaneinemffentlichenOrtSexhaben
+  m_EditorClassIdentifier: 
+  m_tags: 01000000
+  m_category: 0
+  m_title: title
+  m_description: "Henry hat einen Sinn f\xFCr wirklich seltsame Dinge. Wir haben
+    heute entspannt einen Tag am See zusammen verbracht und uns wirklich nichts B\xF6ses
+    dabei gedacht, bis Henry uns auf ein eher abgelegenes Geb\xFCsch aufmerksam macht,
+    das sich sehr bedenklich bewegt. Betont unauff\xE4llig haben wir das mal im Auge
+    behalten, bis irgendwann ein Paar dahinter hervorkommt mit verd\xE4chtig zerzausten
+    Haaren\u2026"
+  m_question: "Hattest du schon mal oder w\xFCrdest du an einem \xF6ffentlichen Ort
+    Sex haben?"
+  m_answers:
+  - Ja, wenn Leute zuschauen, turnt es mich nur noch mehr an.
+  - Ja, aber nur, wenn weit und breit keine weitere Menschenseele ist.
+  - Ja, bei einer Party auf der Toilette.
+  - "Nein, der Devil\u2019s Tango ist Privatsache."
+  m_start: 638229024000000000
+  m_end: 638309376000000000
+  m_image: {fileID: 21300000, guid: 268a148b8c4ad6d44bc5629f8eb8eb48, type: 3}
+--- !u!114 &611799025044674875
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8fac4318f03ac2947b8ec74e36a147df, type: 3}
+  m_Name: HastduschonmaljemandengedatetderdieimGefngnissitzt
+  m_EditorClassIdentifier: 
+  m_tags: 04000000
+  m_category: 0
+  m_title: title
+  m_description: "Noa hat heute einfach ganz nebenbei beim Spieleabend erz\xE4hlt,
+    wie dey eine Zeit lang jemanden im Gef\xE4ngnis gedated hat. Die Person sa\xDF
+    wohl wegen kleinen Delikten, die sich \xFCber die Zeit wohl sehr angeh\xE4uft
+    haben, wie unter anderem Diebstahl, und dann auch nicht sehr lange, aber trotzdem.
+    Was f\xFCr ein wilder Gedanke jemanden zu daten, der im Gef\xE4ngnis sitzt. Klar,
+    nur weil jemand im Gef\xE4ngnis ist, ist man kein schlechter Mensch - auf gar
+    keinen Fall -, aber sie hatten auch gerade erst angefangen zu daten."
+  m_question: "Hast du schon mal jemanden gedatet, der*die im Gef\xE4ngnis sitzt?"
+  m_answers:
+  - "Nein, das w\xFCrde mir nicht einfallen."
+  - Vielleicht, kommt auf die Straftat an.
+  - Ja, aber nur bei einem kleinen Verbrechen.
+  - Ja, ich stehe auf bad boys/girls - I can fix them.
+  m_start: 638229024000000000
+  m_end: 638309376000000000
+  m_image: {fileID: 21300000, guid: 268a148b8c4ad6d44bc5629f8eb8eb48, type: 3}
 --- !u!114 &1389385538057304050
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -135,6 +378,66 @@ MonoBehaviour:
   - Nein, ich sehe mich da generell gar nicht.
   m_start: 638148672000000000
   m_end: 638228160000000000
+  m_image: {fileID: 21300000, guid: 268a148b8c4ad6d44bc5629f8eb8eb48, type: 3}
+--- !u!114 &1918031182604893041
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8fac4318f03ac2947b8ec74e36a147df, type: 3}
+  m_Name: WrdestduversuchensiezuverkuppelnWiestehstduzudemThema
+  m_EditorClassIdentifier: 
+  m_tags: 04000000
+  m_category: 0
+  m_title: title
+  m_description: "Ein bisschen Mitleid habe ich mit Stella und Patrick schon. Gef\xFChlt
+    jeder auf der Arbeit merkt, dass sie Interesse aneinander haben, da sie seit
+    Wochen umeinander herumt\xE4nzeln. Wahrscheinlich haben sie schon gegenseitig
+    gemerkt, was die andere Person empfindet, aber keiner von beiden macht den ersten
+    Schritt - und wer kann es ihnen ver\xFCbeln? Wer will schon gerne eine Romanze
+    auf der Arbeit starten? Das kann doch nur schief gehen."
+  m_question: "W\xFCrdest du versuchen sie zu verkuppeln? Wie stehst du zu dem Thema?"
+  m_answers:
+  - 'Geht gar nicht. '
+  - Auf jeden Fall!
+  - Ja, aber bitte vorher besprechen.
+  - "Will ich einfach pers\xF6nlich nichts davon wissen."
+  m_start: 638229024000000000
+  m_end: 638309376000000000
+  m_image: {fileID: 21300000, guid: 268a148b8c4ad6d44bc5629f8eb8eb48, type: 3}
+--- !u!114 &2454588274936560561
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8fac4318f03ac2947b8ec74e36a147df, type: 3}
+  m_Name: WiesiehtderperfekteFestivaltagfrdichaus
+  m_EditorClassIdentifier: 
+  m_tags: 00000000
+  m_category: 0
+  m_title: title
+  m_description: "Ich glaube, ich gehe mit niemandem lieber auf Festivals als mit
+    Noa. Es f\xE4ngt an als ganz normaler Festivaltag und am Abend befindest du dich
+    pl\xF6tzlich auf einem leeren Fleck vom Campingbereich und beobachtest mit ein
+    paar Meter Entfernung den Campingkocher mit einer geschlossenen Dose Ravioli
+    drauf. W\xE4hrend der Campingkocher auf voller Stufe l\xE4uft. Die Explosion
+    am Ende war deutlich weniger spannend als die ganze Wartezeit bis dahin."
+  m_question: "Wie sieht der perfekte Festivaltag f\xFCr dich aus?"
+  m_answers:
+  - Alkohol von morgens bis abends.
+  - Den ganzen Tag Musik und tanzen.
+  - Chaos veranstalten.
+  - Leute auf dem Zeltplatz kennenlernen.
+  m_start: 638229024000000000
+  m_end: 638309376000000000
   m_image: {fileID: 21300000, guid: 268a148b8c4ad6d44bc5629f8eb8eb48, type: 3}
 --- !u!114 &3527134714977749714
 MonoBehaviour:
