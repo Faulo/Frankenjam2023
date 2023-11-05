@@ -78,5 +78,7 @@ namespace GossipGang {
             Debug.Log($"Awarding point to {player}");
             m_points[player]++;
         }
+
+        public void RestoreSecrets() => removedSecrets.Clear();
     }
 }
