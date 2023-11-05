@@ -38,6 +38,7 @@ namespace GossipGang {
                     yield return ("Game.currentRound", GameManager.state.currentRound);
                     yield return ("Game.lastRound", GameManager.state.lastRound);
                     yield return ("Game.firstPlayer", string.Join(", ", GameManager.state.firstPlayers.Select(p => p.nameWithColor)));
+                    yield return ("Game.secretPlayer", string.Join(", ", GameManager.state.playersWithSecrets.Select(p => p.nameWithColor)));
                     yield return ("Game.playerCount", GameManager.state.playerCount);
                 }
             }
