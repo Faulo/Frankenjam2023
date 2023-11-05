@@ -1,7 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 using Slothsoft.UnityExtensions;
-using UnityEngine;
 
 namespace GossipGang {
     sealed class GameState {
@@ -75,7 +74,6 @@ namespace GossipGang {
         public bool IsSecretAvailable(Player player) => !removedSecrets.Contains(player);
 
         public void AwardPointTo(Player player) {
-            Debug.Log($"Awarding point to {player}");
             m_points[player]++;
         }
 
