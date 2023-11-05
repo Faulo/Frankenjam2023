@@ -60,7 +60,7 @@ MonoBehaviour:
   - "Daf\xFCr brauche ich keinen Alkohol."
   m_start: 638310240000000000
   m_end: 638388000000000000
-  m_image: {fileID: 21300000, guid: 268a148b8c4ad6d44bc5629f8eb8eb48, type: 3}
+  m_image: {fileID: 21300000, guid: 60a09ca2d9ca2f849b8fb9e68e714e40, type: 3}
 --- !u!114 &-8207620903673512548
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -183,7 +183,7 @@ MonoBehaviour:
   - Mit offenem Mund stehen bleiben.
   m_start: 638310240000000000
   m_end: 638388000000000000
-  m_image: {fileID: 21300000, guid: 268a148b8c4ad6d44bc5629f8eb8eb48, type: 3}
+  m_image: {fileID: 21300000, guid: 5b1cdd80cfb07174f943f1fef8511f00, type: 3}
 --- !u!114 &-5374598563832295307
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -361,7 +361,7 @@ MonoBehaviour:
   - "Nein, zum Gl\xFCck nicht."
   m_start: 638148672000000000
   m_end: 638228160000000000
-  m_image: {fileID: 21300000, guid: 268a148b8c4ad6d44bc5629f8eb8eb48, type: 3}
+  m_image: {fileID: 21300000, guid: ef2eae2014f6de744a8fe3e48399e690, type: 3}
 --- !u!114 &-2350748833095173414
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -801,7 +801,7 @@ MonoBehaviour:
   - Leute auf dem Zeltplatz kennenlernen.
   m_start: 638229024000000000
   m_end: 638309376000000000
-  m_image: {fileID: 21300000, guid: 268a148b8c4ad6d44bc5629f8eb8eb48, type: 3}
+  m_image: {fileID: 21300000, guid: 7b48e137dd85b8748b394722b1de62d5, type: 3}
 --- !u!114 &3527134714977749714
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -951,7 +951,7 @@ MonoBehaviour:
   - Kontakt abbrechen, das ist mir zu viel Drama.
   m_start: 638166816000000000
   m_end: 638228160000000000
-  m_image: {fileID: 21300000, guid: 268a148b8c4ad6d44bc5629f8eb8eb48, type: 3}
+  m_image: {fileID: 21300000, guid: 37b01eca74441af478a2b8f022187bef, type: 3}
 --- !u!114 &4914865578710621282
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -19,7 +19,7 @@ namespace GossipGang {
         public readonly int playerCount = 0;
 
         public IEnumerable<Day> days => entries.Select(entry => entry.day);
-        public IEnumerable<Player> players => points.Keys;
+        public IReadOnlyList<Player> players { get; private set; }
         public IEnumerable<Player> firstPlayers {
             get {
                 int max = points.Values.Max();
@@ -35,6 +35,8 @@ namespace GossipGang {
                     playerCount++;
                 }
             }
+
+            this.players = m_points.Keys.ToList();
 
             var entries = days
                 .Shuffle()

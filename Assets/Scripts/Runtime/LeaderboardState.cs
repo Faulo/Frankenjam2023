@@ -17,7 +17,7 @@ namespace GossipGang {
         bool isDone;
 
         void Start() {
-            foreach (var player in GameManager.state.points.OrderByDescending(keyval => keyval.Value)) {
+            foreach (var player in GameManager.state.points.OrderByDescending(keyval => keyval.Value).Select(keyval => keyval.Key)) {
                 var instance = Instantiate(secretPrefab, secretContainer);
                 instance.BindTo(player);
             }
