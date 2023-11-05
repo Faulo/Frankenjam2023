@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using MyBox;
 using Slothsoft.UnityExtensions;
 using UnityEngine;
@@ -8,7 +9,7 @@ using UnityEngine;
 namespace GossipGang {
     sealed class GameManager : MonoBehaviour {
         public static GameManager instance;
-        public static event Action<Day> onAddDay;
+        public static event Action onChangeDays;
         public static event Action<Player> onAddPlayer;
 
         public static GameState state;
@@ -28,6 +29,7 @@ namespace GossipGang {
                 [tag] = value
             };
             allowedTags.SetItems(dictionary);
+            RaiseDayChange();
         }
 
         [Separator]
@@ -47,15 +49,19 @@ namespace GossipGang {
         UIState showDaysState;
 
         readonly Dictionary<string, Day> m_days = new();
-        int dayCount => m_days.Count;
-        public IReadOnlyCollection<Day> allDays => m_days.Values;
+        void RaiseDayChange() {
+            allDays = m_days
+                .Values
+                .Where(day => allowedCategories.TryGetValue(day.category, out bool enabled) && enabled)
+                .Where(day => day.tags.Count == 0 || day.tags.All(t => allowedTags.TryGetValue(t, out bool enabled) && enabled))
+                .ToList();
+            onChangeDays?.Invoke();
+        }
+        public int dayCount => allDays.Count;
+        public IReadOnlyCollection<Day> allDays { get; private set; }
         public void AddDay(Day day) {
-            if (!allowedCategories[day.category]) {
-                return;
-            }
-
             m_days[day.name] = day;
-            onAddDay?.Invoke(day);
+            RaiseDayChange();
         }
 
         readonly List<Player> m_players = new();
