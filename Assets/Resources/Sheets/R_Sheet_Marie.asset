@@ -80,7 +80,7 @@ MonoBehaviour:
   - Das wollen alle.
   m_start: 638310240000000000
   m_end: 638388000000000000
-  m_image: {fileID: 21300000, guid: 268a148b8c4ad6d44bc5629f8eb8eb48, type: 3}
+  m_image: {fileID: 21300000, guid: 91bc808cc980b05458eab414128cbecb, type: 3}
 --- !u!114 &-8006085042016209226
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -110,7 +110,7 @@ MonoBehaviour:
   - Schlechte Hygiene
   m_start: 638310240000000000
   m_end: 638388000000000000
-  m_image: {fileID: 21300000, guid: 268a148b8c4ad6d44bc5629f8eb8eb48, type: 3}
+  m_image: {fileID: 21300000, guid: 91bc808cc980b05458eab414128cbecb, type: 3}
 --- !u!114 &-7877572938678464618
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -141,7 +141,7 @@ MonoBehaviour:
   - Prominente*r
   m_start: 638310240000000000
   m_end: 638388000000000000
-  m_image: {fileID: 21300000, guid: 268a148b8c4ad6d44bc5629f8eb8eb48, type: 3}
+  m_image: {fileID: 21300000, guid: 91bc808cc980b05458eab414128cbecb, type: 3}
 --- !u!114 &-7548295542630893673
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -196,7 +196,7 @@ MonoBehaviour:
   - Ein Bereich exzellent, sonst nur bestanden.
   m_start: 638148672000000000
   m_end: 638228160000000000
-  m_image: {fileID: 21300000, guid: 268a148b8c4ad6d44bc5629f8eb8eb48, type: 3}
+  m_image: {fileID: 21300000, guid: 91bc808cc980b05458eab414128cbecb, type: 3}
 --- !u!114 &-6770560825309897858
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -227,7 +227,7 @@ MonoBehaviour:
   - Kontakt abbrechen, das ist mir zu viel Drama.
   m_start: 638166816000000000
   m_end: 638228160000000000
-  m_image: {fileID: 21300000, guid: 268a148b8c4ad6d44bc5629f8eb8eb48, type: 3}
+  m_image: {fileID: 21300000, guid: 91bc808cc980b05458eab414128cbecb, type: 3}
 --- !u!114 &-6358677075951723540
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -286,7 +286,7 @@ MonoBehaviour:
   - Nein danke, ich kann damit einfach nichts anfangen.
   m_start: 638388864000000000
   m_end: 638147808000000000
-  m_image: {fileID: 21300000, guid: 268a148b8c4ad6d44bc5629f8eb8eb48, type: 3}
+  m_image: {fileID: 21300000, guid: 91bc808cc980b05458eab414128cbecb, type: 3}
 --- !u!114 &-5113335842868806925
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -316,7 +316,7 @@ MonoBehaviour:
   - "Die Person, die immer vortr\xE4gt, weil sich keiner traut."
   m_start: 638388864000000000
   m_end: 638147808000000000
-  m_image: {fileID: 21300000, guid: 268a148b8c4ad6d44bc5629f8eb8eb48, type: 3}
+  m_image: {fileID: 21300000, guid: 91bc808cc980b05458eab414128cbecb, type: 3}
 --- !u!114 &-5025133763835658453
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -347,7 +347,7 @@ MonoBehaviour:
   - "Sie konfrontieren, da es vielleicht nur ein Missverst\xE4ndnis ist."
   m_start: 638148672000000000
   m_end: 638228160000000000
-  m_image: {fileID: 21300000, guid: 268a148b8c4ad6d44bc5629f8eb8eb48, type: 3}
+  m_image: {fileID: 21300000, guid: 91bc808cc980b05458eab414128cbecb, type: 3}
 --- !u!114 &-4320776359527923903
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -377,7 +377,7 @@ MonoBehaviour:
   - Mix aus Erinnerungen.
   m_start: 638388864000000000
   m_end: 638147808000000000
-  m_image: {fileID: 21300000, guid: 268a148b8c4ad6d44bc5629f8eb8eb48, type: 3}
+  m_image: {fileID: 21300000, guid: 91bc808cc980b05458eab414128cbecb, type: 3}
 --- !u!114 &-4041503627928469036
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -403,7 +403,7 @@ MonoBehaviour:
   m_answers: []
   m_start: 638229024000000000
   m_end: 638309376000000000
-  m_image: {fileID: 21300000, guid: 268a148b8c4ad6d44bc5629f8eb8eb48, type: 3}
+  m_image: {fileID: 21300000, guid: 91bc808cc980b05458eab414128cbecb, type: 3}
 --- !u!114 &-3901426238344047573
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -430,7 +430,7 @@ MonoBehaviour:
   m_answers: []
   m_start: 638388864000000000
   m_end: 638147808000000000
-  m_image: {fileID: 21300000, guid: 268a148b8c4ad6d44bc5629f8eb8eb48, type: 3}
+  m_image: {fileID: 21300000, guid: 91bc808cc980b05458eab414128cbecb, type: 3}
 --- !u!114 &-3399425720013908742
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -486,7 +486,7 @@ MonoBehaviour:
   - "\xDCberbewertet."
   m_start: 638310240000000000
   m_end: 638388000000000000
-  m_image: {fileID: 21300000, guid: 268a148b8c4ad6d44bc5629f8eb8eb48, type: 3}
+  m_image: {fileID: 21300000, guid: 91bc808cc980b05458eab414128cbecb, type: 3}
 --- !u!114 &-2795478770607515559
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -514,7 +514,7 @@ MonoBehaviour:
   m_answers: []
   m_start: 638388864000000000
   m_end: 638147808000000000
-  m_image: {fileID: 21300000, guid: 268a148b8c4ad6d44bc5629f8eb8eb48, type: 3}
+  m_image: {fileID: 21300000, guid: 91bc808cc980b05458eab414128cbecb, type: 3}
 --- !u!114 &-2687254112893461656
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -542,7 +542,7 @@ MonoBehaviour:
   m_answers: []
   m_start: 638148672000000000
   m_end: 638228160000000000
-  m_image: {fileID: 21300000, guid: 268a148b8c4ad6d44bc5629f8eb8eb48, type: 3}
+  m_image: {fileID: 21300000, guid: 91bc808cc980b05458eab414128cbecb, type: 3}
 --- !u!114 &-2578847963491323269
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -573,7 +573,7 @@ MonoBehaviour:
   - "Hormonfreie Verh\xFCtung."
   m_start: 638388864000000000
   m_end: 638147808000000000
-  m_image: {fileID: 21300000, guid: 268a148b8c4ad6d44bc5629f8eb8eb48, type: 3}
+  m_image: {fileID: 21300000, guid: 91bc808cc980b05458eab414128cbecb, type: 3}
 --- !u!114 &-2429933916085825650
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -634,7 +634,7 @@ MonoBehaviour:
   - Nein, einmal und nie wieder.
   m_start: 638310240000000000
   m_end: 638388000000000000
-  m_image: {fileID: 21300000, guid: 268a148b8c4ad6d44bc5629f8eb8eb48, type: 3}
+  m_image: {fileID: 21300000, guid: 91bc808cc980b05458eab414128cbecb, type: 3}
 --- !u!114 &-1652373750999350704
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -661,7 +661,7 @@ MonoBehaviour:
   m_answers: []
   m_start: 638148672000000000
   m_end: 638228160000000000
-  m_image: {fileID: 21300000, guid: 268a148b8c4ad6d44bc5629f8eb8eb48, type: 3}
+  m_image: {fileID: 21300000, guid: 91bc808cc980b05458eab414128cbecb, type: 3}
 --- !u!114 &-1408906637999385599
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -688,7 +688,7 @@ MonoBehaviour:
   m_answers: []
   m_start: 638388864000000000
   m_end: 638147808000000000
-  m_image: {fileID: 21300000, guid: 268a148b8c4ad6d44bc5629f8eb8eb48, type: 3}
+  m_image: {fileID: 21300000, guid: 91bc808cc980b05458eab414128cbecb, type: 3}
 --- !u!114 &-1236388257975944866
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -718,7 +718,7 @@ MonoBehaviour:
   - Nein, Karriere geht immer vor.
   m_start: 638388864000000000
   m_end: 638147808000000000
-  m_image: {fileID: 21300000, guid: 268a148b8c4ad6d44bc5629f8eb8eb48, type: 3}
+  m_image: {fileID: 21300000, guid: 91bc808cc980b05458eab414128cbecb, type: 3}
 --- !u!114 &-1036252186914103972
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -747,7 +747,7 @@ MonoBehaviour:
   - Weder noch.
   m_start: 638229024000000000
   m_end: 638309376000000000
-  m_image: {fileID: 21300000, guid: 268a148b8c4ad6d44bc5629f8eb8eb48, type: 3}
+  m_image: {fileID: 21300000, guid: 91bc808cc980b05458eab414128cbecb, type: 3}
 --- !u!114 &-727955171694800619
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -778,7 +778,7 @@ MonoBehaviour:
   - Ja, durch neue Information
   m_start: 638148672000000000
   m_end: 638153856000000000
-  m_image: {fileID: 21300000, guid: 268a148b8c4ad6d44bc5629f8eb8eb48, type: 3}
+  m_image: {fileID: 21300000, guid: 92540c03e272c1d4caa1f91bd98d0b2a, type: 3}
 --- !u!114 &-575371503260824093
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -808,7 +808,7 @@ MonoBehaviour:
   - "Ne, \xFCberhaupt nicht."
   m_start: 638388864000000000
   m_end: 638147808000000000
-  m_image: {fileID: 21300000, guid: 268a148b8c4ad6d44bc5629f8eb8eb48, type: 3}
+  m_image: {fileID: 21300000, guid: 91bc808cc980b05458eab414128cbecb, type: 3}
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -876,7 +876,7 @@ MonoBehaviour:
   m_answers: []
   m_start: 638229024000000000
   m_end: 638309376000000000
-  m_image: {fileID: 21300000, guid: 268a148b8c4ad6d44bc5629f8eb8eb48, type: 3}
+  m_image: {fileID: 21300000, guid: 91bc808cc980b05458eab414128cbecb, type: 3}
 --- !u!114 &1310857752280532733
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -963,7 +963,7 @@ MonoBehaviour:
   - "Das Vorgl\xFChen."
   m_start: 638148672000000000
   m_end: 638228160000000000
-  m_image: {fileID: 21300000, guid: 268a148b8c4ad6d44bc5629f8eb8eb48, type: 3}
+  m_image: {fileID: 21300000, guid: 91bc808cc980b05458eab414128cbecb, type: 3}
 --- !u!114 &2590983315984745866
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -993,7 +993,7 @@ MonoBehaviour:
   - "Will ich einfach pers\xF6nlich nichts davon wissen."
   m_start: 638229024000000000
   m_end: 638309376000000000
-  m_image: {fileID: 21300000, guid: 268a148b8c4ad6d44bc5629f8eb8eb48, type: 3}
+  m_image: {fileID: 21300000, guid: 91bc808cc980b05458eab414128cbecb, type: 3}
 --- !u!114 &3369222382092044158
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1023,7 +1023,7 @@ MonoBehaviour:
   - Ne, da seh ich mich nicht.
   m_start: 638388864000000000
   m_end: 638147808000000000
-  m_image: {fileID: 21300000, guid: 268a148b8c4ad6d44bc5629f8eb8eb48, type: 3}
+  m_image: {fileID: 21300000, guid: 91bc808cc980b05458eab414128cbecb, type: 3}
 --- !u!114 &3604969402401549866
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1053,7 +1053,7 @@ MonoBehaviour:
   - "Keine*n Lehrer*in, aber daf\xFCr meine*n Dozent*in."
   m_start: 638388864000000000
   m_end: 638147808000000000
-  m_image: {fileID: 21300000, guid: 268a148b8c4ad6d44bc5629f8eb8eb48, type: 3}
+  m_image: {fileID: 21300000, guid: 91bc808cc980b05458eab414128cbecb, type: 3}
 --- !u!114 &3832394420789280347
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1084,7 +1084,7 @@ MonoBehaviour:
   - Praktisch Teil des Freundeskreises.
   m_start: 638388864000000000
   m_end: 638147808000000000
-  m_image: {fileID: 21300000, guid: 268a148b8c4ad6d44bc5629f8eb8eb48, type: 3}
+  m_image: {fileID: 21300000, guid: 91bc808cc980b05458eab414128cbecb, type: 3}
 --- !u!114 &3950124752593003557
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1114,7 +1114,7 @@ MonoBehaviour:
   - Nein, auf gar keinen Fall.
   m_start: 638310240000000000
   m_end: 638388000000000000
-  m_image: {fileID: 21300000, guid: 268a148b8c4ad6d44bc5629f8eb8eb48, type: 3}
+  m_image: {fileID: 21300000, guid: 91bc808cc980b05458eab414128cbecb, type: 3}
 --- !u!114 &4499741907850398410
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1145,7 +1145,7 @@ MonoBehaviour:
   - Das geht niemals gut.
   m_start: 638229024000000000
   m_end: 638309376000000000
-  m_image: {fileID: 21300000, guid: 268a148b8c4ad6d44bc5629f8eb8eb48, type: 3}
+  m_image: {fileID: 21300000, guid: 91bc808cc980b05458eab414128cbecb, type: 3}
 --- !u!114 &4551942187668711419
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1176,7 +1176,7 @@ MonoBehaviour:
   - Nein, wie unangenehm.
   m_start: 638388864000000000
   m_end: 638147808000000000
-  m_image: {fileID: 21300000, guid: 268a148b8c4ad6d44bc5629f8eb8eb48, type: 3}
+  m_image: {fileID: 21300000, guid: 91bc808cc980b05458eab414128cbecb, type: 3}
 --- !u!114 &4706961437569731558
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1207,7 +1207,7 @@ MonoBehaviour:
   - Ja, ich stehe auf bad boys/girls - I can fix them.
   m_start: 638229024000000000
   m_end: 638309376000000000
-  m_image: {fileID: 21300000, guid: 268a148b8c4ad6d44bc5629f8eb8eb48, type: 3}
+  m_image: {fileID: 21300000, guid: 91bc808cc980b05458eab414128cbecb, type: 3}
 --- !u!114 &4779982688192325190
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1351,7 +1351,7 @@ MonoBehaviour:
   m_answers: []
   m_start: 638229024000000000
   m_end: 638309376000000000
-  m_image: {fileID: 21300000, guid: 268a148b8c4ad6d44bc5629f8eb8eb48, type: 3}
+  m_image: {fileID: 21300000, guid: 91bc808cc980b05458eab414128cbecb, type: 3}
 --- !u!114 &7284544320246326729
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1377,7 +1377,7 @@ MonoBehaviour:
   m_answers: []
   m_start: 638388864000000000
   m_end: 638147808000000000
-  m_image: {fileID: 21300000, guid: 268a148b8c4ad6d44bc5629f8eb8eb48, type: 3}
+  m_image: {fileID: 21300000, guid: 91bc808cc980b05458eab414128cbecb, type: 3}
 --- !u!114 &7375848523079532228
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1407,7 +1407,7 @@ MonoBehaviour:
   - Zu teuer
   m_start: 638229024000000000
   m_end: 638309376000000000
-  m_image: {fileID: 21300000, guid: 268a148b8c4ad6d44bc5629f8eb8eb48, type: 3}
+  m_image: {fileID: 21300000, guid: 91bc808cc980b05458eab414128cbecb, type: 3}
 --- !u!114 &7794669705272873669
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1467,7 +1467,7 @@ MonoBehaviour:
   - "Nein, w\xE4re mir auch sehr unangenehm."
   m_start: 638229024000000000
   m_end: 638309376000000000
-  m_image: {fileID: 21300000, guid: 268a148b8c4ad6d44bc5629f8eb8eb48, type: 3}
+  m_image: {fileID: 21300000, guid: 91bc808cc980b05458eab414128cbecb, type: 3}
 --- !u!114 &8520445639488365695
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1497,7 +1497,7 @@ MonoBehaviour:
   - "\u2026 schmachtest du aus der Entfernung und zerdenkst absolut alles."
   m_start: 638148672000000000
   m_end: 638228160000000000
-  m_image: {fileID: 21300000, guid: 268a148b8c4ad6d44bc5629f8eb8eb48, type: 3}
+  m_image: {fileID: 21300000, guid: 91bc808cc980b05458eab414128cbecb, type: 3}
 --- !u!114 &9122375913437557591
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1528,7 +1528,7 @@ MonoBehaviour:
   - "Nein, der Devil\u2019s Tango ist Privatsache."
   m_start: 638229024000000000
   m_end: 638309376000000000
-  m_image: {fileID: 21300000, guid: 268a148b8c4ad6d44bc5629f8eb8eb48, type: 3}
+  m_image: {fileID: 21300000, guid: 91bc808cc980b05458eab414128cbecb, type: 3}
 --- !u!114 &9123882135734977891
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1559,7 +1559,7 @@ MonoBehaviour:
   - Ich heirate eine reiche Person.
   m_start: 638229024000000000
   m_end: 638309376000000000
-  m_image: {fileID: 21300000, guid: 268a148b8c4ad6d44bc5629f8eb8eb48, type: 3}
+  m_image: {fileID: 21300000, guid: 91bc808cc980b05458eab414128cbecb, type: 3}
 --- !u!114 &9168621679752729843
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1586,7 +1586,7 @@ MonoBehaviour:
   m_answers: []
   m_start: 638148672000000000
   m_end: 638228160000000000
-  m_image: {fileID: 21300000, guid: 268a148b8c4ad6d44bc5629f8eb8eb48, type: 3}
+  m_image: {fileID: 21300000, guid: 91bc808cc980b05458eab414128cbecb, type: 3}
 --- !u!114 &9208185539375305865
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1617,4 +1617,4 @@ MonoBehaviour:
   - Ja, ich bin einfach nicht hingegangen.
   m_start: 638310240000000000
   m_end: 638388000000000000
-  m_image: {fileID: 21300000, guid: 268a148b8c4ad6d44bc5629f8eb8eb48, type: 3}
+  m_image: {fileID: 21300000, guid: 91bc808cc980b05458eab414128cbecb, type: 3}
