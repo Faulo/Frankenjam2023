@@ -9,33 +9,39 @@ namespace GossipGang {
         public string dateString => date.ToShortDateString();
         public readonly Player askingPlayer;
         public readonly Dictionary<Player, int> playerAnswers;
-        public int answerCount => day.category switch {
-            DayCategory.Default => day.answers.Count,
-            DayCategory.AllPlayers => playerAnswers.Count,
-            DayCategory.AllPlayersExceptSpeaker => playerAnswers.Count - 1,
-            DayCategory.Event => 2,
-            _ => throw new NotImplementedException(),
-        };
-        public IEnumerable<string> answers => day.category switch {
-            DayCategory.Default => day
-                .answers,
-            DayCategory.AllPlayers => playerAnswers
-                .Keys
-                .Select(p => p.nameWithColor),
-            DayCategory.AllPlayersExceptSpeaker => playerAnswers
-                .Keys
-                .Where(p => p != askingPlayer)
-                .Select(p => p.nameWithColor),
-            DayCategory.Event => new[] { "I did the thing.", "I did not do the thing." },
-            _ => throw new NotImplementedException(),
-        };
+        public readonly int answerCount;
+        public IReadOnlyList<string> answers { get; }
 
         public PlayerEntry(Day day, DateTime date, Player askingPlayer, IEnumerable<Player> allPlayers) {
             this.day = day;
             this.date = date;
             this.askingPlayer = askingPlayer;
 
-            playerAnswers = allPlayers.ToDictionary(p => p, p => -1);
+            answers = day.category switch {
+                DayCategory.AllPlayers => playerAnswers
+                    .Keys
+                    .Select(p => p.nameWithColor)
+                    .ToList(),
+                DayCategory.AllPlayersExceptSpeaker => playerAnswers
+                    .Keys
+                    .Where(p => p != askingPlayer)
+                    .Select(p => p.nameWithColor)
+                    .ToList(),
+                DayCategory.Event => new[] {
+                    "I did the thing.",
+                    "I did not do the thing."
+                },
+                _ => day.answers
+            };
+
+            answerCount = answers.Count;
+
+            playerAnswers = day.category switch {
+                DayCategory.Event => new Dictionary<Player, int>() {
+                    [askingPlayer] = -1,
+                },
+                _ => allPlayers.ToDictionary(p => p, p => -1),
+            };
         }
 
         public void AwardScores() {

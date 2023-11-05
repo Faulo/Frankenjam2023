@@ -141,7 +141,7 @@ MonoBehaviour:
   allowedCategories:
     items:
     - key: 0
-      value: 0
+      value: 1
     - key: 1
       value: 1
     - key: 2
