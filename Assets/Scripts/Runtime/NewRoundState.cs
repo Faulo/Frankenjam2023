@@ -33,6 +33,8 @@ namespace GossipGang {
         public override IEnumerator WaitForDone() {
             yield return new WaitUntil(() => isDone);
 
+            entry.AwardScores();
+
             var instance = Instantiate(popupPrefab);
             instance.BindTo(askingPlayer);
             yield return instance.WaitForDone();

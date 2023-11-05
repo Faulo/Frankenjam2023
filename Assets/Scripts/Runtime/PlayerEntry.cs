@@ -18,5 +18,19 @@ namespace GossipGang {
 
             playerAnswers = allPlayers.ToDictionary(p => p, p => -1);
         }
+
+        public void AwardScores() {
+            int corretAnswer = playerAnswers[askingPlayer];
+            var correctPlayers = playerAnswers
+                .Where(kv => kv.Value == corretAnswer)
+                .Select(kv => kv.Key)
+                .ToList();
+
+            if (correctPlayers.Count > 1) {
+                foreach (var player in correctPlayers) {
+                    GameManager.state.AwardPointTo(player);
+                }
+            }
+        }
     }
 }
