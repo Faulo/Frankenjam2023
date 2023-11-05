@@ -4,14 +4,15 @@ using Slothsoft.UnityExtensions;
 
 namespace GossipGang {
     sealed class GameState {
-        public int currentRound = 1;
+        public int currentRound { get; private set; } = 1;
         public readonly int lastRound;
         readonly List<PlayerEntry> m_entries = new();
         public IReadOnlyList<PlayerEntry> entries => m_entries;
         public bool hasFinished => currentRound > lastRound;
 
-        public int askingPlayerIndex;
-        public PlayerEntry currentEntry => entries[askingPlayerIndex];
+        int askingPlayerIndex;
+        int currentEntryIndex => askingPlayerIndex + ((currentRound - 1) * playerCount);
+        public PlayerEntry currentEntry => entries[currentEntryIndex];
         readonly Dictionary<Player, int> m_points = new();
         public IReadOnlyDictionary<Player, int> points => m_points;
         public readonly int playerCount = 0;
