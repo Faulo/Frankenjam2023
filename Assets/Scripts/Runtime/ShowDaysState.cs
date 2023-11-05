@@ -1,4 +1,5 @@
 using System.Collections;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -20,7 +21,13 @@ namespace GossipGang {
         NextState state = NextState.Unknown;
 
         void Start() {
-            foreach (var day in GameManager.instance.allDays) {
+            var days = GameManager
+                .instance
+                .allDays
+                .Select(day => (day, day.randomDate))
+                .OrderBy(d => d.randomDate)
+                .Select(d => d.day);
+            foreach (var day in days) {
                 var instance = Instantiate(dayPrefab, dayContainer);
                 instance.BindTo(day);
             }

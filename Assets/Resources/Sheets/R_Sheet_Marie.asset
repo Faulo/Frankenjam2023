@@ -196,7 +196,7 @@ MonoBehaviour:
   - Ein Bereich exzellent, sonst nur bestanden.
   m_start: 638148672000000000
   m_end: 638228160000000000
-  m_image: {fileID: 21300000, guid: 91bc808cc980b05458eab414128cbecb, type: 3}
+  m_image: {fileID: 21300000, guid: ed30d3d4d8e9429438d4639ac0178ed7, type: 3}
 --- !u!114 &-6770560825309897858
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -227,7 +227,7 @@ MonoBehaviour:
   - Kontakt abbrechen, das ist mir zu viel Drama.
   m_start: 638166816000000000
   m_end: 638228160000000000
-  m_image: {fileID: 21300000, guid: 91bc808cc980b05458eab414128cbecb, type: 3}
+  m_image: {fileID: 21300000, guid: 37b01eca74441af478a2b8f022187bef, type: 3}
 --- !u!114 &-6358677075951723540
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -661,7 +661,7 @@ MonoBehaviour:
   m_answers: []
   m_start: 638148672000000000
   m_end: 638228160000000000
-  m_image: {fileID: 21300000, guid: 91bc808cc980b05458eab414128cbecb, type: 3}
+  m_image: {fileID: 21300000, guid: 16305acb014e800409a7c129fbd9fc32, type: 3}
 --- !u!114 &-1408906637999385599
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1497,7 +1497,7 @@ MonoBehaviour:
   - "\u2026 schmachtest du aus der Entfernung und zerdenkst absolut alles."
   m_start: 638148672000000000
   m_end: 638228160000000000
-  m_image: {fileID: 21300000, guid: 91bc808cc980b05458eab414128cbecb, type: 3}
+  m_image: {fileID: 21300000, guid: 13f6c095d36ae834cb1a4870f632382c, type: 3}
 --- !u!114 &9122375913437557591
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1586,7 +1586,7 @@ MonoBehaviour:
   m_answers: []
   m_start: 638148672000000000
   m_end: 638228160000000000
-  m_image: {fileID: 21300000, guid: 91bc808cc980b05458eab414128cbecb, type: 3}
+  m_image: {fileID: 21300000, guid: 92540c03e272c1d4caa1f91bd98d0b2a, type: 3}
 --- !u!114 &9208185539375305865
 MonoBehaviour:
   m_ObjectHideFlags: 0
