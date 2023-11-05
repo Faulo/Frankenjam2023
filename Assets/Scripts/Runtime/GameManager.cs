@@ -58,7 +58,7 @@ namespace GossipGang {
             onChangeDays?.Invoke();
         }
         public int dayCount => allDays.Count;
-        public IReadOnlyCollection<Day> allDays { get; private set; }
+        public IReadOnlyCollection<Day> allDays { get; private set; } = new List<Day>();
         public void AddDay(Day day) {
             m_days[day.name] = day;
             RaiseDayChange();
