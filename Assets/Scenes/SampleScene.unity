@@ -386,10 +386,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1184013426010036746, guid: 2d7aeecd6b034504c8230adf0ea6725a, type: 3}
-      propertyPath: roundMaximum
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5905875897873123065, guid: 2d7aeecd6b034504c8230adf0ea6725a, type: 3}
       propertyPath: m_Name
       value: P_GameManager

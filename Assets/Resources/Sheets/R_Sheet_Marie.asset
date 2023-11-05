@@ -184,37 +184,6 @@ MonoBehaviour:
   m_start: 638310240000000000
   m_end: 638388000000000000
   m_image: {fileID: 21300000, guid: 5b1cdd80cfb07174f943f1fef8511f00, type: 3}
---- !u!114 &-5483210867897785653
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8fac4318f03ac2947b8ec74e36a147df, type: 3}
-  m_Name: WieglaubstdubeurteilendeineFreundeinnendeineeigenenEltern
-  m_EditorClassIdentifier: 
-  m_tags: 04000000
-  m_category: 0
-  m_title: title
-  m_description: "Einfach so unangenehm! Heute beim Einkaufen habe ich einfach die
-    Mutter von Toni getroffen. Ich war so froh, nach der Trennung nichts mehr mit
-    dieser Frau zu tun haben zu m\xFCssen. Sie war zwar immer freundlich zu mir,
-    aber du hast so schnell gemerkt, wie viel Hass sich eigentlich dahinter versteckt
-    hat. Ehrlicherweise hat das komplett auf Gegenseitigkeit beruht. Eigentlich komme
-    ich gut mit den Familien meiner Partner*innen klar, aber die Frau ging einfach
-    gar nicht."
-  m_question: Wie glaubst du, beurteilen deine Freunde*innen deine eigenen Eltern?
-  m_answers:
-  - Ziemlich streng.
-  - Nett und herzlich.
-  - Helikopter.
-  - Praktisch Teil des Freundeskreises.
-  m_start: 638388864000000000
-  m_end: 638147808000000000
-  m_image: {fileID: 21300000, guid: 268a148b8c4ad6d44bc5629f8eb8eb48, type: 3}
 --- !u!114 &-5374598563832295307
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -543,36 +512,6 @@ MonoBehaviour:
   m_start: 638310240000000000
   m_end: 638388000000000000
   m_image: {fileID: 21300000, guid: 268a148b8c4ad6d44bc5629f8eb8eb48, type: 3}
---- !u!114 &-503198743358934297
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8fac4318f03ac2947b8ec74e36a147df, type: 3}
-  m_Name: WrdestdufrdieLiebedenJobwechseln
-  m_EditorClassIdentifier: 
-  m_tags: 04000000
-  m_category: 0
-  m_title: title
-  m_description: "Man merkt Stella deutlich an, dass sie unter der Fernbeziehung
-    leidet. Alle paar Wochen freut sie sich sehr darauf, Patrick endlich wieder zu
-    sehen. Wenn ich sie dann am folgenden Montag auf der Arbeit sehe und frage, wie
-    es war, dann ist die Antwort immer nur, dass es zu kurz war. Ich habe sie jetzt
-    des \xD6fteren dabei erwischt, wie sie sich nach offenen Stellen bei Patrick
-    in der N\xE4he umgeguckt hat."
-  m_question: "W\xFCrdest du f\xFCr die Liebe den Job wechseln?"
-  m_answers:
-  - "Ja, fr\xFCher oder sp\xE4ter passiert das eh."
-  - "Ja, Beziehung steht f\xFCr mich immer vor der Karriere."
-  - "Nur, wenn mein*e Partner*in dasselbe f\xFCr mich tun w\xFCrde."
-  - Nein, Karriere geht immer vor.
-  m_start: 638388864000000000
-  m_end: 638147808000000000
-  m_image: {fileID: 21300000, guid: 268a148b8c4ad6d44bc5629f8eb8eb48, type: 3}
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -619,37 +558,6 @@ MonoBehaviour:
   - "Nein, der Devil\u2019s Tango ist Privatsache."
   m_start: 638229024000000000
   m_end: 638309376000000000
-  m_image: {fileID: 21300000, guid: 268a148b8c4ad6d44bc5629f8eb8eb48, type: 3}
---- !u!114 &330179806455596416
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8fac4318f03ac2947b8ec74e36a147df, type: 3}
-  m_Name: WiestehstduzumThemaVerhtung
-  m_EditorClassIdentifier: 
-  m_tags: 04000000
-  m_category: 0
-  m_title: title
-  m_description: "Stella bekommt auch wirklich keine Pause. Erst das ganze Drama
-    mit der Fernbeziehung und dann noch mit Patricks Vorschlag, die Beziehung zu
-    \xF6ffnen. Als w\xE4re das nicht genug, hat sie mir jetzt noch erz\xE4hlt, dass
-    ihre Periode bereits zwei Wochen zu sp\xE4t ist. Sie hofft, dass es am ganzen
-    Stress mit Patrick liegt. Ich habe ihr schon geraten, einen Schwangerschaftstest
-    zu machen, aber sie hat viel zu viel Angst vor dem Ergebnis und schiebt es deswegen
-    noch auf. Was einfach nur super dumm ist."
-  m_question: "Wie stehst du zum Thema Verh\xFCtung?"
-  m_answers:
-  - Momentan bei mir nicht aktuell.
-  - "Verh\xFCtung mit Kalender."
-  - "Hormonelle Verh\xFCtung."
-  - "Hormonfreie Verh\xFCtung."
-  m_start: 638388864000000000
-  m_end: 638147808000000000
   m_image: {fileID: 21300000, guid: 268a148b8c4ad6d44bc5629f8eb8eb48, type: 3}
 --- !u!114 &419579852008603082
 MonoBehaviour:
@@ -921,36 +829,6 @@ MonoBehaviour:
   - "Das Vorgl\xFChen."
   m_start: 638148672000000000
   m_end: 638228160000000000
-  m_image: {fileID: 21300000, guid: 268a148b8c4ad6d44bc5629f8eb8eb48, type: 3}
---- !u!114 &4004525482184249589
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8fac4318f03ac2947b8ec74e36a147df, type: 3}
-  m_Name: WiestehstduzuoffenenBeziehungen
-  m_EditorClassIdentifier: 
-  m_tags: 04000000
-  m_category: 0
-  m_title: title
-  m_description: "In der Mittagspause hat Stella mich beiseite genommen und war au\xDFer
-    sich vor Wut. Patrick ist wohl kein Fan davon, dass sie zu ihm zieht, stattdessen
-    hat er eine offene Beziehung vorgeschlagen. Das w\xE4re wohl eine gute L\xF6sung,
-    dass man sich in der Zwischenzeit nicht so einsam f\xFChle bis man sich wieder
-    sieht. Stella ist der festen \xDCberzeugung, dass es nur eine l\xE4cherliche
-    Ausrede daf\xFCr ist, dass er andere Leute daten m\xF6chte."
-  m_question: Wie stehst du zu offenen Beziehungen?
-  m_answers:
-  - "Geh\xF6rt f\xFCr mich einfach dazu. Monogamie ist es nicht."
-  - "Ich w\xFCrde es schon mal ausprobieren."
-  - "Einmal gemacht, aber es war nichts f\xFCr mich."
-  - Ne, da seh ich mich nicht.
-  m_start: 638388864000000000
-  m_end: 638147808000000000
   m_image: {fileID: 21300000, guid: 268a148b8c4ad6d44bc5629f8eb8eb48, type: 3}
 --- !u!114 &4088230328287206774
 MonoBehaviour:
