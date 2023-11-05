@@ -19,21 +19,18 @@ namespace GossipGang {
         }
 
         void OnEnable() {
-            GameManager.onAddDay += HandleDay;
+            GameManager.onChangeDays += UpdateText;
         }
 
         void OnDisable() {
-            GameManager.onAddDay -= HandleDay;
+            GameManager.onChangeDays -= UpdateText;
         }
 
-        void HandleDay(Day day) {
-            UpdateText();
-        }
         IEnumerable<(string, object)> tokens {
             get {
                 yield return ("Application.name", Application.productName);
                 yield return ("Application.version", Application.version);
-                yield return ("Game.dayCount", GameManager.instance.allDays.Count);
+                yield return ("Game.dayCount", GameManager.instance.dayCount);
 
                 if (GameManager.state is not null) {
                     yield return ("Game.currentRound", GameManager.state.currentRound);

@@ -148,6 +148,16 @@ MonoBehaviour:
       value: 1
     - key: 3
       value: 1
+  allowedTags:
+    items:
+    - key: 0
+      value: 1
+    - key: 1
+      value: 1
+    - key: 2
+      value: 1
+    - key: 4
+      value: 1
   mainMenuState: {fileID: 6583839949492670992, guid: c75e34d373e508442af3889bf3349f3f, type: 3}
   newPlayerState: {fileID: 4731318394138481114, guid: 4a854f572741c1141ac8648389b3b7b7, type: 3}
   newRoundState: {fileID: 4975614860496351151, guid: 6c37c2e6a633a994aa810fb684f859e6, type: 3}
