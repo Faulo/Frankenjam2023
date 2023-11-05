@@ -76,6 +76,9 @@ namespace GossipGang {
         public void AwardPointTo(Player player) {
             m_points[player]++;
         }
+        public void RetractPointFrom(Player player) {
+            m_points[player]--;
+        }
 
         public void RestoreSecrets() => removedSecrets.Clear();
     }

@@ -45,15 +45,23 @@ namespace GossipGang {
         }
 
         public void AwardScores() {
-            int corretAnswer = playerAnswers[askingPlayer];
-            var correctPlayers = playerAnswers
-                .Where(kv => kv.Value == corretAnswer)
-                .Select(kv => kv.Key)
-                .ToList();
+            if (day.category == DayCategory.Event) {
+                if (playerAnswers[askingPlayer] == 0) {
+                    GameManager.state.AwardPointTo(askingPlayer);
+                } else {
+                    GameManager.state.RetractPointFrom(askingPlayer);
+                }
+            } else {
+                int corretAnswer = playerAnswers[askingPlayer];
+                var correctPlayers = playerAnswers
+                    .Where(kv => kv.Value == corretAnswer)
+                    .Select(kv => kv.Key)
+                    .ToList();
 
-            if (correctPlayers.Count > 1) {
-                foreach (var player in correctPlayers) {
-                    GameManager.state.AwardPointTo(player);
+                if (correctPlayers.Count > 1) {
+                    foreach (var player in correctPlayers) {
+                        GameManager.state.AwardPointTo(player);
+                    }
                 }
             }
         }
