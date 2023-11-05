@@ -286,7 +286,7 @@ MonoBehaviour:
   - Nein danke, ich kann damit einfach nichts anfangen.
   m_start: 638388864000000000
   m_end: 638147808000000000
-  m_image: {fileID: 21300000, guid: 91bc808cc980b05458eab414128cbecb, type: 3}
+  m_image: {fileID: 21300000, guid: 268a148b8c4ad6d44bc5629f8eb8eb48, type: 3}
 --- !u!114 &-5113335842868806925
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -316,7 +316,7 @@ MonoBehaviour:
   - "Die Person, die immer vortr\xE4gt, weil sich keiner traut."
   m_start: 638388864000000000
   m_end: 638147808000000000
-  m_image: {fileID: 21300000, guid: 91bc808cc980b05458eab414128cbecb, type: 3}
+  m_image: {fileID: 21300000, guid: 2b25095dd63ee5a47b1c76fafe74ebe7, type: 3}
 --- !u!114 &-5025133763835658453
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -377,7 +377,7 @@ MonoBehaviour:
   - Mix aus Erinnerungen.
   m_start: 638388864000000000
   m_end: 638147808000000000
-  m_image: {fileID: 21300000, guid: 91bc808cc980b05458eab414128cbecb, type: 3}
+  m_image: {fileID: 21300000, guid: 6abdada28c9b6fc40b0c131b0e90f3ff, type: 3}
 --- !u!114 &-4041503627928469036
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -430,7 +430,7 @@ MonoBehaviour:
   m_answers: []
   m_start: 638388864000000000
   m_end: 638147808000000000
-  m_image: {fileID: 21300000, guid: 91bc808cc980b05458eab414128cbecb, type: 3}
+  m_image: {fileID: 21300000, guid: 5996ae4068e868848961032428af0bd5, type: 3}
 --- !u!114 &-3399425720013908742
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -514,7 +514,7 @@ MonoBehaviour:
   m_answers: []
   m_start: 638388864000000000
   m_end: 638147808000000000
-  m_image: {fileID: 21300000, guid: 91bc808cc980b05458eab414128cbecb, type: 3}
+  m_image: {fileID: 21300000, guid: 2b25095dd63ee5a47b1c76fafe74ebe7, type: 3}
 --- !u!114 &-2687254112893461656
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -573,7 +573,7 @@ MonoBehaviour:
   - "Hormonfreie Verh\xFCtung."
   m_start: 638388864000000000
   m_end: 638147808000000000
-  m_image: {fileID: 21300000, guid: 91bc808cc980b05458eab414128cbecb, type: 3}
+  m_image: {fileID: 21300000, guid: 6abdada28c9b6fc40b0c131b0e90f3ff, type: 3}
 --- !u!114 &-2429933916085825650
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -718,7 +718,7 @@ MonoBehaviour:
   - Nein, Karriere geht immer vor.
   m_start: 638388864000000000
   m_end: 638147808000000000
-  m_image: {fileID: 21300000, guid: 91bc808cc980b05458eab414128cbecb, type: 3}
+  m_image: {fileID: 21300000, guid: 6abdada28c9b6fc40b0c131b0e90f3ff, type: 3}
 --- !u!114 &-1036252186914103972
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -808,7 +808,7 @@ MonoBehaviour:
   - "Ne, \xFCberhaupt nicht."
   m_start: 638388864000000000
   m_end: 638147808000000000
-  m_image: {fileID: 21300000, guid: 91bc808cc980b05458eab414128cbecb, type: 3}
+  m_image: {fileID: 21300000, guid: 6abdada28c9b6fc40b0c131b0e90f3ff, type: 3}
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1023,7 +1023,7 @@ MonoBehaviour:
   - Ne, da seh ich mich nicht.
   m_start: 638388864000000000
   m_end: 638147808000000000
-  m_image: {fileID: 21300000, guid: 91bc808cc980b05458eab414128cbecb, type: 3}
+  m_image: {fileID: 21300000, guid: 2b25095dd63ee5a47b1c76fafe74ebe7, type: 3}
 --- !u!114 &3604969402401549866
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1053,7 +1053,7 @@ MonoBehaviour:
   - "Keine*n Lehrer*in, aber daf\xFCr meine*n Dozent*in."
   m_start: 638388864000000000
   m_end: 638147808000000000
-  m_image: {fileID: 21300000, guid: 91bc808cc980b05458eab414128cbecb, type: 3}
+  m_image: {fileID: 21300000, guid: 13f6c095d36ae834cb1a4870f632382c, type: 3}
 --- !u!114 &3832394420789280347
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1084,7 +1084,7 @@ MonoBehaviour:
   - Praktisch Teil des Freundeskreises.
   m_start: 638388864000000000
   m_end: 638147808000000000
-  m_image: {fileID: 21300000, guid: 91bc808cc980b05458eab414128cbecb, type: 3}
+  m_image: {fileID: 21300000, guid: 7b48e137dd85b8748b394722b1de62d5, type: 3}
 --- !u!114 &3950124752593003557
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1176,7 +1176,7 @@ MonoBehaviour:
   - Nein, wie unangenehm.
   m_start: 638388864000000000
   m_end: 638147808000000000
-  m_image: {fileID: 21300000, guid: 91bc808cc980b05458eab414128cbecb, type: 3}
+  m_image: {fileID: 21300000, guid: 5996ae4068e868848961032428af0bd5, type: 3}
 --- !u!114 &4706961437569731558
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1377,7 +1377,7 @@ MonoBehaviour:
   m_answers: []
   m_start: 638388864000000000
   m_end: 638147808000000000
-  m_image: {fileID: 21300000, guid: 91bc808cc980b05458eab414128cbecb, type: 3}
+  m_image: {fileID: 21300000, guid: 5895bb8e523f24b4b8a7fed46e4580ea, type: 3}
 --- !u!114 &7375848523079532228
 MonoBehaviour:
   m_ObjectHideFlags: 0
