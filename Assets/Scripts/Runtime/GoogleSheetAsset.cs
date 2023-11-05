@@ -89,8 +89,10 @@ namespace GossipGang {
         ImageLibrary library;
         [SerializeField]
         string id = "1gfnagqw3ySRh9GeTb3Emuy3RAd96msUj7WpWPA0rB2M";
+        [SerializeField]
+        string sheet = "Marie";
 
-        string url => $"https://docs.google.com/spreadsheets/d/{id}/export?format=csv";
+        string url => $"https://docs.google.com/spreadsheets/d/{id}/gviz/tq?tqx=out:csv&sheet={sheet}";
 
         string data;
 
