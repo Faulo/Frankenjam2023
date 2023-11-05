@@ -32,20 +32,13 @@ namespace GossipGang {
         [SerializeField]
         UIState showDaysState;
 
-        readonly HashSet<Day> m_days = new();
-        public IReadOnlyCollection<Day> days => m_days;
+        readonly Dictionary<string, Day> m_days = new();
+        public int dayCount => m_days.Count;
+        public IReadOnlyCollection<Day> days => m_days.Values;
         public void AddDay(Day day) {
-            if (m_days.Add(day)) {
+            if (m_days.TryAdd(day.id, day)) {
                 onAddDay?.Invoke(day);
             }
-        }
-
-        static readonly List<Func<IEnumerator>> loaders = new();
-        public static void RegisterDayLoader(Func<IEnumerator> loader) {
-            loaders.Add(loader);
-        }
-        public static void RemoveDayLoader(Func<IEnumerator> loader) {
-            loaders.Remove(loader);
         }
 
         int activePlayerIndex = 0;
@@ -68,9 +61,7 @@ namespace GossipGang {
         }
 
         public IEnumerator Start() {
-            foreach (var loader in loaders) {
-                yield return loader();
-            }
+            yield return new WaitUntil(() => dayCount > 0);
 
             yield return LoadMainMenu();
         }
@@ -92,7 +83,7 @@ namespace GossipGang {
                 yield return instance.WaitForDone();
             } else {
                 var instance = Instantiate(newRoundState);
-                var entry = new PlayerEntry(m_days.RandomElement(), activePlayer, m_players);
+                var entry = new PlayerEntry(days.RandomElement(), activePlayer, m_players);
                 instance.gameObject.BindTo(entry);
                 yield return instance.WaitForDone();
             }

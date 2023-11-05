@@ -45,6 +45,8 @@ namespace GossipGang {
         Sprite m_image;
         public Sprite image => m_image;
 
+        public string id => m_description;
+
         public static bool TryCreateFromCSV(out Day day, DayCategory category, string description, string question, IEnumerable<string> answers, IEnumerable<DayTag> tags, DateTime start, DateTime end, Sprite image) {
             day = CreateInstance<Day>();
 
