@@ -37,7 +37,6 @@ namespace GossipGang {
             yield return new WaitUntil(() => isDone);
 
             foreach (var (secret, player) in guessedSecrets) {
-                Debug.Log((secret, player));
                 if (secret == player) {
                     GameManager.state.AwardPointTo(activePlayer);
                 }

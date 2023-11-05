@@ -122,6 +122,68 @@ MonoBehaviour:
   m_start: 638229024000000000
   m_end: 638309376000000000
   m_image: {fileID: 21300000, guid: 268a148b8c4ad6d44bc5629f8eb8eb48, type: 3}
+--- !u!114 &-6024604618648688488
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8fac4318f03ac2947b8ec74e36a147df, type: 3}
+  m_Name: DarfmanetwasmitdenFreundendesrExPartnerinanfangen
+  m_EditorClassIdentifier: 
+  m_tags: 04000000
+  m_category: 0
+  m_title: title
+  m_description: "Mittlerweile hat Noa wieder etwas mehr deren Ex-Partnerin zu tun
+    und geht auch \xF6fter mal mit ihr und ihrem Freundeskreis feiern. Anscheinend
+    verstehen sich aber Noa und eine gute Freundin von deren Ex wohl sehr, sehr gut.
+    Noa ist mehr als nur ratlos und ich bin keine Hilfe. Ich w\xFCnschte, ich k\xF6nnte
+    denen irgendwie beistehen, aber das ist schon eine verzwickte Situation. Keine
+    Ahnung, was ich da tun w\xFCrde\u2026"
+  m_question: Darf man etwas mit den Freunden des*r Ex-Partner*in anfangen?
+  m_answers:
+  - Klar, die Beziehung ist ja vorbei.
+  - "Kommt auf die Umst\xE4nde der Trennung an."
+  - Naja, es wird auf jeden Fall kompliziert sein.
+  - Nein, auf gar keinen Fall.
+  m_start: 638310240000000000
+  m_end: 638388000000000000
+  m_image: {fileID: 21300000, guid: 268a148b8c4ad6d44bc5629f8eb8eb48, type: 3}
+--- !u!114 &-5498645529044923644
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8fac4318f03ac2947b8ec74e36a147df, type: 3}
+  m_Name: WiewrdestdureagierenwennduineinZimmerreinplatztwoLeuteSexhaben
+  m_EditorClassIdentifier: 
+  m_tags: 01000000
+  m_category: 0
+  m_title: title
+  m_description: "Ich liebe Safiya, aber das h\xE4tte ich echt nicht sehen m\xFCssen.
+    Vielleicht sollte ich ihr einen Grundlagenkurs darin geben, T\xFCren ordentlich
+    abzuschlie\xDFen. Ich h\xE4tte es n\xE4mlich sehr, sehr gerne vermieden, sie
+    und ihren Freund beim Sex zu erwischen. Und wenn das schon passieren muss, dann
+    w\xE4re es mir lieber gewesen, dass sie das nicht mitbekommen h\xE4tten, sodass
+    ich die Situation einfach f\xFCr mich h\xE4tte verdr\xE4ngen k\xF6nnen. Dadurch,
+    dass wir alle es wissen, ist es irgendwie unangenehmer."
+  m_question: "Wie w\xFCrdest du reagieren, wenn du in ein Zimmer reinplatzt, wo
+    Leute Sex haben?"
+  m_answers:
+  - Leise davon schleichen.
+  - Husten und auf mich aufmerksam machen.
+  - "Fragen: \"Na, macht\u2019s Spa\xDF?\u201D"
+  - Mit offenem Mund stehen bleiben.
+  m_start: 638310240000000000
+  m_end: 638388000000000000
+  m_image: {fileID: 21300000, guid: 268a148b8c4ad6d44bc5629f8eb8eb48, type: 3}
 --- !u!114 &-4436255132289471204
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -150,6 +212,36 @@ MonoBehaviour:
   - "Nichts davon. Ich bin immer die Person, die sich um die Trunkenbolde k\xFCmmert."
   m_start: 638148672000000000
   m_end: 638228160000000000
+  m_image: {fileID: 21300000, guid: 268a148b8c4ad6d44bc5629f8eb8eb48, type: 3}
+--- !u!114 &-4385798684810727432
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8fac4318f03ac2947b8ec74e36a147df, type: 3}
+  m_Name: WiestehstdudamitmitdemPartnerinzusammenzuziehen
+  m_EditorClassIdentifier: 
+  m_tags: 04000000
+  m_category: 0
+  m_title: title
+  m_description: "Henry hat heute den Mietvertrag unterschrieben zusammen mit Francis.
+    Er ist echt gl\xFCcklich. Nach dem ganzen Stress mit Michelle hat Francis sich
+    endlich klar und deutlich f\xFCr Henry entschieden, indem er ihn gefragt hat,
+    ob sie zusammenziehen wollen. Michelle sei wohl extrem unbegeistert davon gewesen,
+    aber ganz ehrlich? Wen interessiert das schon? Die Trennung ist ewig her und
+    langsam sollte sie das wirklich mal verstehen."
+  m_question: Wie stehst du damit mit dem Partner*in zusammenzuziehen?
+  m_answers:
+  - Ein Muss in jeder Beziehung.
+  - "Ich genie\xDFe meinen Freiraum, solange ich kann."
+  - "Schon sch\xF6n, aber ich will auch einen Raum f\xFCr mich."
+  - "\xDCberbewertet."
+  m_start: 638310240000000000
+  m_end: 638388000000000000
   m_image: {fileID: 21300000, guid: 268a148b8c4ad6d44bc5629f8eb8eb48, type: 3}
 --- !u!114 &-3843956175984191900
 MonoBehaviour:
@@ -271,6 +363,95 @@ MonoBehaviour:
   m_start: 638160768000000000
   m_end: 638228160000000000
   m_image: {fileID: 21300000, guid: 268a148b8c4ad6d44bc5629f8eb8eb48, type: 3}
+--- !u!114 &-1178077865214267138
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8fac4318f03ac2947b8ec74e36a147df, type: 3}
+  m_Name: HattestduschonmalsexytimewhrendandereimRaumwaren
+  m_EditorClassIdentifier: 
+  m_tags: 01000000
+  m_category: 0
+  m_title: title
+  m_description: "Mia hat ein H\xE4ndchen daf\xFCr, mich komplett um den Finger zu
+    wickeln. Irgendwann beim Spieleabend hat es wahnsinnig angefangen zu sch\xFCtten,
+    weswegen wir alle einfach beschlossen haben, bei Henry und Francis zu \xFCbernachten.
+    Entsprechend haben wir uns das Wohnzimmer als Schlafplatz mit Noa und Safiya
+    geteilt. Als die beiden dann irgendwann eingeschlafen sind, hat Mia angefangen,
+    mich nach allen Regeln der Kunst zu verf\xFChren, und wie das weiterging, muss
+    ich wohl wirklich nicht weiter ausf\xFChren."
+  m_question: "Hattest du schonmal sexy time, w\xE4hrend andere im Raum waren?"
+  m_answers:
+  - "Vielleicht habe ich mal masturbiert, wer wei\xDF."
+  - Ja, aber wir hatten keinen Sex.
+  - Jupp, das volle Programm.
+  - Nein, wie unangenehm.
+  m_start: 638388864000000000
+  m_end: 638147808000000000
+  m_image: {fileID: 21300000, guid: 268a148b8c4ad6d44bc5629f8eb8eb48, type: 3}
+--- !u!114 &-987659144655253730
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8fac4318f03ac2947b8ec74e36a147df, type: 3}
+  m_Name: WrdestdumitdeinemrPartneringemeinsamSexToysausprobieren
+  m_EditorClassIdentifier: 
+  m_tags: 01000000
+  m_category: 0
+  m_title: title
+  m_description: "Safiya hat mir sehr aufgeregt heute erz\xE4hlt, dass sie und ihr
+    Verlobter einen Mini-Vibrator gekauft haben, um damit mal mehr Sachen f\xFCr
+    unterwegs und drau\xDFen auszuprobieren. Irgendwie hat mich das den restlichen
+    Tag nicht mehr losgelassen. Vielleicht k\xF6nnte ich diese Idee Mia mal n\xE4herbringen\u2026"
+  m_question: "W\xFCrdest du mit deinem*r Partner*in gemeinsam Sex Toys ausprobieren?"
+  m_answers:
+  - Ja, gemeinsam Neues auszuprobieren ist aufregend.
+  - Toys nicht, aber Verkleidungen klingen interessant.
+  - "Ich w\xFCrde erstmal nur dar\xFCber reden und dann schauen, wohin es f\xFChrt."
+  - Nein danke, ich kann damit einfach nichts anfangen.
+  m_start: 638388864000000000
+  m_end: 638147808000000000
+  m_image: {fileID: 21300000, guid: 268a148b8c4ad6d44bc5629f8eb8eb48, type: 3}
+--- !u!114 &-609546090966034213
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8fac4318f03ac2947b8ec74e36a147df, type: 3}
+  m_Name: WasistfrdichdasschlimmsteNoGo
+  m_EditorClassIdentifier: 
+  m_tags: 04000000
+  m_category: 0
+  m_title: title
+  m_description: "Mia ist immer f\xFCr ein Abenteuer zu haben. Sie ist lustig und
+    hat eine fantastische Ausstrahlung. So vieles zieht mich an\u2026 und dann gibt
+    es noch die Tatsache, dass sie raucht. Ich habe immer gesagt, dass ich niemals
+    eine Beziehung mit einem*r Raucher*in eingehe, und dann kam Mia. Aber ist es
+    wirklich etwas, \xFCber das ich hinweg sehen kann? Oder wird es fr\xFCher oder
+    sp\xE4ter daran scheitern?"
+  m_question: "Was ist f\xFCr dich das schlimmste No-Go?"
+  m_answers:
+  - Rauchen
+  - Mag keine Tiere
+  - "Ern\xE4hrung (z.B. isst Fleisch)"
+  - Schlechte Hygiene
+  m_start: 638310240000000000
+  m_end: 638388000000000000
+  m_image: {fileID: 21300000, guid: 268a148b8c4ad6d44bc5629f8eb8eb48, type: 3}
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -349,6 +530,67 @@ MonoBehaviour:
   m_start: 638229024000000000
   m_end: 638309376000000000
   m_image: {fileID: 21300000, guid: 268a148b8c4ad6d44bc5629f8eb8eb48, type: 3}
+--- !u!114 &1156848426054508218
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8fac4318f03ac2947b8ec74e36a147df, type: 3}
+  m_Name: WerwarderdieHeldindeinerKindheit
+  m_EditorClassIdentifier: 
+  m_tags: 02000000
+  m_category: 0
+  m_title: title
+  m_description: "Wenn ich an meine Mutter zur\xFCckdenke, war sie immer die st\xE4rkste
+    Person der Welt. Nichts konnte sie ersch\xFCttern und sie hatte immer f\xFCr
+    alles eine L\xF6sung. Sie war eine unverw\xFCstliche Superheldin. Und irgendwo
+    ist sie das f\xFCr mich immer noch, aber mittlerweile verstehe ich, dass Superhelden
+    auch nur irgendwelche Menschen sind mit ihren eigenen Problemen und Dingen, die
+    sie \xFCberw\xE4ltigen. Ich w\xFCnschte nur, sie w\xFCrde zulassen, dass ich
+    ihr damit helfe."
+  m_question: Wer war der*die Held*in deiner Kindheit?
+  m_answers:
+  - Elternteil
+  - Lehrer*in
+  - Fiktiver Charakter
+  - Prominente*r
+  m_start: 638310240000000000
+  m_end: 638388000000000000
+  m_image: {fileID: 21300000, guid: 268a148b8c4ad6d44bc5629f8eb8eb48, type: 3}
+--- !u!114 &1179249543489673622
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8fac4318f03ac2947b8ec74e36a147df, type: 3}
+  m_Name: Weinstduschnellwenndubetrunkenbist
+  m_EditorClassIdentifier: 
+  m_tags: 00000000
+  m_category: 0
+  m_title: title
+  m_description: "Ja, es ist anstrengend, wenn Noa st\xE4ndig Chaos veranstaltet,
+    aber es ist mir tausend Mal lieber als die Szene, die sich heute abgespielt hat.
+    Henry hat dey im Badezimmer gefunden mitten in einem besoffenen Heulkrampf. Es
+    war herzzerrei\xDFend. Zum Gl\xFCck behielt Henry einen klaren Kopf und hat Noa
+    versucht, bis es denen wieder etwas besser ging. Aber wirklich\u2026 Das m\xF6chte
+    ich nie wieder sehen. Am liebsten h\xE4tte ich direkt mit geheult."
+  m_question: Weinst du schnell, wenn du betrunken bist?
+  m_answers:
+  - Leider ja.
+  - "Ja, aber nur wegen s\xFC\xDFen Dingen."
+  - "Ab und zu, aber nicht h\xE4ufig."
+  - "Ne, \xFCberhaupt nicht."
+  m_start: 638388864000000000
+  m_end: 638147808000000000
+  m_image: {fileID: 21300000, guid: 268a148b8c4ad6d44bc5629f8eb8eb48, type: 3}
 --- !u!114 &1389385538057304050
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -378,6 +620,37 @@ MonoBehaviour:
   - Nein, ich sehe mich da generell gar nicht.
   m_start: 638148672000000000
   m_end: 638228160000000000
+  m_image: {fileID: 21300000, guid: 268a148b8c4ad6d44bc5629f8eb8eb48, type: 3}
+--- !u!114 &1738213711690486174
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8fac4318f03ac2947b8ec74e36a147df, type: 3}
+  m_Name: HastduschonmaldieSchulegeschwnzt
+  m_EditorClassIdentifier: 
+  m_tags: 02000000
+  m_category: 0
+  m_title: title
+  m_description: "Manche Dinge \xE4ndern sich wohl nie. Ich erinnere mich noch so
+    gut daran, wie wehleidig ich vor meinen Eltern aufgetreten bin und ihnen in den
+    Ohren damit lag, wie furchtbar schlecht es mir geht. Meistens haben sie mir diese
+    Scharade durchgehen lassen, aber wahrscheinlich auch nur, weil sie selbst bei
+    der Arbeit auch manchmal auf krank tun. Also, ich habe es nicht direkt mitbekommen,
+    aber ver\xFCbeln k\xF6nnte ich es ihnen nicht. Ich lieb\xE4ugel auch viel zu
+    oft mit dem Gedanken, mich bei der Arbeit einfach krank zu melden."
+  m_question: "Hast du schon mal die Schule geschw\xE4nzt?"
+  m_answers:
+  - Niemals.
+  - Ja, habe mich krank gestellt.
+  - Jein, habe nur verschlafen.
+  - Ja, ich bin einfach nicht hingegangen.
+  m_start: 638310240000000000
+  m_end: 638388000000000000
   m_image: {fileID: 21300000, guid: 268a148b8c4ad6d44bc5629f8eb8eb48, type: 3}
 --- !u!114 &1918031182604893041
 MonoBehaviour:
@@ -650,3 +923,64 @@ MonoBehaviour:
   m_start: 638148672000000000
   m_end: 638228160000000000
   m_image: {fileID: 21300000, guid: 16305acb014e800409a7c129fbd9fc32, type: 3}
+--- !u!114 &8676485089630024733
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8fac4318f03ac2947b8ec74e36a147df, type: 3}
+  m_Name: WrdestdueineFernbeziehungeingehen
+  m_EditorClassIdentifier: 
+  m_tags: 04000000
+  m_category: 0
+  m_title: title
+  m_description: "Entgegen aller Erwartungen hat sich Stella doch irgendwann getraut,
+    den ersten Schritt zu machen. Patrick und sie hatten aber auch direkt dar\xFCber
+    geredet, welche Auswirkungen das auf die Arbeit haben k\xF6nnte, wenn sie einander
+    daten, und alles klar kommuniziert. Ihre Beziehung schien auch echt gut zu laufen,
+    bis Patrick heute erfahren hat, dass er ans andere Ende des Landes versetzt wird.
+    Mit ihnen w\xFCrde ich echt nicht tauschen wollen. Fernbeziehungen sind wirklich
+    gar nicht meins."
+  m_question: "W\xFCrdest du eine Fernbeziehung eingehen?"
+  m_answers:
+  - "Ja, dann sch\xE4tzt man die Zeit zusammen mehr."
+  - Ja, aber nur mit der richtigen Person.
+  - Nein, das halte ich nicht aus.
+  - Nein, einmal und nie wieder.
+  m_start: 638310240000000000
+  m_end: 638388000000000000
+  m_image: {fileID: 21300000, guid: 268a148b8c4ad6d44bc5629f8eb8eb48, type: 3}
+--- !u!114 &9199633040836144033
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8fac4318f03ac2947b8ec74e36a147df, type: 3}
+  m_Name: WiewrdestdujemandemeinenKorbgeben
+  m_EditorClassIdentifier: 
+  m_tags: 04000000
+  m_category: 0
+  m_title: title
+  m_description: "Oliver ist ein toller Mensch. Und s\xFC\xDF. Und wirklich attraktiv.
+    Aber ist es wirklich ihn, den ich gut finde oder die Aufmerksamkeit, die er mir
+    gibt? Denn er ist wirklich aufmerksam und das f\xFChlt sich sehr gut an. Manchmal
+    frage ich mich, ob ich ihm genug zur\xFCck gebe und ob ich das \xFCberhaupt verdient
+    habe. W\xE4hrend ich mit Mia nicht wirklich diese Zweifel habe. Trotzdem f\xFChlt
+    es sich falsch an, Oliver einen Korb zu geben\u2026"
+  m_question: "Wie w\xFCrdest du jemandem einen Korb geben?"
+  m_answers:
+  - Frag mich nochmal in vier Wochen.
+  - "Nett von dir, aber ich teile deine Gef\xFChle nicht."
+  - Nummer geben und dann ghosten.
+  - Das wollen alle.
+  m_start: 638310240000000000
+  m_end: 638388000000000000
+  m_image: {fileID: 21300000, guid: 268a148b8c4ad6d44bc5629f8eb8eb48, type: 3}
