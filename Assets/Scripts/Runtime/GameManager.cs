@@ -3,7 +3,6 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using MyBox;
-using Slothsoft.UnityExtensions;
 using UnityEngine;
 
 namespace GossipGang {
@@ -12,25 +11,11 @@ namespace GossipGang {
         public static event Action onChangeDays;
         public static event Action<Player> onAddPlayer;
 
+        public static readonly GameConfiguration config = new();
         public static GameState state;
 
         [SerializeField]
         int roundMaximum = 3;
-
-        [SerializeField]
-        SerializableKeyValuePairs<DayCategory, bool> allowedCategories = new();
-        public IEnumerable<DayCategory> allCategories => allowedCategories.Keys;
-
-        [SerializeField]
-        SerializableKeyValuePairs<DayTag, bool> allowedTags = new();
-        public IEnumerable<DayTag> allTags => allowedTags.Keys;
-        public void SetTag(DayTag tag, bool value) {
-            var dictionary = new Dictionary<DayTag, bool>(allowedTags) {
-                [tag] = value
-            };
-            allowedTags.SetItems(dictionary);
-            RaiseDayChange();
-        }
 
         [Separator]
         [SerializeField]
@@ -52,14 +37,19 @@ namespace GossipGang {
         void RaiseDayChange() {
             allDays = m_days
                 .Values
-                .Where(day => allowedCategories.TryGetValue(day.category, out bool enabled) && enabled)
-                .Where(day => day.tags.Count == 0 || day.tags.All(t => allowedTags.TryGetValue(t, out bool enabled) && enabled))
+                .Where(day => config.IsAllowed(day.category))
+                .Where(day => day.tags.Count == 0 || config.IsAllowed(day.tags))
                 .ToList();
             onChangeDays?.Invoke();
         }
         public int dayCount => allDays.Count;
         public IReadOnlyCollection<Day> allDays { get; private set; } = new List<Day>();
         public void AddDay(Day day) {
+            config.AddCategory(day.category);
+            foreach (var tag in day.tags) {
+                config.AddTag(tag);
+            }
+
             m_days[day.name] = day;
             RaiseDayChange();
         }
@@ -75,6 +65,7 @@ namespace GossipGang {
 
         void Awake() {
             instance = this;
+            config.onChange += RaiseDayChange;
         }
 
         public IEnumerator Start() {

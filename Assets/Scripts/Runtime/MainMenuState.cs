@@ -10,11 +10,19 @@ namespace GossipGang {
             ShowDays,
             Exit
         }
+
         [SerializeField]
         Transform tagContainer;
         [SerializeField]
         GameObject tagPrefab;
 
+        [Space]
+        [SerializeField]
+        Transform categoryContainer;
+        [SerializeField]
+        GameObject categoryPrefab;
+
+        [Space]
         [SerializeField]
         Button startGameButton;
         [SerializeField]
@@ -24,10 +32,33 @@ namespace GossipGang {
 
         NextState state = NextState.Unknown;
 
+        void OnEnable() {
+            GameManager.config.onAddTag += InstantiateTag;
+            GameManager.config.onAddCategory += InstantiateCategory;
+        }
+
+        void OnDisable() {
+            GameManager.config.onAddTag -= InstantiateTag;
+            GameManager.config.onAddCategory -= InstantiateCategory;
+        }
+
+        void InstantiateTag(DayTag tag, bool isAllowed) {
+            var instance = Instantiate(tagPrefab, tagContainer);
+            instance.BindTo((tag, isAllowed));
+        }
+
+        void InstantiateCategory(DayCategory category, bool isAllowed) {
+            var instance = Instantiate(categoryPrefab, categoryContainer);
+            instance.BindTo((category, isAllowed));
+        }
+
         void Start() {
-            foreach (var tag in GameManager.instance.allTags) {
-                var instance = Instantiate(tagPrefab, tagContainer);
-                instance.BindTo(tag);
+            foreach (var (category, isAllowed) in GameManager.config.allowedCategories) {
+                InstantiateCategory(category, isAllowed);
+            }
+
+            foreach (var (tag, isAllowed) in GameManager.config.allowedTags) {
+                InstantiateTag(tag, isAllowed);
             }
 
             startGameButton.onClick.AddListener(() => {
