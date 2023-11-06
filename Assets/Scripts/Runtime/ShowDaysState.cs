@@ -25,8 +25,7 @@ namespace GossipGang {
                 .instance
                 .allDays
                 .Select(day => (day, day.randomDate))
-                .OrderBy(d => d.randomDate)
-                .Select(d => d.day);
+                .OrderBy(d => d.randomDate);
             foreach (var day in days) {
                 var instance = Instantiate(dayPrefab, dayContainer);
                 instance.BindTo(day);

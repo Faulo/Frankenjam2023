@@ -1,8 +1,9 @@
+using System;
 using TMPro;
 using UnityEngine;
 
 namespace GossipGang {
-    sealed class PrintDay : MonoBehaviour, IBindingReceiver<Day> {
+    sealed class PrintDay : MonoBehaviour, IBindingReceiver<(Day day, DateTime randomDate)> {
         [SerializeField]
         TMP_Text dateText;
         [SerializeField]
@@ -10,10 +11,10 @@ namespace GossipGang {
         [SerializeField]
         TMP_Text questionText;
 
-        public void Bind(Day day) {
-            dateText.text = day.randomDate.ToShortDateString();
-            descriptionText.text = day.description;
-            questionText.text = day.question;
+        public void Bind((Day day, DateTime randomDate) entry) {
+            dateText.text = entry.randomDate.ToShortDateString();
+            descriptionText.text = entry.day.description;
+            questionText.text = entry.day.question;
         }
     }
 }
