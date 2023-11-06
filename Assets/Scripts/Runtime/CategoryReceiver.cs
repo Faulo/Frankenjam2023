@@ -1,13 +1,11 @@
 ﻿using UnityEngine;
+using UnityEngine.Localization;
 using UnityEngine.UI;
 
 namespace GossipGang {
     sealed class CategoryReceiver : MonoBehaviour, IBindingReceiver<(DayCategory category, bool isAllowed)> {
-        [SerializeField]
-        GameObject labelField;
-
         public void Bind((DayCategory category, bool isAllowed) model) {
-            labelField.BindTo(model.category.ToString());
+            gameObject.BindTo(new LocalizedString("Default", $"{nameof(DayCategory)}/{model.category}"));
 
             if (TryGetComponent<Toggle>(out var component)) {
                 component.isOn = model.isAllowed;

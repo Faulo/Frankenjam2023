@@ -44,11 +44,13 @@ namespace GossipGang {
 
         void InstantiateTag(DayTag tag, bool isAllowed) {
             var instance = Instantiate(tagPrefab, tagContainer);
+            instance.AddComponent<TagReceiver>();
             instance.BindTo((tag, isAllowed));
         }
 
         void InstantiateCategory(DayCategory category, bool isAllowed) {
             var instance = Instantiate(categoryPrefab, categoryContainer);
+            instance.AddComponent<CategoryReceiver>();
             instance.BindTo((category, isAllowed));
         }
 
