@@ -85,6 +85,7 @@ namespace GossipGang {
 
         public IEnumerator LoadMainMenu() {
             state = null;
+            m_players.Clear();
 
             yield return ProcessState(mainMenuState);
         }
