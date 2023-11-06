@@ -77,6 +77,8 @@ namespace GossipGang {
 
         public IEnumerable<Player> playersWithSecrets => players
             .Where(p => !removedSecrets.Contains(p));
+        public IEnumerable<Player> playersWithSecretsRemoved => players
+            .Where(removedSecrets.Contains);
 
         readonly HashSet<Player> removedSecrets = new();
 
