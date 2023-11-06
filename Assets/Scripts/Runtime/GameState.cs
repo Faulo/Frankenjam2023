@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 using Slothsoft.UnityExtensions;
+using UnityEngine.Assertions;
 
 namespace GossipGang {
     sealed class GameState {
@@ -37,9 +38,8 @@ namespace GossipGang {
 
             this.players = m_points.Keys.ToList();
 
-            var entries = days
-                .Shuffle()
-                .Take(playerCount * lastRound)
+            var entries = GetInfinite(days.ToList(), playerCount * lastRound)
+                .SelectMany(list => list)
                 .Select(d => (d, d.randomDate))
                 .OrderBy(e => e.randomDate)
                 .ToList();
@@ -48,6 +48,19 @@ namespace GossipGang {
                 var (day, date) = entries[i];
                 m_entries.Add(new(day, date, GetPlayerByIndex(i), players));
             }
+        }
+
+        static IEnumerable<IEnumerable<Day>> GetInfinite(IReadOnlyCollection<Day> days, int count) {
+            Assert.IsTrue(count > 0);
+
+            while (count > days.Count) {
+                count -= days.Count;
+                yield return days;
+            }
+
+            yield return days
+                .Shuffle()
+                .Take(count);
         }
 
         public Player GetPlayerByIndex(int index) => players.ElementAt(index % playerCount);
