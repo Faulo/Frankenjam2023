@@ -24,7 +24,9 @@ MonoBehaviour:
   m_question: Wer verschwindet am ehesten auf Partys?
   m_answers: []
   m_start: 638229024000000000
+  m_startString: 21.06.2023
   m_end: 638309376000000000
+  m_endString: 22.09.2023
   m_image: {fileID: 21300000, guid: 7d9c8ca69c63284429855f085ee42ff0, type: 3}
 --- !u!114 &-8654852444667185129
 MonoBehaviour:
@@ -49,7 +51,9 @@ MonoBehaviour:
   m_question: Wer ist die kinkieste Person im Raum?
   m_answers: []
   m_start: 638310240000000000
+  m_startString: 23.09.2023
   m_end: 638388000000000000
+  m_endString: 22.12.2023
   m_image: {fileID: 21300000, guid: c7bd3da9d86ab7045bdc51573637f1eb, type: 3}
 --- !u!114 &-8126395651961071396
 MonoBehaviour:
@@ -79,7 +83,9 @@ MonoBehaviour:
   - Nummer geben und dann ghosten.
   - Das wollen alle.
   m_start: 638310240000000000
+  m_startString: 23.09.2023
   m_end: 638388000000000000
+  m_endString: 22.12.2023
   m_image: {fileID: 21300000, guid: 37b01eca74441af478a2b8f022187bef, type: 3}
 --- !u!114 &-8006085042016209226
 MonoBehaviour:
@@ -109,7 +115,9 @@ MonoBehaviour:
   - "Ern\xE4hrung (z.B. isst Fleisch)"
   - Schlechte Hygiene
   m_start: 638310240000000000
+  m_startString: 23.09.2023
   m_end: 638388000000000000
+  m_endString: 22.12.2023
   m_image: {fileID: 21300000, guid: 6abdada28c9b6fc40b0c131b0e90f3ff, type: 3}
 --- !u!114 &-7877572938678464618
 MonoBehaviour:
@@ -140,7 +148,9 @@ MonoBehaviour:
   - Fiktiver Charakter
   - Prominente*r
   m_start: 638310240000000000
+  m_startString: 23.09.2023
   m_end: 638388000000000000
+  m_endString: 22.12.2023
   m_image: {fileID: 21300000, guid: ed30d3d4d8e9429438d4639ac0178ed7, type: 3}
 --- !u!114 &-7548295542630893673
 MonoBehaviour:
@@ -165,7 +175,9 @@ MonoBehaviour:
   m_question: "Von wem w\xFCrdest du einen Bodyshot nehmen?"
   m_answers: []
   m_start: 638229024000000000
+  m_startString: 21.06.2023
   m_end: 638309376000000000
+  m_endString: 22.09.2023
   m_image: {fileID: 21300000, guid: 6c31b8c182c07c643b9241477a56a9c6, type: 3}
 --- !u!114 &-7146791284375320677
 MonoBehaviour:
@@ -195,7 +207,9 @@ MonoBehaviour:
   - Solider Durchschnitt
   - Ein Bereich exzellent, sonst nur bestanden.
   m_start: 638148672000000000
+  m_startString: 20.03.2023
   m_end: 638228160000000000
+  m_endString: 20.06.2023
   m_image: {fileID: 21300000, guid: ed30d3d4d8e9429438d4639ac0178ed7, type: 3}
 --- !u!114 &-6770560825309897858
 MonoBehaviour:
@@ -226,7 +240,9 @@ MonoBehaviour:
   - Es weiterlaufen lassen und warten, was sich ergibt.
   - Kontakt abbrechen, das ist mir zu viel Drama.
   m_start: 638166816000000000
+  m_startString: 10.04.2023
   m_end: 638228160000000000
+  m_endString: 20.06.2023
   m_image: {fileID: 21300000, guid: 37b01eca74441af478a2b8f022187bef, type: 3}
 --- !u!114 &-6358677075951723540
 MonoBehaviour:
@@ -257,7 +273,9 @@ MonoBehaviour:
   - Nein, aber das ist doch in Ordnung.
   - "Nein, w\xFCrde ich niemals machen."
   m_start: 638160768000000000
+  m_startString: 03.04.2023
   m_end: 638228160000000000
+  m_endString: 20.06.2023
   m_image: {fileID: 21300000, guid: 37b01eca74441af478a2b8f022187bef, type: 3}
 --- !u!114 &-5654205087542601412
 MonoBehaviour:
@@ -285,7 +303,9 @@ MonoBehaviour:
   - "Ich w\xFCrde erstmal nur dar\xFCber reden und dann schauen, wohin es f\xFChrt."
   - Nein danke, ich kann damit einfach nichts anfangen.
   m_start: 638388864000000000
-  m_end: 638147808000000000
+  m_startString: 23.12.2023
+  m_end: 638464032000000000
+  m_endString: 19.03.2024
   m_image: {fileID: 21300000, guid: 268a148b8c4ad6d44bc5629f8eb8eb48, type: 3}
 --- !u!114 &-5113335842868806925
 MonoBehaviour:
@@ -315,7 +335,9 @@ MonoBehaviour:
   - Die Person, die alles gemacht hat.
   - "Die Person, die immer vortr\xE4gt, weil sich keiner traut."
   m_start: 638388864000000000
-  m_end: 638147808000000000
+  m_startString: 23.12.2023
+  m_end: 638464032000000000
+  m_endString: 19.03.2024
   m_image: {fileID: 21300000, guid: 2b25095dd63ee5a47b1c76fafe74ebe7, type: 3}
 --- !u!114 &-5025133763835658453
 MonoBehaviour:
@@ -346,7 +368,9 @@ MonoBehaviour:
   - "Versuchen sie trotzdem von mir zu \xFCberzeugen."
   - "Sie konfrontieren, da es vielleicht nur ein Missverst\xE4ndnis ist."
   m_start: 638148672000000000
+  m_startString: 20.03.2023
   m_end: 638228160000000000
+  m_endString: 20.06.2023
   m_image: {fileID: 21300000, guid: 6abdada28c9b6fc40b0c131b0e90f3ff, type: 3}
 --- !u!114 &-4320776359527923903
 MonoBehaviour:
@@ -376,7 +400,9 @@ MonoBehaviour:
   - Zukunftsvorstellung.
   - Mix aus Erinnerungen.
   m_start: 638388864000000000
-  m_end: 638147808000000000
+  m_startString: 23.12.2023
+  m_end: 638464032000000000
+  m_endString: 19.03.2024
   m_image: {fileID: 21300000, guid: 6abdada28c9b6fc40b0c131b0e90f3ff, type: 3}
 --- !u!114 &-4041503627928469036
 MonoBehaviour:
@@ -402,7 +428,9 @@ MonoBehaviour:
   m_question: Wer in der Runde, denkst du, war am besten im Sportunterricht?
   m_answers: []
   m_start: 638229024000000000
+  m_startString: 21.06.2023
   m_end: 638309376000000000
+  m_endString: 22.09.2023
   m_image: {fileID: 21300000, guid: 2b25095dd63ee5a47b1c76fafe74ebe7, type: 3}
 --- !u!114 &-3901426238344047573
 MonoBehaviour:
@@ -429,7 +457,9 @@ MonoBehaviour:
     zu schlafen?"
   m_answers: []
   m_start: 638388864000000000
-  m_end: 638147808000000000
+  m_startString: 23.12.2023
+  m_end: 638464032000000000
+  m_endString: 19.03.2024
   m_image: {fileID: 21300000, guid: 5996ae4068e868848961032428af0bd5, type: 3}
 --- !u!114 &-3399425720013908742
 MonoBehaviour:
@@ -455,7 +485,9 @@ MonoBehaviour:
   m_question: "\xDCberzeuge eine mitspielende Person, das Beinkleid zu tauschen."
   m_answers: []
   m_start: 638310240000000000
+  m_startString: 23.09.2023
   m_end: 638388000000000000
+  m_endString: 22.12.2023
   m_image: {fileID: 21300000, guid: 16305acb014e800409a7c129fbd9fc32, type: 3}
 --- !u!114 &-3377429710573429921
 MonoBehaviour:
@@ -485,7 +517,9 @@ MonoBehaviour:
   - "Schon sch\xF6n, aber ich will auch einen Raum f\xFCr mich."
   - "\xDCberbewertet."
   m_start: 638310240000000000
+  m_startString: 23.09.2023
   m_end: 638388000000000000
+  m_endString: 22.12.2023
   m_image: {fileID: 21300000, guid: ed30d3d4d8e9429438d4639ac0178ed7, type: 3}
 --- !u!114 &-2795478770607515559
 MonoBehaviour:
@@ -513,7 +547,9 @@ MonoBehaviour:
     eine saftige Ansage.
   m_answers: []
   m_start: 638388864000000000
-  m_end: 638147808000000000
+  m_startString: 23.12.2023
+  m_end: 638464032000000000
+  m_endString: 19.03.2024
   m_image: {fileID: 21300000, guid: 2b25095dd63ee5a47b1c76fafe74ebe7, type: 3}
 --- !u!114 &-2687254112893461656
 MonoBehaviour:
@@ -541,7 +577,9 @@ MonoBehaviour:
     zu spielen?"
   m_answers: []
   m_start: 638148672000000000
+  m_startString: 20.03.2023
   m_end: 638228160000000000
+  m_endString: 20.06.2023
   m_image: {fileID: 21300000, guid: 2b25095dd63ee5a47b1c76fafe74ebe7, type: 3}
 --- !u!114 &-2578847963491323269
 MonoBehaviour:
@@ -572,7 +610,9 @@ MonoBehaviour:
   - "Hormonelle Verh\xFCtung."
   - "Hormonfreie Verh\xFCtung."
   m_start: 638388864000000000
-  m_end: 638147808000000000
+  m_startString: 23.12.2023
+  m_end: 638464032000000000
+  m_endString: 19.03.2024
   m_image: {fileID: 21300000, guid: 6abdada28c9b6fc40b0c131b0e90f3ff, type: 3}
 --- !u!114 &-2429933916085825650
 MonoBehaviour:
@@ -602,7 +642,9 @@ MonoBehaviour:
   - Nicht so meins, aber wer es mag.
   - Sehr unangenehmes Konzept.
   m_start: 638154720000000000
+  m_startString: 27.03.2023
   m_end: 638159904000000000
+  m_endString: 02.04.2023
   m_image: {fileID: 21300000, guid: 13f6c095d36ae834cb1a4870f632382c, type: 3}
 --- !u!114 &-1892655929337518867
 MonoBehaviour:
@@ -633,7 +675,9 @@ MonoBehaviour:
   - Nein, das halte ich nicht aus.
   - Nein, einmal und nie wieder.
   m_start: 638310240000000000
+  m_startString: 23.09.2023
   m_end: 638388000000000000
+  m_endString: 22.12.2023
   m_image: {fileID: 21300000, guid: 6abdada28c9b6fc40b0c131b0e90f3ff, type: 3}
 --- !u!114 &-1652373750999350704
 MonoBehaviour:
@@ -660,7 +704,9 @@ MonoBehaviour:
   m_question: "Wer w\xFCrde sich am ehesten in die Beziehung von jemand anderem einmischen?"
   m_answers: []
   m_start: 638148672000000000
+  m_startString: 20.03.2023
   m_end: 638228160000000000
+  m_endString: 20.06.2023
   m_image: {fileID: 21300000, guid: 16305acb014e800409a7c129fbd9fc32, type: 3}
 --- !u!114 &-1408906637999385599
 MonoBehaviour:
@@ -687,7 +733,9 @@ MonoBehaviour:
     ihn*sie zu \xFCberzeugen, dich noch reinzulassen."
   m_answers: []
   m_start: 638388864000000000
-  m_end: 638147808000000000
+  m_startString: 23.12.2023
+  m_end: 638464032000000000
+  m_endString: 19.03.2024
   m_image: {fileID: 21300000, guid: ed30d3d4d8e9429438d4639ac0178ed7, type: 3}
 --- !u!114 &-1236388257975944866
 MonoBehaviour:
@@ -717,7 +765,9 @@ MonoBehaviour:
   - "Nur, wenn mein*e Partner*in dasselbe f\xFCr mich tun w\xFCrde."
   - Nein, Karriere geht immer vor.
   m_start: 638388864000000000
-  m_end: 638147808000000000
+  m_startString: 23.12.2023
+  m_end: 638464032000000000
+  m_endString: 19.03.2024
   m_image: {fileID: 21300000, guid: 6abdada28c9b6fc40b0c131b0e90f3ff, type: 3}
 --- !u!114 &-1036252186914103972
 MonoBehaviour:
@@ -746,7 +796,9 @@ MonoBehaviour:
   - War der*die Mobber*in.
   - Weder noch.
   m_start: 638229024000000000
+  m_startString: 21.06.2023
   m_end: 638309376000000000
+  m_endString: 22.09.2023
   m_image: {fileID: 21300000, guid: 6abdada28c9b6fc40b0c131b0e90f3ff, type: 3}
 --- !u!114 &-727955171694800619
 MonoBehaviour:
@@ -777,7 +829,9 @@ MonoBehaviour:
   - Ja, durch einen sexy Traum
   - Ja, durch neue Information
   m_start: 638148672000000000
+  m_startString: 20.03.2023
   m_end: 638153856000000000
+  m_endString: 26.03.2023
   m_image: {fileID: 21300000, guid: 92540c03e272c1d4caa1f91bd98d0b2a, type: 3}
 --- !u!114 &-575371503260824093
 MonoBehaviour:
@@ -807,7 +861,9 @@ MonoBehaviour:
   - "Ab und zu, aber nicht h\xE4ufig."
   - "Ne, \xFCberhaupt nicht."
   m_start: 638388864000000000
-  m_end: 638147808000000000
+  m_startString: 23.12.2023
+  m_end: 638464032000000000
+  m_endString: 19.03.2024
   m_image: {fileID: 21300000, guid: 6abdada28c9b6fc40b0c131b0e90f3ff, type: 3}
 --- !u!114 &11400000
 MonoBehaviour:
@@ -848,7 +904,9 @@ MonoBehaviour:
   m_question: "Wer w\xFCrde am ehesten betrunken Auto fahren?"
   m_answers: []
   m_start: 638310240000000000
+  m_startString: 23.09.2023
   m_end: 638388000000000000
+  m_endString: 22.12.2023
   m_image: {fileID: 21300000, guid: 7f28a09eac1093f4693a2a8c5a4e4593, type: 3}
 --- !u!114 &869047646622213695
 MonoBehaviour:
@@ -875,7 +933,9 @@ MonoBehaviour:
     einmischen?"
   m_answers: []
   m_start: 638229024000000000
+  m_startString: 21.06.2023
   m_end: 638309376000000000
+  m_endString: 22.09.2023
   m_image: {fileID: 21300000, guid: 5996ae4068e868848961032428af0bd5, type: 3}
 --- !u!114 &1310857752280532733
 MonoBehaviour:
@@ -904,7 +964,9 @@ MonoBehaviour:
   - Auf dem Heimweg laut gesungen oder geredet.
   - "Nichts davon. Ich bin immer die Person, die sich um die Trunkenbolde k\xFCmmert."
   m_start: 638148672000000000
+  m_startString: 20.03.2023
   m_end: 638228160000000000
+  m_endString: 20.06.2023
   m_image: {fileID: 21300000, guid: 67e989e8b55951e48b93a4597cc67639, type: 3}
 --- !u!114 &1397478846279166308
 MonoBehaviour:
@@ -934,7 +996,9 @@ MonoBehaviour:
   - "Nein, meine H\xE4nde sind alles, was ich brauche."
   - Nein, ich sehe mich da generell gar nicht.
   m_start: 638148672000000000
+  m_startString: 20.03.2023
   m_end: 638228160000000000
+  m_endString: 20.06.2023
   m_image: {fileID: 21300000, guid: 268a148b8c4ad6d44bc5629f8eb8eb48, type: 3}
 --- !u!114 &1592922225974020761
 MonoBehaviour:
@@ -962,7 +1026,9 @@ MonoBehaviour:
   - Alle Hemmungen fallen lassen.
   - "Das Vorgl\xFChen."
   m_start: 638148672000000000
+  m_startString: 20.03.2023
   m_end: 638228160000000000
+  m_endString: 20.06.2023
   m_image: {fileID: 21300000, guid: 5996ae4068e868848961032428af0bd5, type: 3}
 --- !u!114 &2590983315984745866
 MonoBehaviour:
@@ -992,7 +1058,9 @@ MonoBehaviour:
   - Ja, aber bitte vorher besprechen.
   - "Will ich einfach pers\xF6nlich nichts davon wissen."
   m_start: 638229024000000000
+  m_startString: 21.06.2023
   m_end: 638309376000000000
+  m_endString: 22.09.2023
   m_image: {fileID: 21300000, guid: 13f6c095d36ae834cb1a4870f632382c, type: 3}
 --- !u!114 &3369222382092044158
 MonoBehaviour:
@@ -1022,7 +1090,9 @@ MonoBehaviour:
   - "Einmal gemacht, aber es war nichts f\xFCr mich."
   - Ne, da seh ich mich nicht.
   m_start: 638388864000000000
-  m_end: 638147808000000000
+  m_startString: 23.12.2023
+  m_end: 638464032000000000
+  m_endString: 19.03.2024
   m_image: {fileID: 21300000, guid: 2b25095dd63ee5a47b1c76fafe74ebe7, type: 3}
 --- !u!114 &3604969402401549866
 MonoBehaviour:
@@ -1052,7 +1122,9 @@ MonoBehaviour:
   - Ew, nein.
   - "Keine*n Lehrer*in, aber daf\xFCr meine*n Dozent*in."
   m_start: 638388864000000000
-  m_end: 638147808000000000
+  m_startString: 23.12.2023
+  m_end: 638464032000000000
+  m_endString: 19.03.2024
   m_image: {fileID: 21300000, guid: 13f6c095d36ae834cb1a4870f632382c, type: 3}
 --- !u!114 &3832394420789280347
 MonoBehaviour:
@@ -1083,7 +1155,9 @@ MonoBehaviour:
   - Helikopter.
   - Praktisch Teil des Freundeskreises.
   m_start: 638388864000000000
-  m_end: 638147808000000000
+  m_startString: 23.12.2023
+  m_end: 638464032000000000
+  m_endString: 19.03.2024
   m_image: {fileID: 21300000, guid: 7b48e137dd85b8748b394722b1de62d5, type: 3}
 --- !u!114 &3950124752593003557
 MonoBehaviour:
@@ -1113,7 +1187,9 @@ MonoBehaviour:
   - Naja, es wird auf jeden Fall kompliziert sein.
   - Nein, auf gar keinen Fall.
   m_start: 638310240000000000
+  m_startString: 23.09.2023
   m_end: 638388000000000000
+  m_endString: 22.12.2023
   m_image: {fileID: 21300000, guid: 92540c03e272c1d4caa1f91bd98d0b2a, type: 3}
 --- !u!114 &4499741907850398410
 MonoBehaviour:
@@ -1144,7 +1220,9 @@ MonoBehaviour:
   - Kommt auf die Trennung an.
   - Das geht niemals gut.
   m_start: 638229024000000000
+  m_startString: 21.06.2023
   m_end: 638309376000000000
+  m_endString: 22.09.2023
   m_image: {fileID: 21300000, guid: 2b25095dd63ee5a47b1c76fafe74ebe7, type: 3}
 --- !u!114 &4551942187668711419
 MonoBehaviour:
@@ -1175,7 +1253,9 @@ MonoBehaviour:
   - Jupp, das volle Programm.
   - Nein, wie unangenehm.
   m_start: 638388864000000000
-  m_end: 638147808000000000
+  m_startString: 23.12.2023
+  m_end: 638464032000000000
+  m_endString: 19.03.2024
   m_image: {fileID: 21300000, guid: 5996ae4068e868848961032428af0bd5, type: 3}
 --- !u!114 &4706961437569731558
 MonoBehaviour:
@@ -1206,7 +1286,9 @@ MonoBehaviour:
   - Ja, aber nur bei einem kleinen Verbrechen.
   - Ja, ich stehe auf bad boys/girls - I can fix them.
   m_start: 638229024000000000
+  m_startString: 21.06.2023
   m_end: 638309376000000000
+  m_endString: 22.09.2023
   m_image: {fileID: 21300000, guid: 92540c03e272c1d4caa1f91bd98d0b2a, type: 3}
 --- !u!114 &4779982688192325190
 MonoBehaviour:
@@ -1236,7 +1318,9 @@ MonoBehaviour:
   - "Nein, daf\xFCr trinke ich nicht genug."
   - "Daf\xFCr brauche ich keinen Alkohol."
   m_start: 638310240000000000
+  m_startString: 23.09.2023
   m_end: 638388000000000000
+  m_endString: 22.12.2023
   m_image: {fileID: 21300000, guid: 60a09ca2d9ca2f849b8fb9e68e714e40, type: 3}
 --- !u!114 &5914862319129758560
 MonoBehaviour:
@@ -1266,7 +1350,9 @@ MonoBehaviour:
   - Ich glaube ja, kann mich aber nicht mehr daran erinnern.
   - "Nein, zum Gl\xFCck nicht."
   m_start: 638148672000000000
+  m_startString: 20.03.2023
   m_end: 638228160000000000
+  m_endString: 20.06.2023
   m_image: {fileID: 21300000, guid: ef2eae2014f6de744a8fe3e48399e690, type: 3}
 --- !u!114 &6881016527608704538
 MonoBehaviour:
@@ -1292,7 +1378,9 @@ MonoBehaviour:
   m_question: "Wer w\xFCrde am ehesten beim Sex telefonieren?"
   m_answers: []
   m_start: 638310240000000000
+  m_startString: 23.09.2023
   m_end: 638388000000000000
+  m_endString: 22.12.2023
   m_image: {fileID: 21300000, guid: 392a5452966d01e41abc03dd9db26ec7, type: 3}
 --- !u!114 &6919492884983318114
 MonoBehaviour:
@@ -1324,7 +1412,9 @@ MonoBehaviour:
   - "Fragen: \"Na, macht\u2019s Spa\xDF?\u201D"
   - Mit offenem Mund stehen bleiben.
   m_start: 638310240000000000
+  m_startString: 23.09.2023
   m_end: 638388000000000000
+  m_endString: 22.12.2023
   m_image: {fileID: 21300000, guid: 5b1cdd80cfb07174f943f1fef8511f00, type: 3}
 --- !u!114 &7143201623111808820
 MonoBehaviour:
@@ -1350,7 +1440,9 @@ MonoBehaviour:
   m_question: "Welche Person k\xF6nnte man hier am ehesten nach einem Dreier fragen?"
   m_answers: []
   m_start: 638229024000000000
+  m_startString: 21.06.2023
   m_end: 638309376000000000
+  m_endString: 22.09.2023
   m_image: {fileID: 21300000, guid: 13f6c095d36ae834cb1a4870f632382c, type: 3}
 --- !u!114 &7284544320246326729
 MonoBehaviour:
@@ -1376,7 +1468,9 @@ MonoBehaviour:
   m_question: "Wer w\xFCrde am ehesten betrunken auf dem Klo einschlafen?"
   m_answers: []
   m_start: 638388864000000000
-  m_end: 638147808000000000
+  m_startString: 23.12.2023
+  m_end: 638464032000000000
+  m_endString: 19.03.2024
   m_image: {fileID: 21300000, guid: 5895bb8e523f24b4b8a7fed46e4580ea, type: 3}
 --- !u!114 &7375848523079532228
 MonoBehaviour:
@@ -1406,7 +1500,9 @@ MonoBehaviour:
   - Guter Steuervorteil
   - Zu teuer
   m_start: 638229024000000000
+  m_startString: 21.06.2023
   m_end: 638309376000000000
+  m_endString: 22.09.2023
   m_image: {fileID: 21300000, guid: 5895bb8e523f24b4b8a7fed46e4580ea, type: 3}
 --- !u!114 &7794669705272873669
 MonoBehaviour:
@@ -1436,7 +1532,9 @@ MonoBehaviour:
   - Chaos veranstalten.
   - Leute auf dem Zeltplatz kennenlernen.
   m_start: 638229024000000000
+  m_startString: 21.06.2023
   m_end: 638309376000000000
+  m_endString: 22.09.2023
   m_image: {fileID: 21300000, guid: 7b48e137dd85b8748b394722b1de62d5, type: 3}
 --- !u!114 &8297182599808904712
 MonoBehaviour:
@@ -1466,7 +1564,9 @@ MonoBehaviour:
   - "Nein, f\xE4nde ich aber lustig."
   - "Nein, w\xE4re mir auch sehr unangenehm."
   m_start: 638229024000000000
+  m_startString: 21.06.2023
   m_end: 638309376000000000
+  m_endString: 22.09.2023
   m_image: {fileID: 21300000, guid: 5996ae4068e868848961032428af0bd5, type: 3}
 --- !u!114 &8520445639488365695
 MonoBehaviour:
@@ -1496,7 +1596,9 @@ MonoBehaviour:
   - "\u2026 bittest ein*e Freund*in, Wing-person zu spielen\r"
   - "\u2026 schmachtest du aus der Entfernung und zerdenkst absolut alles."
   m_start: 638148672000000000
+  m_startString: 20.03.2023
   m_end: 638228160000000000
+  m_endString: 20.06.2023
   m_image: {fileID: 21300000, guid: 13f6c095d36ae834cb1a4870f632382c, type: 3}
 --- !u!114 &9122375913437557591
 MonoBehaviour:
@@ -1527,7 +1629,9 @@ MonoBehaviour:
   - Ja, bei einer Party auf der Toilette.
   - "Nein, der Devil\u2019s Tango ist Privatsache."
   m_start: 638229024000000000
+  m_startString: 21.06.2023
   m_end: 638309376000000000
+  m_endString: 22.09.2023
   m_image: {fileID: 21300000, guid: 13f6c095d36ae834cb1a4870f632382c, type: 3}
 --- !u!114 &9123882135734977891
 MonoBehaviour:
@@ -1558,7 +1662,9 @@ MonoBehaviour:
   - Etwas mulmig ist mir schon.
   - Ich heirate eine reiche Person.
   m_start: 638229024000000000
+  m_startString: 21.06.2023
   m_end: 638309376000000000
+  m_endString: 22.09.2023
   m_image: {fileID: 21300000, guid: 7d9c8ca69c63284429855f085ee42ff0, type: 3}
 --- !u!114 &9168621679752729843
 MonoBehaviour:
@@ -1585,7 +1691,9 @@ MonoBehaviour:
   m_question: "Wer in dieser Runde w\xE4re der beste Lehrk\xF6rper?"
   m_answers: []
   m_start: 638148672000000000
+  m_startString: 20.03.2023
   m_end: 638228160000000000
+  m_endString: 20.06.2023
   m_image: {fileID: 21300000, guid: 92540c03e272c1d4caa1f91bd98d0b2a, type: 3}
 --- !u!114 &9208185539375305865
 MonoBehaviour:
@@ -1616,5 +1724,7 @@ MonoBehaviour:
   - Jein, habe nur verschlafen.
   - Ja, ich bin einfach nicht hingegangen.
   m_start: 638310240000000000
+  m_startString: 23.09.2023
   m_end: 638388000000000000
+  m_endString: 22.12.2023
   m_image: {fileID: 21300000, guid: 6abdada28c9b6fc40b0c131b0e90f3ff, type: 3}

@@ -39,7 +39,7 @@ namespace GossipGang {
             public string Start { get; set; }
             public DateTime StartDate {
                 get {
-                    return DateTime.TryParse(Start + DateTime.Now.Year, out var date)
+                    return DateTime.TryParse(Start, out var date)
                         ? date
                         : DateTime.Now;
                 }
@@ -48,7 +48,7 @@ namespace GossipGang {
             public string End { get; set; }
             public DateTime EndDate {
                 get {
-                    return DateTime.TryParse(End + DateTime.Now.Year, out var date)
+                    return DateTime.TryParse(End, out var date)
                         ? date
                         : DateTime.Now;
                 }

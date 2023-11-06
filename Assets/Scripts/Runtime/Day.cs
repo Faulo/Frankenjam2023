@@ -34,10 +34,14 @@ namespace GossipGang {
 
         [SerializeField]
         long m_start = DateTime.Now.Ticks;
+        [SerializeField]
+        string m_startString = DateTime.Now.ToShortDateString();
         public DateTime start => new(m_start);
 
         [SerializeField]
         long m_end = DateTime.Now.Ticks;
+        [SerializeField]
+        string m_endString = DateTime.Now.ToShortDateString();
         public DateTime end => new(m_end);
 
         public DateTime randomDate => new((long)UnityRandom.Range(m_start, m_end));
@@ -57,7 +61,9 @@ namespace GossipGang {
             day.m_answers = answers.ToArray();
             day.m_tags = tags.ToArray();
             day.m_start = start.Ticks;
+            day.m_startString = start.ToShortDateString();
             day.m_end = end.Ticks;
+            day.m_endString = end.ToShortDateString();
             day.m_image = image;
 
             if (string.IsNullOrWhiteSpace(day.m_question)) {
