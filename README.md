@@ -8,8 +8,8 @@ Franken Game Jam 2023
 - Theme: "give or take"
 
 ## Credits
-- Aki Withers (art)
-- Tina Wolfrum (project management, art)
-- Marie-Charleen Wrenger (narrative design)
 - Elisabeth Harzbecker (narrative design)
 - Daniel Schulz (programming)
+- Aki Withers (ui design, 2d art)
+- Tina Wolfrum (project management, ux design, 2d art)
+- Marie-Charleen Wrenger (narrative design)
