@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Linq;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -9,31 +11,60 @@ namespace GossipGang {
         [SerializeField]
         GameObject nameField;
         [SerializeField]
-        Slider dropdown;
+        Slider slider;
+
+        [Space]
+        [SerializeField]
+        TMP_Dropdown dropdown;
+
+        [Space]
         [SerializeField]
         GameObject secretField;
 
+        Player secret;
+
         public void Bind(Player secret) {
+            this.secret = secret;
+
             secretField.BindTo(secret.secret);
 
-            dropdown.minValue = -1;
-            dropdown.maxValue = GameManager.state.playerCount - 1;
+            if (slider) {
+                slider.minValue = -1;
+                slider.maxValue = GameManager.state.playerCount - 1;
 
-            dropdown.onValueChanged.AddListener(i => {
-                var player = i < 0
-                    ? null
-                    : GameManager.state.GetPlayerByIndex(Mathf.RoundToInt(i));
+                slider.onValueChanged.AddListener(i => HandleValue(Mathf.RoundToInt(i)));
 
+                slider.value = -1;
+            }
+
+            if (dropdown) {
+                dropdown.options = GameManager
+                    .state
+                    .players
+                    .Select(p => p.nameWithColor)
+                    .Prepend("???")
+                    .Select(text => new TMP_Dropdown.OptionData(text))
+                    .ToList();
+
+                dropdown.onValueChanged.AddListener(HandleValue);
+
+                dropdown.value = 0;
+            }
+        }
+
+        void HandleValue(int i) {
+            var player = i < 0
+                ? null
+                : GameManager.state.GetPlayerByIndex(i);
+
+            if (nameField) {
                 string name = player is null
-                    ? "???"
-                    : player.nameWithColor;
-
+                            ? "???"
+                            : player.nameWithColor;
                 nameField.BindTo(name);
+            }
 
-                onGuessSecret?.Invoke(secret, player);
-            });
-
-            dropdown.value = -1;
+            onGuessSecret?.Invoke(secret, player);
         }
     }
 }

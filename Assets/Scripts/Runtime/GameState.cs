@@ -1,7 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 using Slothsoft.UnityExtensions;
-using UnityEngine.Assertions;
 
 namespace GossipGang {
     sealed class GameState {
@@ -51,7 +50,9 @@ namespace GossipGang {
         }
 
         static IEnumerable<IEnumerable<Day>> GetInfinite(IReadOnlyCollection<Day> days, int count) {
-            Assert.IsTrue(count > 0);
+            if (count <= 0) {
+                yield break;
+            }
 
             while (count > days.Count) {
                 count -= days.Count;
